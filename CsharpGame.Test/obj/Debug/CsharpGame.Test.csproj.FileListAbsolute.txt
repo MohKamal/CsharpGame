@@ -1,0 +1,13 @@
+D:\GitHub\CsharpGame\CsharpGame.Test\bin\Debug\CsharpGame.Test.exe.config
+D:\GitHub\CsharpGame\CsharpGame.Test\bin\Debug\CsharpGame.Test.exe
+D:\GitHub\CsharpGame\CsharpGame.Test\bin\Debug\CsharpGame.Test.pdb
+D:\GitHub\CsharpGame\CsharpGame.Test\bin\Debug\CsharpGame.Engine.dll
+D:\GitHub\CsharpGame\CsharpGame.Test\bin\Debug\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.csprojAssemblyReference.cache
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.Form1.resources
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.Properties.Resources.resources
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.csproj.GenerateResource.cache
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.csproj.CoreCompileInputs.cache
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.csproj.CopyComplete
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.exe
+D:\GitHub\CsharpGame\CsharpGame.Test\obj\Debug\CsharpGame.Test.pdb
