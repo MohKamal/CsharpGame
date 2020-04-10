@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
-using CsharpGame.Engine.Components;
 
 namespace CsharpGame.Engine.Base
 {
@@ -98,28 +97,6 @@ namespace CsharpGame.Engine.Base
         {
             SolidBrush solidBrush = new SolidBrush(color);
             Graphic.FillRectangle(solidBrush, x, y, with, height);
-            return true;
-        }
-
-        /// <summary>
-        /// Draw a map of tiles
-        /// </summary>
-        /// <param name="map"></param>
-        /// <returns></returns>
-        public bool Map(Map map)
-        {
-            if (map == null)
-                return false;
-
-            for (int x= 0; x < map.Width; x++)
-            {
-                for (int y = 0; y < map.Height; y++)
-                {
-                    Graphic.DrawImage(map.Grid[x, y].Sprite.Graphic, new Rectangle(new Point((int)map.Grid[x, y].Position.X, (int)map.Grid[x, y].Position.Y),
-                        new Size((int)map.Grid[x, y].Sprite.Width, (int)map.Grid[x, y].Sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)map.Grid[x, y].Sprite.Width, (int)map.Grid[x, y].Sprite.Height)), GraphicsUnit.Pixel);
-                }
-            }
-
             return true;
         }
 

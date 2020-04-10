@@ -1,7 +1,7 @@
-﻿using CsharpGame.Engine.Components;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,13 +59,6 @@ namespace CsharpGame.Engine.Base
                 return false;
 
             _GameObjects.Add(gameObject);
-            return true;
-        }
-
-        public bool RegisterMap(Map map)
-        {
-            if (map == null)
-                return false;
             return true;
         }
 
@@ -242,6 +235,16 @@ namespace CsharpGame.Engine.Base
                 return false;
             }
             return EngineThread();
+        }
+
+        /// <summary>
+        /// Get ressource path
+        /// </summary>
+        /// <param name="ressourceName"></param>
+        /// <returns></returns>
+        public string Ressources(string ressourceName)
+        {
+            return Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName, $@"Resources\{ressourceName}");
         }
     }
 }

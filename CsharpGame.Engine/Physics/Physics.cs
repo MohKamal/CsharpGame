@@ -1,5 +1,4 @@
 ﻿using CsharpGame.Engine.Base;
-using CsharpGame.Engine.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;

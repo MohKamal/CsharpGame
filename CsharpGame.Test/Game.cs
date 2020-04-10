@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CsharpGame.Engine.Base;
-using CsharpGame.Engine.Components;
 using CsharpGame.Engine.Physics;
 using CsharpGame.Engine.Platformer;
 
@@ -13,8 +12,7 @@ namespace CsharpGame.Test
 {
     public class Game : Core
     {
-        public Game(PictureBox pictureBox) : base(pictureBox) { this.DisplayFPS = false; this.CalculeFPS = false; }
-
+        public Game(PictureBox pictureBox) : base(pictureBox) { this.DisplayFPS = true; this.CalculeFPS = true; }
         CustomPlatform Platfromer;
 
         public override bool OnCreate()
@@ -26,7 +24,6 @@ namespace CsharpGame.Test
         public override bool OnUpdate(double ElapsedTime)
         {
             Platfromer.Run((float)ElapsedTime);
-
             return true;
         }
     }
