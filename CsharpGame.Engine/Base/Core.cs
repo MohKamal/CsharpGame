@@ -23,6 +23,8 @@ namespace CsharpGame.Engine.Base
             _GameObjects = new List<GameObject>();
             DisplayFPS = true;
             CalculeFPS = true;
+            KeyboardKey = new List<Keys>();
+            MouseButton = new List<MouseButtons>();
         }
 
         /// <summary>
@@ -64,7 +66,6 @@ namespace CsharpGame.Engine.Base
         {
             if (map == null)
                 return false;
-            _Map = map;
             return true;
         }
 
@@ -100,13 +101,6 @@ namespace CsharpGame.Engine.Base
         private List<GameObject> _GameObjects;
 
         /// <summary>
-        /// Game map
-        /// </summary>
-        private Map _Map;
-
-        public Map Map { get { return _Map; } }
-
-        /// <summary>
         /// Drawer to draw the game
         /// </summary>
         public Drawer Drawer;
@@ -137,12 +131,12 @@ namespace CsharpGame.Engine.Base
         /// <summary>
         /// Clicked Keys
         /// </summary>
-        public Keys KeyboardKey;
+        private List<Keys> KeyboardKey;
 
         /// <summary>
         /// Clicked mouse button
         /// </summary>
-        public MouseButtons MouseButton;
+        private List<MouseButtons> MouseButton;
 
         /// <summary>
         /// Where the Magic is happening
@@ -172,13 +166,13 @@ namespace CsharpGame.Engine.Base
         private void Form_KeyUp(object sender, KeyEventArgs e)
         {
             IsClicking = false;
-            KeyboardKey = Keys.None;
+            KeyboardKey.Remove(e.KeyCode);
         }
 
         private void Form_KeyDown(object sender, KeyEventArgs e)
         {
             IsClicking = true;
-            KeyboardKey = e.KeyCode;
+            KeyboardKey.Add(e.KeyCode);
         }
 
         private void DrawingArea_MouseMove(object sender, MouseEventArgs e)
@@ -190,6 +184,16 @@ namespace CsharpGame.Engine.Base
             IsClicking = true;
         }
 
+        /// <summary>
+        /// Check if the user is clicking a specific key
+        /// </summary>
+        /// <param name="keys"></param>
+        /// <returns></returns>
+        public bool KeyClicked(Keys keys)
+        {
+            return KeyboardKey.Contains(keys);
+        }
+
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             //Clear the frame
@@ -198,9 +202,6 @@ namespace CsharpGame.Engine.Base
             _EndTime = DateTime.Now;
             ElapsedTime = _EndTime.Subtract(_StartTime).TotalMilliseconds / 1000;
             _StartTime = _EndTime;
-            //First, Draw map, to be at the back
-            if (this.Map != null)
-                Drawer.Map(this.Map);
             //Executre the user logic
             EngineActive = OnUpdate(ElapsedTime);
             //Draw registred game object
@@ -223,6 +224,10 @@ namespace CsharpGame.Engine.Base
                         Console.WriteLine($"FPS: {FPS}");
                 }
             }
+
+
+            if (DisplayFPS)
+                Drawer.String($"FPS: {FPS}", "Arial", 10f, Color.Red, new PointF(ScreenWith() - 100, 10));
         }
 
         /// <summary>

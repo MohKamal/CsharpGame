@@ -87,6 +87,20 @@ namespace CsharpGame.Engine.Base
             return true;
         }
 
+        public bool Line(Point p1, Point p2, Color color)
+        {
+            Pen pen = new Pen(color);
+            Graphic.DrawLine(pen, p1, p2);
+            return true;
+        }
+
+        public bool Rectangle(float x, float y, float with, float height, Color color)
+        {
+            SolidBrush solidBrush = new SolidBrush(color);
+            Graphic.FillRectangle(solidBrush, x, y, with, height);
+            return true;
+        }
+
         /// <summary>
         /// Draw a map of tiles
         /// </summary>
@@ -106,6 +120,23 @@ namespace CsharpGame.Engine.Base
                 }
             }
 
+            return true;
+        }
+
+        /// <summary>
+        /// Draw a string to screen
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="fontfamily"></param>
+        /// <param name="size"></param>
+        /// <param name="color"></param>
+        /// <param name="position"></param>
+        /// <returns></returns>
+        public bool String(string text, string fontfamily, float size , Color color, PointF position)
+        {
+            SolidBrush brush = new SolidBrush(color);
+            Font font = new Font(fontfamily, size);
+            Graphic.DrawString(text, font, brush, position);
             return true;
         }
     }

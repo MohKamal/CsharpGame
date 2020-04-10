@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomPlatform.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +102,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tile_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleC.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleB.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

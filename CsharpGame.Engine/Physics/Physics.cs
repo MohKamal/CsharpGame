@@ -38,7 +38,7 @@ namespace CsharpGame.Engine.Physics
                         gameObject.Velocity = new System.Drawing.PointF(gameObject.Velocity.X, Gravity);
 
                     Collision collision = new Collision(gameObject);
-                    collision.CollidedWidthMap();
+                    //collision.CollidedWidthMap();
                     gameObject.Move();
                 }
             }
@@ -56,21 +56,21 @@ namespace CsharpGame.Engine.Physics
                 _Object = gameObject;
             }
 
-            public bool CollidedWidthMap()
-            {
-                Tile tile = Core.Map.GetTile(_Object.Position.X, _Object.Position.Y);
-                if (tile != null)
-                {
-                    Tile under = Core.Map.GetTile((int)(tile.Position.X / tile.Sprite.Width), (int)(tile.Position.Y / tile.Sprite.Height) + 1);
-                    if (under != null)
-                    {
-                        Collision collision = new Collision(_Object);
-                        if (under.Ground)
-                            _Object.StopMoving();
-                    }
-                }
-                return false;
-            }
+            //public bool CollidedWidthMap()
+            //{
+            //    Tile tile = Core.Map.GetTile(_Object.Position.X, _Object.Position.Y);
+            //    if (tile != null)
+            //    {
+            //        Tile under = Core.Map.GetTile((int)(tile.Position.X / tile.Sprite.Width), (int)(tile.Position.Y / tile.Sprite.Height) + 1);
+            //        if (under != null)
+            //        {
+            //            Collision collision = new Collision(_Object);
+            //            if (under.Ground)
+            //                _Object.StopMoving();
+            //        }
+            //    }
+            //    return false;
+            //}
 
             public bool CollidedWidth(GameObject other)
             {
