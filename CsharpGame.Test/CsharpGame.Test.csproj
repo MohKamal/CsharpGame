@@ -118,5 +118,11 @@
   <ItemGroup>
     <None Include="Resources\spritesheet_numbered.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charachter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jump.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

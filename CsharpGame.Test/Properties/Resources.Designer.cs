@@ -63,6 +63,25 @@ namespace CsharpGame.Test.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap charachter {
+            get {
+                object obj = ResourceManager.GetObject("charachter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Jump {
+            get {
+                return ResourceManager.GetStream("Jump", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap men_1 {
             get {
                 object obj = ResourceManager.GetObject("men_1", resourceCulture);

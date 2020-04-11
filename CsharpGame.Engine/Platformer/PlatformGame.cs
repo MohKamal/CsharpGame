@@ -215,7 +215,10 @@ namespace CsharpGame.Engine.Platformer
             for (int i = 0; i < Grid.Nodes.Count; i++)
             {
                 PlatformerNode node = Grid.Nodes[i];
-                Engine.Drawer.Sprite(node.Position, node.Sprite);
+                if (node.Sprite is SpriteSheet)
+                    Engine.Drawer.SpriteSheet(node.Position, (SpriteSheet)node.Sprite);
+                else
+                    Engine.Drawer.Sprite(node.Position, node.Sprite);
                 //Engine.Drawer.Rectangle(node.Position.X, node.Position.Y, node.Sprite.Width, node.Sprite.Height, System.Drawing.Color.Red);
             }
         }
