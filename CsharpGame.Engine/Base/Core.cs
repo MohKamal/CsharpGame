@@ -25,7 +25,10 @@ namespace CsharpGame.Engine.Base
             CalculeFPS = true;
             KeyboardKey = new List<Keys>();
             MouseButton = new List<MouseButtons>();
+            MousePos = new Point(0, 0);
         }
+
+        private Point MousePos;
 
         /// <summary>
         /// Frame timer and count to see the fps count
@@ -145,7 +148,8 @@ namespace CsharpGame.Engine.Base
                 form.KeyDown += Form_KeyDown;
                 form.KeyUp += Form_KeyUp;
             }
-            DrawingArea.MouseClick += DrawingArea_MouseClick;
+            DrawingArea.MouseDown += DrawingArea_MouseDown;
+            DrawingArea.MouseUp += DrawingArea_MouseUp;
             DrawingArea.MouseMove += DrawingArea_MouseMove;
             EngineActive = OnCreate();
             timer = new System.Timers.Timer();
@@ -156,25 +160,46 @@ namespace CsharpGame.Engine.Base
             return EngineActive;
         }
 
+        private void DrawingArea_MouseUp(object sender, MouseEventArgs e)
+        {
+            IsClicking = false;
+            if (MouseButton.Contains(e.Button))
+                MouseButton.Remove(e.Button);
+        }
+
+        private void DrawingArea_MouseDown(object sender, MouseEventArgs e)
+        {
+            IsClicking = true;
+            if (!MouseButton.Contains(e.Button))
+                MouseButton.Add(e.Button);
+        }
+
         private void Form_KeyUp(object sender, KeyEventArgs e)
         {
             IsClicking = false;
-            KeyboardKey.Remove(e.KeyCode);
+            if (KeyboardKey.Contains(e.KeyCode))
+                KeyboardKey.Remove(e.KeyCode);
         }
 
         private void Form_KeyDown(object sender, KeyEventArgs e)
         {
             IsClicking = true;
-            KeyboardKey.Add(e.KeyCode);
+            if (!KeyboardKey.Contains(e.KeyCode))
+                KeyboardKey.Add(e.KeyCode);
         }
 
         private void DrawingArea_MouseMove(object sender, MouseEventArgs e)
         {
+            MousePos = e.Location;
         }
 
-        private void DrawingArea_MouseClick(object sender, MouseEventArgs e)
+        /// <summary>
+        /// Get mouse Location on the drawing area
+        /// </summary>
+        /// <returns></returns>
+        public Point MousePosition()
         {
-            IsClicking = true;
+            return MousePos;
         }
 
         /// <summary>
@@ -185,6 +210,16 @@ namespace CsharpGame.Engine.Base
         public bool KeyClicked(Keys keys)
         {
             return KeyboardKey.Contains(keys);
+        }
+
+        /// <summary>
+        /// Check if the user is clicking a specific key
+        /// </summary>
+        /// <param name="keys"></param>
+        /// <returns></returns>
+        public bool MouseClicked(MouseButtons keys)
+        {
+            return MouseButton.Contains(keys);
         }
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)

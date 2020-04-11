@@ -32,8 +32,8 @@ namespace CsharpGame.Engine.Platformer
             ShowGrid = true;
             PLAYER_SPAWN_X = 10;
             PLAYER_SPAWN_Y = 10;
-            PLAYER_JUMP_SPEED = -20;
-            PLAYER_WALK_SPEED = 10;
+            PLAYER_JUMP_SPEED = -100;
+            PLAYER_WALK_SPEED = 80;
             Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), new Sprite(Grid.Resolution, Grid.Resolution));
             Grid.Nodes.Add(Character);
         }
@@ -167,7 +167,8 @@ namespace CsharpGame.Engine.Platformer
                     }
                 }
             }
-            Logic(ElapsedTime);
+            UserInputs(ElapsedTime);
+            MouseDrawing();
             Update(ElapsedTime);
             if (ShowGrid)
             {
@@ -202,7 +203,7 @@ namespace CsharpGame.Engine.Platformer
         private bool JumpDown = false;
         private bool LeftDown = false;
         private bool RightDown = false;
-        private void Logic(float ElapsedTime)
+        private void UserInputs(float ElapsedTime)
         {
             //Key Down
             if (Engine.KeyClicked(System.Windows.Forms.Keys.Up))
@@ -234,13 +235,57 @@ namespace CsharpGame.Engine.Platformer
             if (RightDown)
                 Character.SetVelocityX(Math.Min((float)Character.Velocity.X + PLAYER_WALK_SPEED * ElapsedTime, (float)PLAYER_WALK_SPEED));
             if(LeftDown)
-                Character.SetVelocityX(Math.Min((float)Character.Velocity.X - PLAYER_WALK_SPEED * ElapsedTime, (float)-PLAYER_WALK_SPEED));
+                Character.SetVelocityX(Math.Max((float)Character.Velocity.X - PLAYER_WALK_SPEED * ElapsedTime, (float)-PLAYER_WALK_SPEED));
 
             if (Character.Position.X < -Character.Sprite.Width ||
               Character.Position.Y < -Character.Sprite.Height ||
               Character.Position.X > Engine.ScreenWith()||
               Character.Position.Y > Engine.ScreenHeight())
                 Character.Position = new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y);
+        }
+
+        /// <summary>
+        /// Draw line when mouse is clicked
+        /// </summary>
+        private void MouseDrawing()
+        {
+
+            System.Drawing.Point MouseLoaction = Engine.MousePosition();
+            float gridX = (float)Math.Floor((double)(MouseLoaction.X / Grid.Resolution));
+            float gridY = (float)Math.Floor((double)(MouseLoaction.Y / Grid.Resolution));
+            bool gridWall = false;
+            findSelectedEdge(MouseLoaction.X, MouseLoaction.Y, gridX, gridY, gridWall);
+            if (Engine.MouseClicked(System.Windows.Forms.MouseButtons.Left))
+            {
+                if (gridX == -1 || gridY == -1)
+                    return;
+
+                // Toggle selected edge
+                if (gridWall)
+                    Grid.setWall((int)gridX, (int)gridY, !Grid.getWall((int)gridX, (int)gridY));
+                else
+                    Grid.setCeiling((int)gridX, (int)gridY, !Grid.getCeiling((int)gridX, (int)gridY));
+            }
+        }
+
+        private void findSelectedEdge(float mouseX, float mouseY, float gridX, float gridY, bool gridWall)
+        {
+            float deltaX = mouseX - gridX * Grid.Resolution;
+            float deltaY = mouseY - gridY * Grid.Resolution;
+            gridWall = deltaX * deltaX < deltaY * deltaY;
+            if (deltaX + deltaY > Grid.Resolution)
+            {
+                if (deltaX > deltaY)
+                {
+                    gridX = Math.Min(gridX + 1, Grid.Width);
+                }
+                else
+                {
+                    gridY = Math.Min(gridY + 1, Grid.Height);
+                }
+
+                gridWall = !gridWall;
+            }
         }
 
         /// <summary>

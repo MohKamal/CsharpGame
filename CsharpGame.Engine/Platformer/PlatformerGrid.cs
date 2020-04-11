@@ -21,7 +21,7 @@ namespace CsharpGame.Engine.Platformer
         public List<PlatformerGridCell> Cells { get; }
         public List<PlatformerNode> Nodes { get; }
 
-        public PlatformerGrid(int with, int height, int resolution=16, float gravity=100, float friction=17)
+        public PlatformerGrid(int with, int height, int resolution=16, float gravity=100, float friction=10)
         {
             Width = with;
             Height = height;

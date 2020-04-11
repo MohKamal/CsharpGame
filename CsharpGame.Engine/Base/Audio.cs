@@ -30,34 +30,7 @@ namespace CsharpGame.Engine.Base
                 this.FileName = fileName;
             else
                 this.FileName = AppDomain.CurrentDomain.BaseDirectory + fileName;
-            //Player = new BackgroundWorker();
-            //Player.DoWork += new DoWorkEventHandler(Player_DoWork);
-
-            //Player = new WMPLib.WindowsMediaPlayer();
-            //Player.URL = AppDomain.CurrentDomain.BaseDirectory + "local.wav";
-            //Player = new System.Media.SoundPlayer(fileName);
         }
-
-        ////play the track for n minutes
-        //public void StartPlaying()
-        //{
-        //    try
-        //    {
-        //        //this.Timer = timer;
-        //        //IsBeingPlayed = true;
-        //        PlayLoop();
-        //        //ThreadStart ts = new ThreadStart(Loop);
-        //        //LoopThread = new Thread(ts);
-        //        //LoopThread.Start();
-
-        //        //if (!Player.IsBusy)
-        //            //Player.RunWorkerAsync();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        frmMain.WriteLog("Error occured in StartPlaying: " + ex.Message);
-        //    }
-        //}
 
         private void PlayWorker()
         {
@@ -71,11 +44,6 @@ namespace CsharpGame.Engine.Base
             int length = Convert.ToInt32(sb.ToString());
             int pos = 0;
             long oldvol = lngVolume;
-
-            //set the initial volume - Changed by Prahlad for phase-2
-            //sb = new StringBuilder("................................................................................................................................");
-            //mciSendString("setaudio " + this.TrackName + " volume to " + lngVolume.ToString(), sb, sb.Length, IntPtr.Zero);
-
 
             while (IsBeingPlayed)
             {
@@ -112,10 +80,6 @@ namespace CsharpGame.Engine.Base
                     }
                     oldvol = lngVolume;
                 }
-                //Player.openPlayer( AppDomain.CurrentDomain.BaseDirectory + "local.wav");
-                //Player.Play();
-                //Application.DoEvents();
-                //Thread.Sleep(500);
             }
             mciSendString("stop " + this.TrackName, sb, 0, IntPtr.Zero);
             mciSendString("close " + this.TrackName, sb, 0, IntPtr.Zero);
@@ -131,7 +95,6 @@ namespace CsharpGame.Engine.Base
         public void SetVolume(int newvolume)
         {
             this.lngVolume = newvolume * 100;
-            //mciSendString("setaudio " + strAlias + " volume to " & lngVolume, "", 0, 0&);
         }
 
         public void Play(bool Looping)
@@ -149,12 +112,6 @@ namespace CsharpGame.Engine.Base
                 ThreadStart ts = new ThreadStart(PlayWorker);
                 Thread WorkerThread = new Thread(ts);
                 WorkerThread.Start();
-                //DateTime t = DateTime.Now;
-                //PlaySound(FileName, IntPtr.Zero, SoundFlags.SND_FILENAME | SoundFlags.SND_ASYNC | SoundFlags.SND_NODEFAULT | SoundFlags.SND_LOOP);// | SoundFlags.SND_NOSTOP );
-                //mciSendString("Open \"" + AppDomain.CurrentDomain.BaseDirectory + "local.wav\" alias local",new StringBuilder(),0,IntPtr.Zero);
-                //mciSendString("play local", new StringBuilder(), 0, IntPtr.Zero);
-                //PlaySound(null, IntPtr.Zero, SoundFlags.SND_FILENAME | SoundFlags.SND_ASYNC | SoundFlags.SND_LOOP);
-                //Timer = 0;//reset the timer
             }
             catch (Exception ex)
             {
@@ -164,11 +121,6 @@ namespace CsharpGame.Engine.Base
         public void StopPlaying()
         {
             IsBeingPlayed = false;
-            //PlaySound(null, IntPtr.Zero, SoundFlags.SND_FILENAME | SoundFlags.SND_ASYNC | SoundFlags.SND_LOOP);
-            //mciSendString("stop local", new StringBuilder(), 0, IntPtr.Zero);
-            //mciSendString("close local", new StringBuilder(), 0, IntPtr.Zero);
-            //if (LoopThread !=null && LoopThread.ThreadState==ThreadState.Running)
-            //    LoopThread.Abort();
         }
 
         //sound api functions
