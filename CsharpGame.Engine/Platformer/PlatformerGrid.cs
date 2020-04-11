@@ -38,6 +38,12 @@ namespace CsharpGame.Engine.Platformer
                 setCeiling(x, Height - 1, true);
         }
 
+        /// <summary>
+        /// Validate an x & y positions
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
         public bool validateCoordinates(int x, int y)
         {
             if (x < 0 || y < 0 || x >= Width || y >= Height)
@@ -45,11 +51,23 @@ namespace CsharpGame.Engine.Platformer
             return true;
         }
 
+        /// <summary>
+        /// Get cell by positiion x & y
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
         public PlatformerGridCell getCell(int x, int y)
         {
             return Cells[x + y * Width];
         }
 
+        /// <summary>
+        /// Check if the current cell is a wall
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
         public bool getWall(int x, int y)
         {
             if (!validateCoordinates(x, y))
@@ -58,6 +76,13 @@ namespace CsharpGame.Engine.Platformer
             return getCell(x, y).Wall;
         }
 
+
+        /// <summary>
+        /// Check if the current cell is celling
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
         public bool getCeiling(int x, int y)
         {
             if (!validateCoordinates(x, y))
@@ -66,24 +91,44 @@ namespace CsharpGame.Engine.Platformer
             return getCell(x, y).Celling;
         }
 
+        /// <summary>
+        /// Make the cell a wall
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="wall"></param>
         public void setWall(int x, int y, bool wall)
         {
             if (validateCoordinates(x, y))
                 getCell(x, y).Wall = wall;
         }
 
+        /// <summary>
+        /// Make a cell celling
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="celling"></param>
         public void setCeiling(int x, int y, bool celling)
         {
             if (validateCoordinates(x, y))
                 getCell(x, y).Celling = celling;
         }
 
+        /// <summary>
+        /// A node to the grid
+        /// </summary>
+        /// <param name="node"></param>
         public void addNode(PlatformerNode node)
         {
             if (node != null)
                 Nodes.Add(node);
         }
 
+        /// <summary>
+        /// Remove a node to the grid
+        /// </summary>
+        /// <param name="node"></param>
         public void removeNode(PlatformerNode node)
         {
             if (node != null)

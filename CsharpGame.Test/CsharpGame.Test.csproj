@@ -112,5 +112,11 @@
   <ItemGroup>
     <None Include="Resources\SampleB.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spritesheet_numbered.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

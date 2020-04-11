@@ -15,6 +15,9 @@ namespace CsharpGame.Engine.Base
         public PointF Position { get; set; }
         public PointF Velocity { get; set; }
         public Sprite Sprite { get; set; }
+
+        public Animation Animations { get; set; }
+
         /// <summary>
         /// If true, no physics rules with be applied on this object
         /// </summary>
@@ -25,6 +28,21 @@ namespace CsharpGame.Engine.Base
             Position = position;
             Sprite = sprite;
             Static = false;
+            Animations = new Animation();
+        }
+
+        /// <summary>
+        /// Change the current animation
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public bool SetAnimation(string name)
+        {
+            SpriteSheet spriteSheet = Animations.GetAnimation(name);
+            if (spriteSheet == null)
+                return false;
+            Sprite = spriteSheet;
+            return true;
         }
 
         /// <summary>

@@ -19,6 +19,8 @@ namespace CsharpGame.Engine.Platformer
 
         public bool ShowGrid { get; set; }
 
+        public bool CreateWithMouse { get; set; }
+
         public float PLAYER_SPAWN_X { get; set; }
         public float PLAYER_SPAWN_Y { get; set; }
         public float PLAYER_JUMP_SPEED { get; set; }
@@ -30,12 +32,27 @@ namespace CsharpGame.Engine.Platformer
             _Grid = new PlatformerGrid(25, 25);
             _Core = engine;
             ShowGrid = true;
+            CreateWithMouse = true;
             PLAYER_SPAWN_X = 10;
             PLAYER_SPAWN_Y = 10;
             PLAYER_JUMP_SPEED = -100;
             PLAYER_WALK_SPEED = 80;
-            Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), new Sprite(Grid.Resolution, Grid.Resolution));
+            if(Character == null)
+                Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), new Sprite(Grid.Resolution, Grid.Resolution));
             Grid.Nodes.Add(Character);
+        }
+
+        /// <summary>
+        /// Set a custom grid
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns></returns>
+        public bool RegisterGrid(PlatformerGrid grid)
+        {
+            if (grid == null)
+                return false;
+            _Grid = grid;
+            return true;
         }
 
 
@@ -168,7 +185,8 @@ namespace CsharpGame.Engine.Platformer
                 }
             }
             UserInputs(ElapsedTime);
-            MouseDrawing();
+            if (CreateWithMouse)
+                MouseDrawing();
             Update(ElapsedTime);
             if (ShowGrid)
             {
@@ -179,6 +197,7 @@ namespace CsharpGame.Engine.Platformer
                 for (int x = 0; x < Grid.Height; x++)
                     Engine.Drawer.Line(new System.Drawing.Point(x * Grid.Resolution, 0), new System.Drawing.Point(x * Grid.Resolution, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
             }
+
             //Walls
             for(int x = 0; x < Grid.Width; x++)
             {
@@ -196,7 +215,8 @@ namespace CsharpGame.Engine.Platformer
             for (int i = 0; i < Grid.Nodes.Count; i++)
             {
                 PlatformerNode node = Grid.Nodes[i];
-                Engine.Drawer.Rectangle(node.Position.X, node.Position.Y, node.Sprite.Width, node.Sprite.Height, System.Drawing.Color.Red);
+                Engine.Drawer.Sprite(node.Position, node.Sprite);
+                //Engine.Drawer.Rectangle(node.Position.X, node.Position.Y, node.Sprite.Width, node.Sprite.Height, System.Drawing.Color.Red);
             }
         }
 

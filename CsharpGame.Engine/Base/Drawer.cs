@@ -52,6 +52,11 @@ namespace CsharpGame.Engine.Base
             if (sprite == null)
                 return false;
 
+            if (sprite.Graphic == null)
+                return false;
+            if (sprite is SpriteSheet)
+                SpriteSheet(x, y, (SpriteSheet)sprite);
+
             Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x,(int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(new Point(0,0), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
             return true;
         }
@@ -66,8 +71,50 @@ namespace CsharpGame.Engine.Base
         {
             if (sprite == null)
                 return false;
+            if (sprite.Graphic == null)
+                return false;
+
+            if (sprite is SpriteSheet)
+                SpriteSheet(point, (SpriteSheet)sprite);
 
             Graphic.DrawImage(sprite.Graphic, point);
+            return true;
+        }
+
+        /// <summary>
+        /// Draw Sprite with floats points
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="sprite"></param>
+        /// <returns></returns>
+        public bool SpriteSheet(float x, float y, SpriteSheet sprite)
+        {
+            if (sprite == null)
+                return false;
+
+            if (sprite.Graphic == null)
+                return false;
+            sprite.Update();
+            Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            return true;
+        }
+
+
+        /// <summary>
+        /// Draw Sprtie with point vec2
+        /// </summary>
+        /// <param name="point"></param>
+        /// <param name="sprite"></param>
+        /// <returns></returns>
+        public bool SpriteSheet(PointF point, SpriteSheet sprite)
+        {
+            if (sprite == null)
+                return false;
+            if (sprite.Graphic == null)
+                return false;
+            sprite.Update();
+            Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)point.X, (int)point.Y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
             return true;
         }
 
@@ -81,6 +128,12 @@ namespace CsharpGame.Engine.Base
         {
             if (obj == null)
                 return false;
+            if(obj.Sprite is SpriteSheet)
+            {
+                (obj.Sprite as SpriteSheet).Update();
+                Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle((obj.Sprite as SpriteSheet).Frame(), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                return true;
+            }
 
             Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle(new Point(0,0), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
             return true;

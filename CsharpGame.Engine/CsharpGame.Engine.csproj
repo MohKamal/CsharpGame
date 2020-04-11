@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\Animation.cs" />
     <Compile Include="Base\Audio.cs" />
+    <Compile Include="Base\SpriteSheet.cs" />
     <Compile Include="Physics\AABB.cs" />
     <Compile Include="Base\GameObject.cs" />
     <Compile Include="Base\Core.cs" />
