@@ -13,6 +13,10 @@ namespace CsharpGame.Engine.Base
         private Graphics Graphic;
         private PictureBox _DrawingArea;
         private Bitmap DrawArea;
+        private Camera _Camera;
+
+        public Camera Camera { get => _Camera; }
+
         public Drawer(PictureBox drawArea)
         {
             if (drawArea != null)
@@ -20,6 +24,7 @@ namespace CsharpGame.Engine.Base
                 _DrawingArea = drawArea;
                 DrawArea = new Bitmap(_DrawingArea.Size.Width, _DrawingArea.Size.Height);
                 Graphic = Graphics.FromImage(DrawArea);
+                _Camera = new Camera(drawArea.Width, drawArea.Height, drawArea.Width, drawArea.Height, 1, 1) { Position = new PointF(0, 0) };
             }
         }
 

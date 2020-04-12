@@ -39,8 +39,11 @@ namespace CsharpGame.Engine.Base
         public void Update()
         {
             // update to the next frame if it is time
+            int animCount = AnimationSequence.Count;
+            if (animCount == 0)
+                animCount = 1;
             if (Counter == (FrameSpeed - 1))
-                CurrentFrame = (CurrentFrame + 1) % AnimationSequence.Count;
+                CurrentFrame = (CurrentFrame + 1) % animCount;
 
             // update the counter
             Counter = (Counter + 1) % FrameSpeed;

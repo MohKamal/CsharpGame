@@ -22,11 +22,11 @@ namespace CsharpGame.Test
 
         public CustomPlatform(Core engine) : base(engine)
         {
-            RegisterGrid(new PlatformerGrid(engine.ScreenWith() / 32, engine.ScreenHeight() / 32, 32));
+            RegisterGrid(new PlatformerGrid((engine.ScreenWith() * 2) / 32, engine.ScreenHeight() / 32, 32));
             Stand = new SpriteSheet("stand", 32, 32, 1, 5, 5, Test.Properties.Resources.charachter);
             RunLeft = new SpriteSheet("run_left", 32, 32, 15, 6, 9, Test.Properties.Resources.charachter);
             RunRight = new SpriteSheet("run_right", 32, 32, 15, 0, 3, Test.Properties.Resources.charachter);
-            JumpLeft = new SpriteSheet("jump_left", 32, 32, 5, 15, 10, Test.Properties.Resources.charachter);
+            JumpLeft = new SpriteSheet("jump_left", 32, 32, 5, 10, 10, Test.Properties.Resources.charachter);
             JumpRight = new SpriteSheet("jump_right", 32, 32, 5, 4, 4, Test.Properties.Resources.charachter);
             Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), Stand);
             Character.Animations.RegisterAnimation(Stand);
@@ -36,7 +36,6 @@ namespace CsharpGame.Test
             Character.Animations.RegisterAnimation(JumpRight);
             Grid.addNode(Character);
             Character.SetAnimation("stand");
-            ShowGrid = false;
 
             Jump = new Audio(Engine.Ressources("Jump.wav"));
         }

@@ -40,6 +40,7 @@ namespace CsharpGame.Engine.Platformer
             if(Character == null)
                 Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), new Sprite(Grid.Resolution, Grid.Resolution));
             Grid.Nodes.Add(Character);
+
         }
 
         /// <summary>
@@ -194,7 +195,7 @@ namespace CsharpGame.Engine.Platformer
                 for (int y = 0; y < Grid.Height; y++)
                     Engine.Drawer.Line(new System.Drawing.Point(0, y * Grid.Resolution), new System.Drawing.Point(Grid.Width * Grid.Resolution, y * Grid.Resolution), System.Drawing.Color.Red);
 
-                for (int x = 0; x < Grid.Height; x++)
+                for (int x = 0; x < Grid.Width; x++)
                     Engine.Drawer.Line(new System.Drawing.Point(x * Grid.Resolution, 0), new System.Drawing.Point(x * Grid.Resolution, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
             }
 
