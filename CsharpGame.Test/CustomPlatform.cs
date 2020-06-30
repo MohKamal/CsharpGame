@@ -1,4 +1,5 @@
 ﻿using CsharpGame.Engine.Base;
+using CsharpGame.Engine.Base.Cameras;
 using CsharpGame.Engine.Platformer;
 using System;
 using System.Collections.Generic;

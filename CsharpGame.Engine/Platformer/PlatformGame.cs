@@ -18,7 +18,7 @@ namespace CsharpGame.Engine.Platformer
 
         public PlatformCharacter Character { get; set; }
 
-        public WorldCamera Camera { get; set; }
+        public Camera Camera { get; set; }
 
         public bool ShowGrid { get; set; }
 
@@ -191,6 +191,7 @@ namespace CsharpGame.Engine.Platformer
             UserInputs(ElapsedTime);
             if (CreateWithMouse)
                 MouseDrawing();
+            //user edits
             Update(ElapsedTime);
 
 
@@ -209,7 +210,7 @@ namespace CsharpGame.Engine.Platformer
                     if (Camera is WorldCamera)
                         Engine.Drawer.Line(new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, 0), new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
                     else
-                        Engine.Drawer.Line(new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, 0), new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
+                        Engine.Drawer.Line(new System.Drawing.Point(x * Grid.Resolution, 0), new System.Drawing.Point(x * Grid.Resolution, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
                 }
             }
 
@@ -253,7 +254,7 @@ namespace CsharpGame.Engine.Platformer
                     if (Camera is WorldCamera)
                         Engine.Drawer.Sprite(new System.Drawing.Point((int)node.Position.X + (int)Camera.Offset.X, (int)node.Position.Y + (int)Camera.Offset.Y), node.Sprite, Camera);
                     else
-                        Engine.Drawer.Sprite(new System.Drawing.Point((int)node.Position.X + (int)Camera.Offset.X, (int)node.Position.Y + (int)Camera.Offset.Y), node.Sprite, Camera);
+                        Engine.Drawer.Sprite(new System.Drawing.Point((int)node.Position.X, (int)node.Position.Y), node.Sprite, Camera);
                 }
             }
 
@@ -264,7 +265,6 @@ namespace CsharpGame.Engine.Platformer
             //Engine.Drawer.String($"Camera Position: {Camera.Position}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 80));
             //Engine.Drawer.String($"Camera Offset: {Camera.Offset}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 120));
             //Engine.Drawer.String($"Camera Max: {Camera.MaxPosition}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 140));
-            //Engine.Drawer.String($"Camera Location: {Camera.Location}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 160));
         }
 
         private bool JumpDown = false;
