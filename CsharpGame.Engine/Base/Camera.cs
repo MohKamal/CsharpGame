@@ -7,56 +7,78 @@ using System.Threading.Tasks;
 
 namespace CsharpGame.Engine.Base
 {
+    /// <summary>
+    /// Base camera object
+    /// </summary>
     public class Camera
     {
         public PointF Position { get; set; }
 
         public PointF Offset { get; set; }
-        public PointF TileOffset { get; set; }
 
-        public Size VisibleArea { get; set; }
+        public Size CameraSize { get; set; }
 
-        public Size TileSize { get; set; }
+        private PointF _MaxPosition;
+        public PointF MaxPosition { get { return _MaxPosition; } }
 
         private Size ScreenSize { get; set; }
 
-        public Size LevelSize { get; set; }
+        public Size LayoutSize { get; set; }
 
-        public Camera(int screenWidth, int screenHeight, int tileWidth, int tileHeight, int levelWidth, int levelHeight)
+        public float Speed { get; set; }
+
+        public Camera(int screenWidth, int screenHeight, int levelWidth, int levelHeight, float speed=10)
         {
             ScreenSize = new Size(screenWidth, screenHeight);
-            TileSize = new Size(tileWidth, tileHeight);
-            LevelSize = new Size(levelWidth, levelHeight);
-            CalculeVisibleArea();
-            CalculeOffset();
+            LayoutSize = new Size(levelWidth, levelHeight);
+            CameraSize = new Size(screenWidth, screenHeight);
+            Speed = speed;
+            UpdateMaxPosition();
+            getOffset();
         }
 
-        public Size CalculeVisibleArea()
+        public virtual void UpdateMaxPosition()
         {
-            VisibleArea = new Size(ScreenSize.Width / TileSize.Width, ScreenSize.Height / TileSize.Height);
-            return VisibleArea;
+            _MaxPosition = new PointF(Position.X + CameraSize.Width, Position.Y + CameraSize.Height);
         }
 
-        public PointF CalculeOffset()
+        public virtual PointF getOffset()
         {
-            Offset = new PointF(Position.X - VisibleArea.Width / 2, Position.Y - VisibleArea.Height / 2);
-            // Clamp camera to game boundaries
-            if (Offset.X < 0) Offset = new PointF(0, Offset.Y);
-            if (Offset.Y < 0) Offset = new PointF(Offset.X, 0);
-            if (Offset.X > LevelSize.Width - VisibleArea.Width) Offset = new PointF(LevelSize.Width - VisibleArea.Width, Offset.Y);
-            if (Offset.Y > LevelSize.Height - VisibleArea.Height) Offset = new PointF(Offset.X, LevelSize.Height - VisibleArea.Height);
+            Offset = new PointF((CameraSize.Width / 2) - Position.X, (CameraSize.Height / 2) - Position.Y);
             return Offset;
         }
 
-        public PointF CalculeTileOffset()
+        public virtual void SetPositionTo(GameObject @object)
         {
-            TileOffset = new PointF((Offset.X - (int)Offset.X) * TileSize.Width, (Offset.Y - (int)Offset.Y) * TileSize.Height);
-            return TileOffset;
-        }
+            PointF BordersX = new PointF(Position.X + @object.Sprite.Width, Position.X + (CameraSize.Width - (@object.Sprite.Width + 10)));
+            PointF BordersY = new PointF(Position.Y + @object.Sprite.Height, Position.Y + (CameraSize.Height - (@object.Sprite.Height + 10)));
 
-        public void SetPositionTo(GameObject @object)
-        {
-            Position = @object.Position;
+            if (@object.Position.X < BordersX.X)
+            {
+                if (Position.X > @object.Position.X - (CameraSize.Width / 2))
+                    Position = new PointF(Position.X - Speed, Position.Y);
+            }
+
+            if (@object.Position.X > BordersX.Y)
+            {
+                if (Position.X < @object.Position.X - (CameraSize.Width / 2))
+                    Position = new PointF(Position.X + Speed, Position.Y);
+            }
+
+            if (@object.Position.Y < BordersY.X)
+            {
+                if (Position.Y > @object.Position.Y - (CameraSize.Height / 2))
+                    Position = new PointF(Position.X, Position.Y - Speed);
+            }
+
+            if (@object.Position.Y > BordersY.Y)
+            {
+                if (Position.Y < @object.Position.Y - (CameraSize.Height / 2))
+                    Position = new PointF(Position.X, Position.Y + Speed);
+            }
+
+            getOffset();
+            //Checkoffset();
         }
     }
 }

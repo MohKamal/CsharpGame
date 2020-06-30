@@ -1,4 +1,5 @@
 ﻿using CsharpGame.Engine.Base;
+using CsharpGame.Engine.Base.Cameras;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,11 @@ namespace CsharpGame.Engine.Platformer
 
         public PlatformCharacter Character { get; set; }
 
+        public WorldCamera Camera { get; set; }
+
         public bool ShowGrid { get; set; }
 
         public bool CreateWithMouse { get; set; }
-
         public float PLAYER_SPAWN_X { get; set; }
         public float PLAYER_SPAWN_Y { get; set; }
         public float PLAYER_JUMP_SPEED { get; set; }
@@ -29,7 +31,7 @@ namespace CsharpGame.Engine.Platformer
 
         public PlatformGame(Core engine)
         {
-            _Grid = new PlatformerGrid(25, 25);
+            _Grid = new PlatformerGrid(100, 25);
             _Core = engine;
             ShowGrid = true;
             CreateWithMouse = true;
@@ -40,7 +42,7 @@ namespace CsharpGame.Engine.Platformer
             if(Character == null)
                 Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), new Sprite(Grid.Resolution, Grid.Resolution));
             Grid.Nodes.Add(Character);
-
+            Camera = new WorldCamera(_Core.ScreenWith(), _Core.ScreenHeight(), Grid.Width * Grid.Resolution, Grid.Height * Grid.Resolution);
         }
 
         /// <summary>
@@ -63,7 +65,8 @@ namespace CsharpGame.Engine.Platformer
         /// <param name="ElapsedTime"></param>
         public void Run(float ElapsedTime)
         {
-            for(int i=0; i < Grid.Nodes.Count; i++)
+            Camera.SetPositionTo(Character);
+            for(int i =0; i < Grid.Nodes.Count; i++)
             {
                 PlatformerNode node = Grid.Nodes[i];
 
@@ -189,26 +192,47 @@ namespace CsharpGame.Engine.Platformer
             if (CreateWithMouse)
                 MouseDrawing();
             Update(ElapsedTime);
+
+
             if (ShowGrid)
             {
                 //Grid
                 for (int y = 0; y < Grid.Height; y++)
-                    Engine.Drawer.Line(new System.Drawing.Point(0, y * Grid.Resolution), new System.Drawing.Point(Grid.Width * Grid.Resolution, y * Grid.Resolution), System.Drawing.Color.Red);
-
+                {
+                    if (Camera is WorldCamera)
+                        Engine.Drawer.Line(new System.Drawing.Point(0, (y * Grid.Resolution) + (int)Camera.Offset.Y), new System.Drawing.Point(Grid.Width * Grid.Resolution, (y * Grid.Resolution) + (int)Camera.Offset.Y), System.Drawing.Color.Red);
+                    else
+                        Engine.Drawer.Line(new System.Drawing.Point(0, (y * Grid.Resolution)), new System.Drawing.Point(Grid.Width * Grid.Resolution, (y * Grid.Resolution)), System.Drawing.Color.Red);
+                }
                 for (int x = 0; x < Grid.Width; x++)
-                    Engine.Drawer.Line(new System.Drawing.Point(x * Grid.Resolution, 0), new System.Drawing.Point(x * Grid.Resolution, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
+                {
+                    if (Camera is WorldCamera)
+                        Engine.Drawer.Line(new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, 0), new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
+                    else
+                        Engine.Drawer.Line(new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, 0), new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, Grid.Height * Grid.Resolution), System.Drawing.Color.Red);
+                }
             }
 
             //Walls
             for(int x = 0; x < Grid.Width; x++)
             {
-                for(int y = 0; y < Grid.Height; y++)
+                for (int y = 0; y < Grid.Height; y++)
                 {
                     PlatformerGridCell cell = Grid.getCell(x, y);
                     if (cell.Wall)
-                        Engine.Drawer.Line(new System.Drawing.Point(x * Grid.Resolution, (y + 1) * Grid.Resolution), new System.Drawing.Point(x*Grid.Resolution, y*Grid.Resolution), System.Drawing.Color.Blue);
+                    {
+                        if (Camera is WorldCamera)
+                            Engine.Drawer.Line(new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, ((y + 1) * Grid.Resolution) + (int)Camera.Offset.Y), new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, (y * Grid.Resolution) + (int)Camera.Offset.Y), System.Drawing.Color.Blue, Camera);
+                        else
+                            Engine.Drawer.Line(new System.Drawing.Point(x * Grid.Resolution, (y + 1) * Grid.Resolution), new System.Drawing.Point(x * Grid.Resolution, y * Grid.Resolution), System.Drawing.Color.Blue, Camera);
+                    }
                     if (cell.Celling)
-                        Engine.Drawer.Line(new System.Drawing.Point((x + 1) * Grid.Resolution, y * Grid.Resolution), new System.Drawing.Point(x * Grid.Resolution, y * Grid.Resolution), System.Drawing.Color.Green);
+                    {
+                        if (Camera is WorldCamera)
+                            Engine.Drawer.Line(new System.Drawing.Point(((x + 1) * Grid.Resolution)  + (int)Camera.Offset.X, (y * Grid.Resolution) + (int)Camera.Offset.Y), new System.Drawing.Point((x * Grid.Resolution) + (int)Camera.Offset.X, (y * Grid.Resolution) + (int)Camera.Offset.Y), System.Drawing.Color.Green, Camera);
+                        else
+                            Engine.Drawer.Line(new System.Drawing.Point((x + 1) * Grid.Resolution, y * Grid.Resolution), new System.Drawing.Point(x * Grid.Resolution, y * Grid.Resolution), System.Drawing.Color.Green, Camera);
+                    }
                 }
             }
 
@@ -217,11 +241,30 @@ namespace CsharpGame.Engine.Platformer
             {
                 PlatformerNode node = Grid.Nodes[i];
                 if (node.Sprite is SpriteSheet)
-                    Engine.Drawer.SpriteSheet(node.Position, (SpriteSheet)node.Sprite);
+                {
+                    if (Camera is WorldCamera)
+                        Engine.Drawer.SpriteSheet(new System.Drawing.Point((int)node.Position.X + (int)Camera.Offset.X, (int)node.Position.Y + (int)Camera.Offset.Y), (SpriteSheet)node.Sprite, Camera);
+                    else
+                        Engine.Drawer.SpriteSheet(new System.Drawing.Point((int)node.Position.X, (int)node.Position.Y), (SpriteSheet)node.Sprite, Camera);
+
+                }
                 else
-                    Engine.Drawer.Sprite(node.Position, node.Sprite);
-                //Engine.Drawer.Rectangle(node.Position.X, node.Position.Y, node.Sprite.Width, node.Sprite.Height, System.Drawing.Color.Red);
+                {
+                    if (Camera is WorldCamera)
+                        Engine.Drawer.Sprite(new System.Drawing.Point((int)node.Position.X + (int)Camera.Offset.X, (int)node.Position.Y + (int)Camera.Offset.Y), node.Sprite, Camera);
+                    else
+                        Engine.Drawer.Sprite(new System.Drawing.Point((int)node.Position.X + (int)Camera.Offset.X, (int)node.Position.Y + (int)Camera.Offset.Y), node.Sprite, Camera);
+                }
             }
+
+            //Debugging data
+            //Engine.Drawer.Rectangle(Camera.Position.X, Camera.Position.Y, Camera.CameraSize.Width, Camera.CameraSize.Height, System.Drawing.Color.Black);
+            //Engine.Drawer.Rectangle(Character.Position.X + (int)Camera.Offset.X, Character.Position.Y + (int)Camera.Offset.Y, Character.Sprite.Width, Character.Sprite.Height, System.Drawing.Color.Black);
+            //Engine.Drawer.String($"Player Position: {Character.Position}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 50));
+            //Engine.Drawer.String($"Camera Position: {Camera.Position}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 80));
+            //Engine.Drawer.String($"Camera Offset: {Camera.Offset}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 120));
+            //Engine.Drawer.String($"Camera Max: {Camera.MaxPosition}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 140));
+            //Engine.Drawer.String($"Camera Location: {Camera.Location}", "Arial", 12, System.Drawing.Color.Black, new System.Drawing.PointF(100, 160));
         }
 
         private bool JumpDown = false;
@@ -263,8 +306,8 @@ namespace CsharpGame.Engine.Platformer
 
             if (Character.Position.X < -Character.Sprite.Width ||
               Character.Position.Y < -Character.Sprite.Height ||
-              Character.Position.X > Engine.ScreenWith()||
-              Character.Position.Y > Engine.ScreenHeight())
+              Character.Position.X > Grid.Width * Grid.Resolution ||
+              Character.Position.Y > Grid.Height * Grid.Resolution)
                 Character.Position = new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y);
         }
 
@@ -275,10 +318,13 @@ namespace CsharpGame.Engine.Platformer
         {
 
             System.Drawing.Point MouseLoaction = Engine.MousePosition();
+            if(Camera is WorldCamera)
+                MouseLoaction = new System.Drawing.Point(MouseLoaction.X - (int)Camera.Offset.X, MouseLoaction.Y - (int)Camera.Offset.Y);
             float gridX = (float)Math.Floor((double)(MouseLoaction.X / Grid.Resolution));
             float gridY = (float)Math.Floor((double)(MouseLoaction.Y / Grid.Resolution));
             bool gridWall = false;
             findSelectedEdge(MouseLoaction.X, MouseLoaction.Y, gridX, gridY, gridWall);
+
             if (Engine.MouseClicked(System.Windows.Forms.MouseButtons.Left))
             {
                 if (gridX == -1 || gridY == -1)

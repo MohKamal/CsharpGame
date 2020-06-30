@@ -71,7 +71,7 @@ namespace CsharpGame.Engine.Base
         /// <returns></returns>
         public int ScreenWith()
         {
-            return DrawingArea.Width;
+            return DrawingArea.Width - 1;
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace CsharpGame.Engine.Base
         /// <returns></returns>
         public int ScreenHeight()
         {
-            return DrawingArea.Height;
+            return DrawingArea.Height - 1;
         }
         /// <summary>
         /// Get the list of the registred objects

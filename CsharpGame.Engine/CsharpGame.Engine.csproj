@@ -46,6 +46,8 @@
     <Compile Include="Base\Animation.cs" />
     <Compile Include="Base\Audio.cs" />
     <Compile Include="Base\Camera.cs" />
+    <Compile Include="Base\Cameras\FixedCamera.cs" />
+    <Compile Include="Base\Cameras\WorldCamera.cs" />
     <Compile Include="Base\SpriteSheet.cs" />
     <Compile Include="Physics\AABB.cs" />
     <Compile Include="Base\GameObject.cs" />
