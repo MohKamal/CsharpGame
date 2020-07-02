@@ -11,38 +11,31 @@ namespace CsharpGame.Engine.MapTile.Simple
     {
         public Size Size { get; set; }
         public string Name { get; set; }
-        public Tile[,] Grid { get; set; }
         public Size TilesSize { get; set; }
 
-        // Instantiate random number generator.  
-        private readonly Random _random = new Random();
+        public Dictionary<int, Layout> _Layouts;
+        public Dictionary<int, Layout> Layouts { get => _Layouts; }
 
         public Map(string name, Size size, Size tilesSize)
         {
             Name = name;
             Size = size;
-            Grid = new Tile[size.Width, size.Height];
             TilesSize = tilesSize;
-            GenerateMap();
+            _Layouts = new Dictionary<int, Layout>();
         }
 
         /// <summary>
-        /// Generate a map using only code
+        /// Add layout to the map
         /// </summary>
-        public virtual void GenerateMap()
+        /// <param name="layout"></param>
+        /// <returns></returns>
+        public bool AddLayout(Layout layout)
         {
-            for(int x=0; x < Size.Width; x++)
-            {
-                for(int y=0; y < Size.Height; y++)
-                {
-                    Tile tile = new Tile(TilesSize) { Position = new Point(x, y), Texture = new Base.Sprite(TilesSize.Width, TilesSize.Height) };
-                    if(_random.Next(0, 20) < 11)
-                        tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.sky);
-                    else
-                        tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.tile);
-                    Grid[x, y] = tile;
-                }
-            }
+            if (layout == null)
+                return false;
+            layout.Order = _Layouts.Count;
+            _Layouts.Add(_Layouts.Count, layout);
+            return true;
         }
     }
 }

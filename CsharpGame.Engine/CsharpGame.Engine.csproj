@@ -47,9 +47,11 @@
     <Compile Include="Base\Audio.cs" />
     <Compile Include="Base\Camera.cs" />
     <Compile Include="Base\Cameras\FixedCamera.cs" />
-    <Compile Include="Base\Cameras\TileCamera.cs" />
     <Compile Include="Base\Cameras\WorldCamera.cs" />
     <Compile Include="Base\SpriteSheet.cs" />
+    <Compile Include="MapTile\Simple\AStar.cs" />
+    <Compile Include="MapTile\Simple\Layout.cs" />
+    <Compile Include="MapTile\Simple\LogicTile.cs" />
     <Compile Include="MapTile\Simple\Map.cs" />
     <Compile Include="MapTile\Simple\Tile.cs" />
     <Compile Include="MapTile\Simple\TileGame.cs" />
@@ -92,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SampleC.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
