@@ -42,11 +42,11 @@ namespace CsharpGame.Engine.MapTile.Simple
                 for (int y = 0; y < Size.Height; y++)
                 {
                     Tile tile = new Tile(TilesSize) { Position = new Point(x, y), Texture = new Base.Sprite(TilesSize.Width, TilesSize.Height) };
-                    tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.sky);
-                    //if (_random.Next(0, 20) < 11)
-                    //    tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.sky);
-                    //else
-                    //    tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.tile);
+                    //tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.sky);
+                    if (_random.Next(0, 20) < 11)
+                        tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.sky);
+                    else
+                        tile.Texture.LoadFromFile(CsharpGame.Engine.Resource.tile);
                     Grid[x, y] = tile;
                     
                 }

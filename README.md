@@ -18,6 +18,28 @@ public class MyGame : Engine
     //ToDo
 }
 ```
+
+Impliment the default contructor.
+
+```C#
+public class MyGame : Engine
+{
+    public MyGame(PictureBox drawingArea) : base(drawingArea) { }
+}
+```
+
+To run the game, on the load event of the form, call the an object of the Class MyGame and execute the start function.
+
+```C#
+    public MyGame MyGame { get; private set; }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        MyGame = new MyGame(pictureBox1);
+        MyGame.Start();
+    }
+```
+
 # Documentation
 
 ## Engine Class

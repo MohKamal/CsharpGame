@@ -14,19 +14,19 @@ namespace CsharpGame.Test
     public class Game : Engine.Base.Engine
     {
         public Game(PictureBox pictureBox) : base(pictureBox) { this.DisplayFPS = true; this.CalculeFPS = true; }
-        CustomPlatform Platfromer;
-        //TileGame TileGame;
+        //CustomPlatform Platfromer;
+        TileGame TileGame;
         public override bool OnCreate()
         {
-            Platfromer = new CustomPlatform(this);
-            //TileGame = new TileGame(this);
+            //Platfromer = new CustomPlatform(this);
+            TileGame = new TileGame(this);
             return true;
         }
 
         public override bool OnUpdate(double ElapsedTime)
         {
-            Platfromer.Run((float)ElapsedTime);
-            //TileGame.Run((float)ElapsedTime);
+            //Platfromer.Run((float)ElapsedTime);
+            TileGame.Run((float)ElapsedTime);
             return true;
         }
     }
