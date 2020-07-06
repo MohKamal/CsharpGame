@@ -9,14 +9,14 @@ namespace CsharpGame.Engine.Physics
 {
     public class Physics
     {
-        private Core _Core { get; set; }
+        private Base.Engine _Core { get; set; }
         public float Gravity { get; set; }
 
         /// <summary>
         /// Init the physic object and properties
         /// </summary>
         /// <param name="core"></param>
-        public Physics(Core core)
+        public Physics(Base.Engine core)
         {
             _Core = core;
             Gravity = 20.0f;
@@ -48,7 +48,7 @@ namespace CsharpGame.Engine.Physics
             private GameObject _Object;
             public GameObject Object { get => _Object; }
 
-            public static Core Core { get; set; }
+            public static Base.Engine Core { get; set; }
 
             public Collision(GameObject gameObject)
             {

@@ -11,7 +11,7 @@ namespace CsharpGame.Engine.Platformer
     public class PlatformGame
     {
         private PlatformerGrid _Grid;
-        private Core _Core;
+        private Base.Engine _Core;
 
         //Public properties to edit by user
         public PlatformerGrid Grid { get => _Grid; }
@@ -27,9 +27,9 @@ namespace CsharpGame.Engine.Platformer
         public float PLAYER_SPAWN_Y { get; set; }
         public float PLAYER_JUMP_SPEED { get; set; }
         public float PLAYER_WALK_SPEED { get; set; }
-        public Core Engine { get => _Core; }
+        public Base.Engine Engine { get => _Core; }
 
-        public PlatformGame(Core engine)
+        public PlatformGame(Base.Engine engine)
         {
             _Grid = new PlatformerGrid(100, 25);
             _Core = engine;

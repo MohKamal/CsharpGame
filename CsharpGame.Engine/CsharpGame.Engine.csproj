@@ -57,7 +57,7 @@
     <Compile Include="MapTile\Simple\TileGame.cs" />
     <Compile Include="Physics\AABB.cs" />
     <Compile Include="Base\GameObject.cs" />
-    <Compile Include="Base\Core.cs" />
+    <Compile Include="Base\Engine.cs" />
     <Compile Include="Base\Drawer.cs" />
     <Compile Include="Physics\Circle.cs" />
     <Compile Include="Platformer\PlatformCharacter.cs" />

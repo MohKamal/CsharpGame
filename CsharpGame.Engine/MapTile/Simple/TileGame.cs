@@ -11,8 +11,8 @@ namespace CsharpGame.Engine.MapTile.Simple
 {
     public class TileGame
     {
-        private Core _Core;
-        public Core Engine { get => _Core; }
+        private Base.Engine _Core;
+        public Base.Engine Engine { get => _Core; }
         public WorldCamera Camera { get; set; }
 
         private Map _Map;
@@ -20,7 +20,7 @@ namespace CsharpGame.Engine.MapTile.Simple
 
         public AStar PathFinder { get; }
 
-        public TileGame(Core core)
+        public TileGame(Base.Engine core)
         {
             _Core = core;
             _Core.DisplayFPS = true;

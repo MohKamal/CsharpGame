@@ -66,113 +66,137 @@ namespace CsharpGame.Engine.MapTile.Simple
             if (Position.X > 0)
             {
                 Tile node = nodes[Position.X - 1, Position.Y];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if (Position.Y > 0)
             {
                 Tile node = nodes[Position.X, Position.Y - 1];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if (Position.X < Rows)
             {
                 Tile node = nodes[Position.X + 1, Position.Y];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if (Position.Y < Cols)
             {
                 Tile node = nodes[Position.X, Position.Y + 1];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if(Position.X > 0 && Position.Y > 0)
             {
                 Tile node = nodes[Position.X - 1, Position.Y - 1];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if (Position.X < Rows && Position.Y < Cols)
             {
                 Tile node = nodes[Position.X + 1, Position.Y + 1];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if (Position.X > 0 && Position.Y < Cols)
             {
                 Tile node = nodes[Position.X - 1, Position.Y + 1];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
 
             if (Position.X < Rows && Position.Y > 0)
             {
                 Tile node = nodes[Position.X + 1, Position.Y - 1];
-                var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
-                Edge e = new Edge()
+                if (node.ID != this.ID)
                 {
-                    ConnectedNode = node,
-                    Length = dist,
-                    Cost = dist,
-                };
-                if (!Connections.Contains(e))
-                    Connections.Add(e);
+                    var dist = Math.Sqrt(Math.Pow(Position.X - node.Position.X, 2) + Math.Pow(Position.Y - node.Position.Y, 2));
+                    Edge e = new Edge()
+                    {
+                        ConnectedNode = node,
+                        Length = dist,
+                        Cost = dist,
+                    };
+                    if (!Connections.Contains(e))
+                        Connections.Add(e);
+                }
             }
         }
 

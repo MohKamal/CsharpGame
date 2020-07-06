@@ -11,13 +11,13 @@ using System.Windows.Forms;
 namespace CsharpGame.Engine.Base
 {
     //Core
-    public class Core
+    public class Engine
     {
         /// <summary>
         /// Init the picturebox to draw the game
         /// </summary>
         /// <param name="drawingArea"></param>
-        public Core(PictureBox drawingArea)
+        public Engine(PictureBox drawingArea)
         {
             DrawingArea = drawingArea;
             _GameObjects = new List<GameObject>();

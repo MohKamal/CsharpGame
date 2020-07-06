@@ -23,7 +23,7 @@ namespace CsharpGame.Test
         Audio Jump;
         bool JumpSound = false;
 
-        public CustomPlatform(Core engine) : base(engine)
+        public CustomPlatform(Engine.Base.Engine engine) : base(engine)
         {
             //Generate empty Grid (Platform)
             RegisterGrid(new PlatformerGrid((engine.ScreenWith() * 2) / 32, (engine.ScreenHeight() * 2) / 32, 32));
