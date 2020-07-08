@@ -48,6 +48,7 @@
     <Compile Include="Base\Camera.cs" />
     <Compile Include="Base\Cameras\FixedCamera.cs" />
     <Compile Include="Base\Cameras\WorldCamera.cs" />
+    <Compile Include="Base\Scene.cs" />
     <Compile Include="Base\SpriteSheet.cs" />
     <Compile Include="MapTile\Simple\AStar.cs" />
     <Compile Include="MapTile\Simple\Layout.cs" />

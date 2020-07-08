@@ -26,6 +26,7 @@ namespace CsharpGame.Engine.Base
             KeyboardKey = new List<Keys>();
             MouseButton = new List<MouseButtons>();
             MousePos = new Point(0, 0);
+            Scenes = new Dictionary<int, Scene>();
         }
 
         private Point MousePos;
@@ -38,6 +39,48 @@ namespace CsharpGame.Engine.Base
         public int FPS;
         public bool DisplayFPS;
         public bool CalculeFPS;
+
+        /// <summary>
+        /// List of all the scenes in the game
+        /// </summary>
+        public Dictionary<int, Scene> Scenes { get; private set; }
+        public Scene CurrentScene { get; private set; }
+
+        /// <summary>
+        /// This function checks the scenes and set the current scene
+        /// </summary>
+        /// <returns></returns>
+        private bool ExecuteScenes()
+        {
+            CurrentScene = null;
+            if (Scenes.Count > 0)
+            {
+                foreach (KeyValuePair<int, Scene> entry in Scenes)
+                {
+                    if (!entry.Value.IsEnded)
+                    {
+                        CurrentScene = entry.Value;
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Register a scene to the engine scene with a default order of execution
+        /// </summary>
+        /// <param name="scene"></param>
+        /// <returns></returns>
+        public bool RegisterScene(Scene scene)
+        {
+            if (scene == null)
+                return false;
+
+            Scenes.Add(Scenes.Count, scene);
+            return true;
+        }
 
         /// <summary>
         /// Those functions will be overrided by the user
@@ -232,6 +275,21 @@ namespace CsharpGame.Engine.Base
             _StartTime = _EndTime;
             //Executre the user logic
             EngineActive = OnUpdate(ElapsedTime);
+
+            //Execute Scenes
+            ExecuteScenes();
+            if(CurrentScene != null)
+            {
+                //Set the OnCreate function for scene
+                if (!CurrentScene.IsCreated)
+                {
+                    CurrentScene.OnCreate();
+                    CurrentScene.Created();
+                }
+
+                CurrentScene.OnUpdate(ElapsedTime);
+            }
+
             //Draw registred game object
             foreach (GameObject gameObject in _GameObjects)
                 Drawer.GameObject(gameObject);

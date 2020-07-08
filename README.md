@@ -477,6 +477,60 @@ This object is still not on point, if any bug or suggestion, i will take it.
 
 ```
 
+## Scene
+
+A scene it's like a smaller engine peace, it has the two important functions like the engine, OnCreate and OnUpdate.
+You put your logic there and the engine will execute scene by scene, when the previous is done.
+You can use the scene to create a Menu scene, a game scene and credit scene, and put condition to end a scene and the engine will switch to the next one.
+
+To create a scene, you create a class and inherit from Scene class, and override the OnCreate and OnUpdate function.
+
+```C#
+public class MenuScene : Scene
+{
+    public MenuScene(Engine.Base.Engine engine) : base("Menu", engine)
+    {
+    }
+
+    public override bool OnCreate()
+    {
+        return base.OnCreate();
+    }
+
+    public override bool OnUpdate(double ElapsedTime)
+    {
+        return base.OnUpdate(double ElapsedTime);
+    }
+}
+```
+
+To end the scene, call the Ended function in your OnUpdate function (mainly).
+
+```C#
+public class MenuScene : Scene
+{
+    public MenuScene(Engine.Base.Engine engine) : base("Menu", engine)
+    {
+    }
+
+    public override bool OnCreate()
+    {
+        return base.OnCreate();
+    }
+
+    public override bool OnUpdate(double ElapsedTime)
+    {
+        Engine.Drawer.String("This is a menu", "Arial", 48, Color.Red, new PointF(100, 100));
+        Engine.Drawer.String("Clique Space to go out of menu", "Arial", 18, Color.Red, new PointF(100, 160));
+
+        if (Engine.KeyClicked(System.Windows.Forms.Keys.Space))
+        {
+            Ended();
+        }
+        return true;
+    }
+}
+```
 # More
 
 For now, there are two define game concepts, Platform game, and map tile game. You can run them to test the engine (use the Test project).
