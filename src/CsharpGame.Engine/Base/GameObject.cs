@@ -77,5 +77,22 @@ namespace CsharpGame.Engine.Base
         {
             this.Velocity = new PointF(0, 0);
         }
+
+        /// <summary>
+        /// Check if this object is in collision with another object
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public bool CollisionWith(GameObject other)
+        {
+            if (this.Position.X < other.Position.X + other.Sprite.Width &&
+                   this.Position.X + this.Sprite.Width > other.Position.X &&
+                   this.Position.Y < other.Position.Y + other.Sprite.Height &&
+                   this.Sprite.Height + this.Position.Y > other.Sprite.Height)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

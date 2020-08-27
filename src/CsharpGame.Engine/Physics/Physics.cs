@@ -28,17 +28,24 @@ namespace CsharpGame.Engine.Physics
         /// </summary>
         public void ApplyPhysiques(double ElapsedTime)
         {
-            foreach(GameObject gameObject in _Core.RegistredObjects())
+            foreach (KeyValuePair<int, Scene> entry in _Core.Scenes)
             {
-                if (!gameObject.Static)
+                var sortedDict = from _entry in entry.Value.Layers orderby _entry.Key ascending select _entry;
+                foreach (KeyValuePair<int, Layer> layer in sortedDict)
                 {
-                    gameObject.Velocity = new System.Drawing.PointF(gameObject.Velocity.X, gameObject.Velocity.Y + (Gravity * (float)ElapsedTime));
-                    if(gameObject.Velocity.Y > Gravity)
-                        gameObject.Velocity = new System.Drawing.PointF(gameObject.Velocity.X, Gravity);
+                    foreach (GameObject gameObject in layer.Value.RegistredObjects())
+                    {
+                        if (!gameObject.Static)
+                        {
+                            gameObject.Velocity = new System.Drawing.PointF(gameObject.Velocity.X, gameObject.Velocity.Y + (Gravity * (float)ElapsedTime));
+                            if (gameObject.Velocity.Y > Gravity)
+                                gameObject.Velocity = new System.Drawing.PointF(gameObject.Velocity.X, Gravity);
 
-                    Collision collision = new Collision(gameObject);
-                    //collision.CollidedWidthMap();
-                    gameObject.Move();
+                            Collision collision = new Collision(gameObject);
+                            //collision.CollidedWidthMap();
+                            gameObject.Move();
+                        }
+                    }
                 }
             }
         }

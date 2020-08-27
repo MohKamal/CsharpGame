@@ -15,9 +15,11 @@ namespace CSharpGame.PingPong
         public PingPong(PictureBox drawingArea) : base(drawingArea) { DisplayFPS = true; CalculeFPS = true; }
 
         public Sprite PlayerSprite { get; private set; }
+        public Sprite _PlayerSprite { get; private set; }
         public Sprite BallSprite { get; private set; }
 
         public GameObject Player { get; private set; }
+        public GameObject _Player { get; private set; }
         public GameObject Ball { get; private set; }
 
         int Score = 0;
@@ -27,8 +29,6 @@ namespace CSharpGame.PingPong
         int ballSpeedY = 0;
 
 
-
-
         int Red = 0;
         int Blue = 0;
         int Green = 0;
@@ -36,16 +36,23 @@ namespace CSharpGame.PingPong
         {
             PlayerSprite = new Sprite(30, 100);
             PlayerSprite.LoadFromFile(CSharpGame.PingPong.Properties.Resources.bar);
+            _PlayerSprite = new Sprite(30, 100);
+            _PlayerSprite.LoadFromFile(CSharpGame.PingPong.Properties.Resources.bar);
             BallSprite = new Sprite(30, 30);
             BallSprite.LoadFromFile(CSharpGame.PingPong.Properties.Resources.ball);
             Player = new GameObject(new PointF(10, 120), PlayerSprite);
+            _Player = new GameObject(new PointF(100, 120), _PlayerSprite);
             Ball = new GameObject(new PointF(120, 120), BallSprite);
             Rnd = new Random();
             ballSpeedX = Rnd.Next(-10, 10);
             ballSpeedY = Rnd.Next(-10, 10);
             //This will draw the game objects to screnn without using the draw methor in the OnUpdate function
-            RegisterGameObject(Player);
-            RegisterGameObject(Ball);
+            this.Scenes[0].Layers[0].RegisterGameObject(Player);
+            this.Scenes[0].Layers[0].RegisterGameObject(Ball);
+            Layer layer = new Layer("top");
+
+            layer.RegisterGameObject(_Player);
+            this.Scenes[0].RegisterLayer(layer);
 
             return true;
         }

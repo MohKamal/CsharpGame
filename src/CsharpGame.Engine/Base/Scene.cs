@@ -18,6 +18,8 @@ namespace CsharpGame.Engine.Base
         public bool IsEnded { get; private set; }
         public bool IsCreated { get; private set; }
 
+        public Dictionary<int, Layer> Layers { get; private set; }
+
         public Engine Engine { get; private set; }
 
         public Scene(string name, Engine engine)
@@ -26,6 +28,27 @@ namespace CsharpGame.Engine.Base
             IsEnded = false;
             Engine = engine;
             IsCreated = false;
+            Layers = new Dictionary<int, Layer>();
+
+            //Create the default layer
+            RegisterLayer(new Layer("ground"));
+        }
+
+        /// <summary>
+        /// Adding new layer to the scene
+        /// </summary>
+        /// <param name="layer"></param>
+        /// <returns></returns>
+        public bool RegisterLayer(Layer layer)
+        {
+            if (layer is null)
+                return false;
+
+            int zOrder = Layers.Count;
+            layer.z_order = zOrder;
+            Layers.Add(zOrder, layer);
+
+            return true;
         }
 
         /// <summary>

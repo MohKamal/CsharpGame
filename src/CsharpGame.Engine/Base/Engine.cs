@@ -27,6 +27,8 @@ namespace CsharpGame.Engine.Base
             MouseButton = new List<MouseButtons>();
             MousePos = new Point(0, 0);
             Scenes = new Dictionary<int, Scene>();
+            //Add default scene
+            RegisterScene(new Scene("default", this));
         }
 
         private Point MousePos;
@@ -288,6 +290,13 @@ namespace CsharpGame.Engine.Base
                 }
 
                 CurrentScene.OnUpdate(ElapsedTime);
+                var sortedDict = from entry in CurrentScene.Layers orderby entry.Key ascending select entry;
+                foreach (KeyValuePair<int, Layer> entry in sortedDict)
+                {
+                    //Draw registred game object
+                    foreach (GameObject gameObject in entry.Value.RegistredObjects())
+                        Drawer.GameObject(gameObject);
+                }
             }
 
             //Draw registred game object

@@ -378,6 +378,21 @@ To make them simple, you can define a GameObject and registred to the Engine, so
     }
 ```
 
+### Collisions
+
+#### Simple collision
+
+To check if an object is colliding with another, you can use the function CollisionWith.
+
+```C#
+
+    Player = new GameObject(new PointF(10, 120), PlayerSprite);
+    Ball = new GameObject(new PointF(50,120), BallSprite);
+    if(Player.CollisionWith(Ball))
+        //Do something
+
+```
+
 ## Animation
 
 Animation is a collection of SpriteSheets saved with a name. This will help you run different animations according to one or more conditions.
@@ -483,6 +498,8 @@ A scene it's like a smaller engine peace, it has the two important functions lik
 You put your logic there and the engine will execute scene by scene, when the previous is done.
 You can use the scene to create a Menu scene, a game scene and credit scene, and put condition to end a scene and the engine will switch to the next one.
 
+By default, there is a default scene in an empty engine instance, use it to create your objects, so you can use the layers.
+
 To create a scene, you create a class and inherit from Scene class, and override the OnCreate and OnUpdate function.
 
 ```C#
@@ -531,6 +548,32 @@ public class MenuScene : Scene
     }
 }
 ```
+
+## Layer
+
+To get sprite with z-order, you can use layer, by default there is a layer with z-order equal to 0.
+The layer has two public properties, z-order and Name.
+
+### RegisterGameObject
+
+This function is used to add you game objects to the layer, so they will be drawed automatically wihtout you calling the Drawer Class.
+
+```C#
+    //From pingpong project
+    public override bool OnCreate()
+    {
+        PlayerSprite = new Sprite(30, 100);
+        PlayerSprite.LoadFromFile(CSharpGame.PingPong.Properties.Resources.bar);
+        Player = new GameObject(new PointF(10, 120), PlayerSprite);
+        //Add layer
+        Layer layer = new Layer("top");
+        //Add object to the layer
+        layer.RegisterGameObject(Player);
+        this.Scenes[0].RegisterLayer(layer);
+        return true;
+    }
+```
+
 # More
 
 For now, there are two define game concepts, Platform game, and map tile game. You can run them to test the engine (use the Test project).
