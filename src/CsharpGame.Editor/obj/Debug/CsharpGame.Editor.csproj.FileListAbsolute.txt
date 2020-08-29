@@ -1,0 +1,17 @@
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\CsharpGame.Editor.exe.config
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\CsharpGame.Editor.exe
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\CsharpGame.Editor.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\CsharpGame.Engine.dll
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\CsharpGame.Engine.dll.config
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.csprojAssemblyReference.cache
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.Form1.resources
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.Properties.Resources.resources
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.csproj.GenerateResource.cache
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.csproj.CoreCompileInputs.cache
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.csproj.CopyComplete
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.exe
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.forms.NewScene.resources
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.forms.NewLayer.resources
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.forms.NewGameObject.resources

@@ -205,6 +205,17 @@ namespace CsharpGame.Engine.Base
             return EngineActive;
         }
 
+        /// <summary>
+        /// Stop The engine Thread and timer
+        /// </summary>
+        /// <returns></returns>
+        private bool EndEngineThread()
+        {
+            timer.Stop();
+            timer.Dispose();
+            return true;
+        }
+
         private void DrawingArea_MouseUp(object sender, MouseEventArgs e)
         {
             IsClicking = false;
@@ -337,6 +348,15 @@ namespace CsharpGame.Engine.Base
                 return false;
             }
             return EngineThread();
+        }
+
+        /// <summary>
+        /// Start the game
+        /// </summary>
+        /// <returns></returns>
+        public bool Stop()
+        {
+            return EndEngineThread();
         }
 
         /// <summary>

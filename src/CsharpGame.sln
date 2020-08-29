@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpGame.Test", "CsharpGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpGame.PingPong", "CSharpGame.PingPong\CSharpGame.PingPong.csproj", "{8AE7C682-7A17-41E9-84E5-1D26FBAF8038}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpGame.Editor", "CsharpGame.Editor\CsharpGame.Editor.csproj", "{ADEC40B6-29DE-441C-960E-0DA16EB6EA13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8AE7C682-7A17-41E9-84E5-1D26FBAF8038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AE7C682-7A17-41E9-84E5-1D26FBAF8038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AE7C682-7A17-41E9-84E5-1D26FBAF8038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADEC40B6-29DE-441C-960E-0DA16EB6EA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADEC40B6-29DE-441C-960E-0DA16EB6EA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADEC40B6-29DE-441C-960E-0DA16EB6EA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADEC40B6-29DE-441C-960E-0DA16EB6EA13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

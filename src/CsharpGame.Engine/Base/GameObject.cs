@@ -16,6 +16,8 @@ namespace CsharpGame.Engine.Base
         public PointF Velocity { get; set; }
         public Sprite Sprite { get; set; }
 
+        public string Name { get; set; }
+
         public Animation Animations { get; set; }
 
         /// <summary>
