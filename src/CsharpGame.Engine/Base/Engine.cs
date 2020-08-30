@@ -54,17 +54,39 @@ namespace CsharpGame.Engine.Base
         /// <returns></returns>
         private bool ExecuteScenes()
         {
-            CurrentScene = null;
-            if (Scenes.Count > 0)
+            if (CurrentScene == null)
             {
-                foreach (KeyValuePair<int, Scene> entry in Scenes)
+                if (Scenes.Count > 0)
                 {
-                    if (!entry.Value.IsEnded)
+                    foreach (KeyValuePair<int, Scene> entry in Scenes)
                     {
-                        CurrentScene = entry.Value;
-                        return true;
+                        if (!entry.Value.IsEnded)
+                        {
+                            CurrentScene = entry.Value;
+                            return true;
+                        }
                     }
                 }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Run spefic scene
+        /// </summary>
+        /// <param name="scene"></param>
+        /// <returns></returns>
+        public bool GoToScene(Scene scene)
+        {
+            if (scene != null)
+            {
+                if (CurrentScene != null)
+                {
+                    CurrentScene.Ended();
+                }
+                CurrentScene = scene;
+                return true;
             }
 
             return false;

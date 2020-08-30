@@ -181,6 +181,26 @@ This function return a bool value if a specific key is clicked
         return false;
 ```
 
+#### GoToScene
+
+This function will help switch from scene to another, like from the menu to credit, or menu to game level
+
+```C#
+    public override bool OnCreate()
+    {
+        creditScene = new CreditScene(this);
+        RegisterScene(finalscene);
+
+        menuScene = new MenuScene(this);
+        RegisterScene(menuScene);
+        //Launch the menu scene
+        GoToScene(menuScene);
+        
+        return base.OnCreate();
+    }
+
+```
+
 ### Public Properties
 
 FPS properties are public, you can display them where every you want. By default the FPS is not calculed. To display the FPS by default, set the DispalyFPS property to true and the CalculeFPS to true.

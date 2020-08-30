@@ -85,6 +85,9 @@ namespace CsharpGame.Editor
             catch
             {
                 MessageBox.Show("An error is occuperd, please check your code!");
+                LogViewer logViewer = new LogViewer();
+                logViewer.Text = $"Log View for {ProjectPath}";
+                logViewer.Show();
                 return false;
             }
             return true;
@@ -143,25 +146,22 @@ namespace CsharpGame.Editor
         private void btn_add_scene_Click(object sender, EventArgs e)
         {
             NewScene newScene = new NewScene();
-            //newScene.Engine = Engine;
-            //newScene.ShowDialog();
-            //RefreshScenesList();
+            newScene.ProjectPath = ProjectPath;
+            newScene.ShowDialog();
+            InitTheInterface();
+            RefreshFile($@"{ProjectPath}\Empty\Game.cs");
         }
 
         private void btn_add_layer_Click(object sender, EventArgs e)
         {
             NewLayer newLayer = new NewLayer();
-            //newLayer.Engine = Engine;
-            //newLayer.ShowDialog();
-            //RefreshScenesList();
+            newLayer.ShowDialog();
         }
 
         private void btn_add_gameobject_Click(object sender, EventArgs e)
         {
             NewGameObject newGameObject = new NewGameObject();
-            //newGameObject.Engine = Engine;
-            //newGameObject.ShowDialog();
-            //RefreshScenesList();
+            newGameObject.ShowDialog();
         }
 
         private void nouveauToolStripButton_Click(object sender, EventArgs e)
@@ -194,79 +194,140 @@ namespace CsharpGame.Editor
             if(contentList.SelectedItems.Count > 0)
             {
                 ListViewItem item = contentList.SelectedItems[0];
-                bool found = false;
-                TabPage tp = null;
-                foreach(TabPage p in code_edit_panel.Controls)
+                LoadFile(item);
+            }
+        }
+
+        private void LoadFile(ListViewItem item)
+        {
+            bool found = false;
+            TabPage tp = null;
+            foreach (TabPage p in code_edit_panel.Controls)
+            {
+                if (p.Tag == item.Tag)
                 {
-                    if(p.Tag == item.Tag)
+                    found = true;
+                    tp = p;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                string text = File.ReadAllText(item.Tag.ToString());
+                tp = new TabPage($"{item.Text}        ");
+                tp.Tag = item.Tag;
+                tp.Leave += tabPage_Leave;
+                code_edit_panel.TabPages.Add(tp);
+
+                SyntaxHighlighter.SyntaxRichTextBox m_syntaxRichTextBox = new SyntaxHighlighter.SyntaxRichTextBox();
+                m_syntaxRichTextBox.Dock = DockStyle.Fill;
+                m_syntaxRichTextBox.BorderStyle = BorderStyle.None;
+                m_syntaxRichTextBox.Margin = new Padding(0);
+                m_syntaxRichTextBox.AcceptsTab = true;
+                m_syntaxRichTextBox.Font = new Font(new FontFamily("Consolas"), 11);
+                m_syntaxRichTextBox.KeyDown += M_syntaxRichTextBox_KeyDown;
+
+                // Add the keywords to the list.
+                List<string> keywords = new List<string>() { "public", "class", "void", "bool", "namespace", "using", "return", "base", "string", "int", "float", "double",
+                    "char", "true", "false", "new", "private", "protected", "static", "override", "readonly", "System", "this" };
+                m_syntaxRichTextBox.Settings.Keywords.AddRange(keywords);
+
+                // Set the comment identifier. 
+                // For Lua this is two minus-signs after each other (--).
+                // For C++ code we would set this property to "//".
+                m_syntaxRichTextBox.Settings.Comment = "//";
+
+                // Set the colors that will be used.
+                m_syntaxRichTextBox.Settings.KeywordColor = Color.Blue;
+                m_syntaxRichTextBox.Settings.CommentColor = Color.Green;
+                m_syntaxRichTextBox.Settings.StringColor = Color.Brown;
+                m_syntaxRichTextBox.Settings.IntegerColor = Color.BlueViolet;
+
+                // Let's not process strings and integers.
+                m_syntaxRichTextBox.Settings.EnableStrings = true;
+                m_syntaxRichTextBox.Settings.EnableIntegers = true;
+
+                // Let's make the settings we just set valid by compiling
+                // the keywords to a regular expression.
+                m_syntaxRichTextBox.CompileKeywords();
+
+                // Load a file and update the syntax highlighting.
+                m_syntaxRichTextBox.LoadFile(item.Tag.ToString(), RichTextBoxStreamType.PlainText);
+                m_syntaxRichTextBox.ProcessAllLines();
+
+                //RichTextBox tb = new RichTextBox();
+                //tb.Dock = DockStyle.Fill;
+                //tb.BorderStyle = BorderStyle.None;
+                //tb.Margin = new Padding(0);
+                //tb.Text = text;
+                tp.Controls.Add(m_syntaxRichTextBox);
+            }
+
+            if (tp != null)
+                code_edit_panel.SelectedTab = tp;
+        }
+
+        private void M_syntaxRichTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Control)
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.S:
+                        MessageBox.Show("saving");
+                        break;
+                    case Keys.A:
+                        MessageBox.Show("Cancel");
+                        break;
+                    case Keys.C:
+                        MessageBox.Show("Copu");
+                        break;
+                }
+            }
+        }
+
+        private void RefreshFile(string file)
+        {
+            bool found = false;
+            TabPage tp = null;
+            foreach (TabPage p in code_edit_panel.Controls)
+            {
+                if(p.Tag != null)
+                {
+                    if (p.Tag.ToString() == file)
                     {
                         found = true;
                         tp = p;
                         break;
                     }
                 }
-
-                if (!found)
-                {
-                    string text = File.ReadAllText(item.Tag.ToString());
-                    tp = new TabPage(item.Text);
-                    tp.Tag = item.Tag;
-                    tp.Leave += tabPage_Leave;
-                    tp.ContextMenuStrip = tabsMenu;
-                    code_edit_panel.TabPages.Add(tp);
-
-                    SyntaxHighlighter.SyntaxRichTextBox m_syntaxRichTextBox = new SyntaxHighlighter.SyntaxRichTextBox();
-                    m_syntaxRichTextBox.Dock = DockStyle.Fill;
-                    m_syntaxRichTextBox.BorderStyle = BorderStyle.None;
-                    m_syntaxRichTextBox.Margin = new Padding(0);
-                    m_syntaxRichTextBox.AcceptsTab = true;
-                    m_syntaxRichTextBox.Font = new Font(new FontFamily("Consolas"), 11);
-
-                    // Add the keywords to the list.
-                    List<string> keywords = new List<string>() { "public", "class", "void", "bool", "namespace", "using", "return", "base", "string", "int", "float", "double",
-                    "char", "true", "false", "new", "private", "protected", "static", "override", "readonly", "System" };
-                    m_syntaxRichTextBox.Settings.Keywords.AddRange(keywords);
-
-                    // Set the comment identifier. 
-                    // For Lua this is two minus-signs after each other (--).
-                    // For C++ code we would set this property to "//".
-                    m_syntaxRichTextBox.Settings.Comment = "//";
-
-                    // Set the colors that will be used.
-                    m_syntaxRichTextBox.Settings.KeywordColor = Color.Blue;
-                    m_syntaxRichTextBox.Settings.CommentColor = Color.Green;
-                    m_syntaxRichTextBox.Settings.StringColor = Color.Brown;
-                    m_syntaxRichTextBox.Settings.IntegerColor = Color.BlueViolet;
-
-                    // Let's not process strings and integers.
-                    m_syntaxRichTextBox.Settings.EnableStrings = true;
-                    m_syntaxRichTextBox.Settings.EnableIntegers = true;
-
-                    // Let's make the settings we just set valid by compiling
-                    // the keywords to a regular expression.
-                    m_syntaxRichTextBox.CompileKeywords();
-
-                    // Load a file and update the syntax highlighting.
-                    m_syntaxRichTextBox.LoadFile(item.Tag.ToString(), RichTextBoxStreamType.PlainText);
-                    m_syntaxRichTextBox.ProcessAllLines();
-
-                    //RichTextBox tb = new RichTextBox();
-                    //tb.Dock = DockStyle.Fill;
-                    //tb.BorderStyle = BorderStyle.None;
-                    //tb.Margin = new Padding(0);
-                    //tb.Text = text;
-                    tp.Controls.Add(m_syntaxRichTextBox);
-                }
-
-                if(tp != null)
-                    code_edit_panel.SelectedTab = tp;
             }
+
+            if (tp != null)
+            {
+                if (found)
+                {
+                    SyntaxHighlighter.SyntaxRichTextBox m_syntaxRichTextBox = tp.Controls.OfType<SyntaxHighlighter.SyntaxRichTextBox>().FirstOrDefault();
+                    // Load a file and update the syntax highlighting.
+                    m_syntaxRichTextBox.LoadFile(file, RichTextBoxStreamType.PlainText);
+                    m_syntaxRichTextBox.ProcessAllLines();
+                }
+            }
+
+            if (tp != null)
+                code_edit_panel.SelectedTab = tp;
         }
 
         private void tabPage_Leave(object sender, EventArgs e)
         {
             TabPage tabPage = (TabPage)sender;
-            if(tabPage != null)
+            SaveTabContent(tabPage);
+        }
+
+        private void SaveTabContent(TabPage tabPage)
+        {
+            if (tabPage != null)
             {
                 string path = tabPage.Tag.ToString();
                 if (!string.IsNullOrEmpty(path))
@@ -284,18 +345,7 @@ namespace CsharpGame.Editor
         {
             ToolStripMenuItem toolStripMenuItem = (ToolStripMenuItem)sender;
             TabPage tabPage = (TabPage)toolStripMenuItem.Owner.Parent;
-            if (tabPage != null)
-            {
-                string path = tabPage.Tag.ToString();
-                if (!string.IsNullOrEmpty(path))
-                {
-                    RichTextBox rich = tabPage.Controls.OfType<RichTextBox>().FirstOrDefault();
-                    if (rich != null)
-                    {
-                        rich.SaveFile(path, RichTextBoxStreamType.PlainText);
-                    }
-                }
-            }
+            SaveTabContent(tabPage);
         }
 
         private void closeTabsMenu_Click(object sender, EventArgs e)
@@ -305,6 +355,35 @@ namespace CsharpGame.Editor
             if (tabPage != null)
             {
                 tabPage.Parent.Controls.Remove(tabPage);
+            }
+        }
+
+        private void code_edit_panel_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            //This code will render a "x" mark at the end of the Tab caption. 
+            e.Graphics.DrawString("x", e.Font, Brushes.Black, e.Bounds.Right - 15, e.Bounds.Top + 4);
+            e.Graphics.DrawString(this.code_edit_panel.TabPages[e.Index].Text, e.Font, Brushes.Black, e.Bounds.Left + 12, e.Bounds.Top + 4);
+            e.DrawFocusRectangle();
+        }
+
+        private void code_edit_panel_MouseDown(object sender, MouseEventArgs e)
+        {
+            //Looping through the controls.
+            for (int i = 0; i < this.code_edit_panel.TabPages.Count; i++)
+            {
+                Rectangle r = code_edit_panel.GetTabRect(i);
+                //Getting the position of the "x" mark.
+                Rectangle closeButton = new Rectangle(r.Right - 15, r.Top + 4, 9, 7);
+                if (closeButton.Contains(e.Location))
+                {
+                    if (MessageBox.Show("Would you like to Close this Tab?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        TabPage tabPage = code_edit_panel.TabPages[i];
+                        SaveTabContent(tabPage);
+                        this.code_edit_panel.TabPages.RemoveAt(i);
+                        break;
+                    }
+                }
             }
         }
     }

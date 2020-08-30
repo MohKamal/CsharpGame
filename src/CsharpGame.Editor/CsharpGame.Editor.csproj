@@ -91,6 +91,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\LogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LogViewer.Designer.cs">
+      <DependentUpon>LogViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\NewGameObject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\LogViewer.resx">
+      <DependentUpon>LogViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\NewGameObject.resx">
       <DependentUpon>NewGameObject.cs</DependentUpon>
@@ -156,7 +165,9 @@
       <Name>CsharpGame.Engine</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="models\Scene.txt" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Empty.zip" />
     <None Include="Resources\traffic-sign.png" />

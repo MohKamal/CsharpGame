@@ -22,3 +22,17 @@ D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Properties.Resources.resour
 D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
 D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.exe
 D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.pdb
+D:\GitHub\CsharpGame\src\_Empty\Empty\bin\Debug\Empty.exe.config
+D:\GitHub\CsharpGame\src\_Empty\Empty\bin\Debug\Empty.exe
+D:\GitHub\CsharpGame\src\_Empty\Empty\bin\Debug\Empty.pdb
+D:\GitHub\CsharpGame\src\_Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+D:\GitHub\CsharpGame\src\_Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\_Empty\Empty\bin\Debug\CsharpGame.Engine.dll.config
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.csprojAssemblyReference.cache
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.Form1.resources
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.cache
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.csproj.CoreCompileInputs.cache
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.csproj.CopyComplete
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.exe
+D:\GitHub\CsharpGame\src\_Empty\Empty\obj\Debug\Empty.pdb

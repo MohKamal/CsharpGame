@@ -1,0 +1,30 @@
+﻿using CsharpGame.Engine.Base;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Empty.Scenes
+{
+    public class <SceneClassName> : Scene
+    {
+        public <SceneClassName>(Engine engine) : base("<SceneName>", engine)
+        {
+            //Contructor
+        }
+
+        //Init all items on this function
+        public override bool OnCreate()
+        {
+            return base.OnCreate();
+        }
+
+        //Set the logic of your scene here
+        public override bool OnUpdate(double ElapsedTime)
+        {
+            return base.OnUpdate(ElapsedTime);
+        }
+    }
+}

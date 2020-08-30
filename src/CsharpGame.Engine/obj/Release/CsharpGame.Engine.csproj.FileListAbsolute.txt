@@ -6,3 +6,12 @@ D:\GitHub\CsharpGame\CsharpGame.Engine\obj\Release\CsharpGame.Engine.csproj.Gene
 D:\GitHub\CsharpGame\CsharpGame.Engine\obj\Release\CsharpGame.Engine.csproj.CoreCompileInputs.cache
 D:\GitHub\CsharpGame\CsharpGame.Engine\obj\Release\CsharpGame.Engine.dll
 D:\GitHub\CsharpGame\CsharpGame.Engine\obj\Release\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll.config
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Release\CsharpGame.Engine.csprojAssemblyReference.cache
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Release\CsharpGame.Engine.Resource.resources
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Release\CsharpGame.Engine.csproj.GenerateResource.cache
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Release\CsharpGame.Engine.csproj.CoreCompileInputs.cache
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Release\CsharpGame.Engine.dll
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Release\CsharpGame.Engine.pdb

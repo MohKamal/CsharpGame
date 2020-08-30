@@ -33,6 +33,14 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.code_edit_panel = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saveTabsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeTabsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.txt_code_first = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.contentList = new System.Windows.Forms.ListView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.nouveauToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ouvrirToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -51,21 +59,13 @@
             this.btn_start = new System.Windows.Forms.ToolStripButton();
             this.btn_stop = new System.Windows.Forms.ToolStripButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.code_edit_panel = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.txt_code_first = new System.Windows.Forms.RichTextBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.contentList = new System.Windows.Forms.ListView();
-            this.tabsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.saveTabsMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeTabsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.code_edit_panel.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tabsMenu.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -111,6 +111,98 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1184, 714);
             this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // code_edit_panel
+            // 
+            this.code_edit_panel.Controls.Add(this.tabPage1);
+            this.code_edit_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.code_edit_panel.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.code_edit_panel.Location = new System.Drawing.Point(177, 0);
+            this.code_edit_panel.Margin = new System.Windows.Forms.Padding(0);
+            this.code_edit_panel.Name = "code_edit_panel";
+            this.code_edit_panel.SelectedIndex = 0;
+            this.code_edit_panel.Size = new System.Drawing.Size(828, 714);
+            this.code_edit_panel.TabIndex = 1;
+            this.code_edit_panel.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.code_edit_panel_DrawItem);
+            this.code_edit_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.code_edit_panel_MouseDown);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.ContextMenuStrip = this.tabsMenu;
+            this.tabPage1.Controls.Add(this.txt_code_first);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(820, 688);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Welcome!          ";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabsMenu
+            // 
+            this.tabsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveTabsMenu,
+            this.closeTabsMenu});
+            this.tabsMenu.Name = "tabsMenu";
+            this.tabsMenu.Size = new System.Drawing.Size(104, 48);
+            // 
+            // saveTabsMenu
+            // 
+            this.saveTabsMenu.Name = "saveTabsMenu";
+            this.saveTabsMenu.Size = new System.Drawing.Size(103, 22);
+            this.saveTabsMenu.Text = "Save";
+            this.saveTabsMenu.Click += new System.EventHandler(this.saveTabsMenu_Click);
+            // 
+            // closeTabsMenu
+            // 
+            this.closeTabsMenu.Name = "closeTabsMenu";
+            this.closeTabsMenu.Size = new System.Drawing.Size(103, 22);
+            this.closeTabsMenu.Text = "Close";
+            this.closeTabsMenu.Click += new System.EventHandler(this.closeTabsMenu_Click);
+            // 
+            // txt_code_first
+            // 
+            this.txt_code_first.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_code_first.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_code_first.Enabled = false;
+            this.txt_code_first.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_code_first.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_code_first.Location = new System.Drawing.Point(3, 3);
+            this.txt_code_first.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_code_first.Name = "txt_code_first";
+            this.txt_code_first.Size = new System.Drawing.Size(814, 682);
+            this.txt_code_first.TabIndex = 0;
+            this.txt_code_first.Text = resources.GetString("txt_code_first.Text");
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.contentList, 0, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(177, 714);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // contentList
+            // 
+            this.contentList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentList.HideSelection = false;
+            this.contentList.Location = new System.Drawing.Point(0, 178);
+            this.contentList.Margin = new System.Windows.Forms.Padding(0);
+            this.contentList.Name = "contentList";
+            this.contentList.Size = new System.Drawing.Size(177, 178);
+            this.contentList.TabIndex = 0;
+            this.contentList.UseCompatibleStateImageBehavior = false;
+            this.contentList.View = System.Windows.Forms.View.List;
+            this.contentList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.contentList_MouseDoubleClick);
             // 
             // toolStrip1
             // 
@@ -274,93 +366,6 @@
             this.btn_stop.Text = "Stop";
             this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
             // 
-            // code_edit_panel
-            // 
-            this.code_edit_panel.Controls.Add(this.tabPage1);
-            this.code_edit_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.code_edit_panel.Location = new System.Drawing.Point(177, 0);
-            this.code_edit_panel.Margin = new System.Windows.Forms.Padding(0);
-            this.code_edit_panel.Name = "code_edit_panel";
-            this.code_edit_panel.SelectedIndex = 0;
-            this.code_edit_panel.Size = new System.Drawing.Size(828, 714);
-            this.code_edit_panel.TabIndex = 1;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.ContextMenuStrip = this.tabsMenu;
-            this.tabPage1.Controls.Add(this.txt_code_first);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(820, 688);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Welcome!";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // txt_code_first
-            // 
-            this.txt_code_first.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_code_first.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_code_first.Enabled = false;
-            this.txt_code_first.Location = new System.Drawing.Point(3, 3);
-            this.txt_code_first.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_code_first.Name = "txt_code_first";
-            this.txt_code_first.Size = new System.Drawing.Size(814, 682);
-            this.txt_code_first.TabIndex = 0;
-            this.txt_code_first.Text = "";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.contentList, 0, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(177, 714);
-            this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // contentList
-            // 
-            this.contentList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentList.HideSelection = false;
-            this.contentList.Location = new System.Drawing.Point(0, 178);
-            this.contentList.Margin = new System.Windows.Forms.Padding(0);
-            this.contentList.Name = "contentList";
-            this.contentList.Size = new System.Drawing.Size(177, 178);
-            this.contentList.TabIndex = 0;
-            this.contentList.UseCompatibleStateImageBehavior = false;
-            this.contentList.View = System.Windows.Forms.View.List;
-            this.contentList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.contentList_MouseDoubleClick);
-            // 
-            // tabsMenu
-            // 
-            this.tabsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveTabsMenu,
-            this.closeTabsMenu});
-            this.tabsMenu.Name = "tabsMenu";
-            this.tabsMenu.Size = new System.Drawing.Size(104, 48);
-            // 
-            // saveTabsMenu
-            // 
-            this.saveTabsMenu.Name = "saveTabsMenu";
-            this.saveTabsMenu.Size = new System.Drawing.Size(180, 22);
-            this.saveTabsMenu.Text = "Save";
-            this.saveTabsMenu.Click += new System.EventHandler(this.saveTabsMenu_Click);
-            // 
-            // closeTabsMenu
-            // 
-            this.closeTabsMenu.Name = "closeTabsMenu";
-            this.closeTabsMenu.Size = new System.Drawing.Size(180, 22);
-            this.closeTabsMenu.Text = "Close";
-            this.closeTabsMenu.Click += new System.EventHandler(this.closeTabsMenu_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,12 +378,12 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.code_edit_panel.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.tabsMenu.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }

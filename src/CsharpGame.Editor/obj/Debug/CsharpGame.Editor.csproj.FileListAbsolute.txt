@@ -36,3 +36,4 @@ D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\System.Numerics.Vectors.xml
 D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\System.Threading.Tasks.Dataflow.xml
 D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug\SyntaxHighlighter.dll
+D:\GitHub\CsharpGame\src\CsharpGame.Editor\obj\Debug\CsharpGame.Editor.forms.LogViewer.resources

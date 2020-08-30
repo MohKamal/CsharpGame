@@ -1,4 +1,4 @@
-La génération a démarré 30/08/2020 02:44:26.
+La génération a démarré 30/08/2020 15:27:44.
 Environnement au début de la génération :
 ALLUSERSPROFILE = C:\ProgramData
 APPDATA = C:\Users\hp\AppData\Roaming
@@ -34,7 +34,7 @@ ProgramFiles(x86) = C:\Program Files (x86)
 ProgramW6432 = C:\Program Files
 PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 PUBLIC = C:\Users\Public
-ServiceHubLogSessionKey = FAF7732C
+ServiceHubLogSessionKey = 3FBB57B3
 SESSIONNAME = Console
 SystemDrive = C:
 SystemRoot = C:\WINDOWS
@@ -119,7 +119,7 @@ PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\Wi
 PUBLIC = C:\Users\Public
 SDK35ToolsPath = 
 SDK40ToolsPath = 
-ServiceHubLogSessionKey = FAF7732C
+ServiceHubLogSessionKey = 3FBB57B3
 SESSIONNAME = Console
 SolutionDir = C:\Users\hp\Documents\Games\
 SolutionExt = .sln
@@ -485,7 +485,7 @@ MarkupCompilePass2ForMainAssemblyDependsOn =
        
 MaxTargetPath = 100
 MsAppxPackageTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v16.0\AppxPackage\Microsoft.AppXPackage.Targets
-MSBuildAllProjects = ;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.props;C:\Users\hp\Documents\Games\Empty\Empty.csproj;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets
+MSBuildAllProjects = ;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.props;C:\Users\hp\Documents\Games\Empty\Empty.csproj;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets;C:\Users\hp\Documents\Games\Empty\Empty.csproj.user;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets
 MSBuildBinPath = C:\Windows\Microsoft.NET\Framework\v4.0.30319
 MSBuildExtensionsPath = C:\Program Files (x86)\MSBuild
 MSBuildExtensionsPath32 = C:\Program Files (x86)\MSBuild
@@ -588,6 +588,7 @@ ProjectFlavor = Client
 ProjectGuid = {E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}
 ProjectName = Empty
 ProjectPath = C:\Users\hp\Documents\Games\Empty\Empty.csproj
+ProjectView = ProjectFiles
 PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 PUBLIC = C:\Users\Public
 PublishableProject = true
@@ -660,7 +661,7 @@ SDK40ToolsPath =
 SDKRedistOutputGroupDependsOn = ResolveSDKReferences;ExpandSDKReferences
 SDKReferenceDirectoryRoot = C:\Users\hp\AppData\Local\Microsoft SDKs;C:\Program Files (x86)\Microsoft SDKs
 SDKReferenceRegistryRoot = Software\Microsoft\Microsoft SDKs
-ServiceHubLogSessionKey = FAF7732C
+ServiceHubLogSessionKey = 3FBB57B3
 SESSIONNAME = Console
 SGenFilesOutputGroupDependsOn = 
 SGenShouldGenerateSerializer = true
@@ -786,6 +787,12 @@ Compile
         AutoGen = True
         DependentUpon = Settings.settings
         DesignTimeSharedInput = True
+    Scenes\CreditScene.cs
+    Scenes\FinalScene.cs
+    Scenes\MamaScene.cs
+    Scenes\MenuScene.cs
+    Scenes\RegScene.cs
+    Scenes\TestingCom.cs
 DebugSymbolsProjectOutputGroupOutput
     C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb
         FinalOutputPath = C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb
@@ -1434,6 +1441,7 @@ Tâche "GenerateResource" (IDTâche:17)
           C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.props
           C:\Users\hp\Documents\Games\Empty\Empty.csproj
           C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets
+          C:\Users\hp\Documents\Games\Empty\Empty.csproj.user
           C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets
           C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets (IDTâche:17)
   Paramètre de tâche :StateFile=obj\Debug\Empty.csproj.GenerateResource.Cache (IDTâche:17)
@@ -1688,6 +1696,12 @@ Tâche "Csc" (IDTâche:21)
           Game.cs
           Program.cs
           Properties\AssemblyInfo.cs
+          Scenes\CreditScene.cs
+          Scenes\FinalScene.cs
+          Scenes\MamaScene.cs
+          Scenes\MenuScene.cs
+          Scenes\RegScene.cs
+          Scenes\TestingCom.cs
           Properties\Resources.Designer.cs
                   AutoGen=True
                   DependentUpon=Resources.resx
@@ -1702,7 +1716,7 @@ Tâche "Csc" (IDTâche:21)
   Paramètre de tâche :UseHostCompilerIfAvailable=True (IDTâche:21)
   Paramètre de tâche :Utf8Output=True (IDTâche:21)
   Paramètre de tâche :WarningLevel=4 (IDTâche:21)
-  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Empty.exe /subsystemversion:6.00 /resource:obj\Debug\Empty.Form1.resources /resource:obj\Debug\Empty.Properties.Resources.resources /target:winexe /utf8output Form1.cs Form1.Designer.cs Game.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "C:\Users\hp\AppData\Local\Temp\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" (IDTâche:21)
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Empty.exe /subsystemversion:6.00 /resource:obj\Debug\Empty.Form1.resources /resource:obj\Debug\Empty.Properties.Resources.resources /target:winexe /utf8output Form1.cs Form1.Designer.cs Game.cs Program.cs Properties\AssemblyInfo.cs Scenes\CreditScene.cs Scenes\FinalScene.cs Scenes\MamaScene.cs Scenes\MenuScene.cs Scenes\RegScene.cs Scenes\TestingCom.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "C:\Users\hp\AppData\Local\Temp\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" (IDTâche:21)
   Microsoft (R) Visual C# Compiler version 4.8.3752.0 (IDTâche:21)
    (IDTâche:21)
   for C# 5 (IDTâche:21)
@@ -2330,99 +2344,99 @@ Génération du projet "C:\Users\hp\Documents\Games\Empty.sln" terminée (cibles pa
 
 
 Résumé de performance des projets :
-      267 ms  C:\Users\hp\Documents\Games\Empty\Empty.csproj   1 appels
-      318 ms  C:\Users\hp\Documents\Games\Empty.sln      1 appels
+      312 ms  C:\Users\hp\Documents\Games\Empty\Empty.csproj   1 appels
+      372 ms  C:\Users\hp\Documents\Games\Empty.sln      1 appels
 
 Résumé de performance cible :
-        0 ms  ExpressionBuildExtension                   1 appels
-        0 ms  CreateSatelliteAssemblies                  1 appels
-        0 ms  BeforeResGen                               1 appels
-        0 ms  ResGen                                     1 appels
+        0 ms  CreateManifestResourceNames                1 appels
         0 ms  ValidationExtension                        1 appels
-        0 ms  ResolveReferences                          1 appels
-        0 ms  _SetTargetFrameworkMonikerAttribute        1 appels
-        0 ms  _SplitProjectReferencesByFileExistence     1 appels
-        0 ms  GetInstalledSDKLocations                   1 appels
+        0 ms  _GenerateCompileInputs                     1 appels
+        0 ms  CreateCustomManifestResourceNames          1 appels
+        0 ms  _CopySourceItemsToOutputDirectory          1 appels
+        0 ms  ResGen                                     1 appels
+        0 ms  BeforeResGen                               1 appels
         0 ms  AfterCompileWinFX                          1 appels
         0 ms  PrepareForRun                              1 appels
-        0 ms  AfterMarkupCompilePass1                    1 appels
-        0 ms  AfterResolveReferences                     1 appels
+        0 ms  GetInstalledSDKLocations                   1 appels
+        0 ms  ExpressionBuildExtension                   1 appels
+        0 ms  CreateSatelliteAssemblies                  1 appels
+        0 ms  ResolveReferences                          1 appels
         0 ms  ValidateProjects                           1 appels
+        0 ms  AfterMarkupCompilePass1                    1 appels
+        0 ms  PreXsdCodeGen                              1 appels
         0 ms  ResolveSDKReferences                       1 appels
+        0 ms  _CopyFilesMarkedCopyLocal                  1 appels
         0 ms  _AfterCompileWinFXInternal                 1 appels
-        0 ms  GetTargetPath                              1 appels
-        0 ms  AfterResGen                                1 appels
-        0 ms  _CopySourceItemsToOutputDirectory          1 appels
-        0 ms  GetCopyToOutputDirectoryItems              1 appels
-        0 ms  GetFrameworkPaths                          1 appels
+        0 ms  AfterResolveReferences                     1 appels
         0 ms  AfterCompile                               1 appels
-        0 ms  CoreBuild                                  1 appels
+        0 ms  GetCopyToOutputDirectoryItems              1 appels
+        0 ms  AfterResGen                                1 appels
+        0 ms  _CleanGetCurrentAndPriorFileWrites         1 appels
+        0 ms  GetTargetPath                              1 appels
+        0 ms  GetFrameworkPaths                          1 appels
+        0 ms  GenerateTargetFrameworkMonikerAttribute    1 appels
         0 ms  BeforeBuild                                1 appels
         0 ms  ImplicitlyExpandDesignTimeFacades          1 appels
-        0 ms  FileClassification                         1 appels
         0 ms  AfterBuild                                 1 appels
-        0 ms  _CheckForCompileOutputs                    1 appels
-        0 ms  _GenerateSatelliteAssemblyInputs           1 appels
+        0 ms  FileClassification                         1 appels
+        0 ms  CleanXsdCodeGen                            1 appels
         0 ms  ExpandSDKReferences                        1 appels
-        0 ms  ValidateToolsVersions                      1 appels
-        0 ms  PrepareResourceNames                       1 appels
-        0 ms  Compile                                    1 appels
-        0 ms  BuildOnlySettings                          1 appels
         0 ms  ComputeIntermediateSatelliteAssemblies     1 appels
-        0 ms  BeforeCompile                              1 appels
+        0 ms  PrepareResourceNames                       1 appels
+        0 ms  _CheckForCompileOutputs                    1 appels
+        0 ms  ValidateToolsVersions                      1 appels
         0 ms  PrepareResources                           1 appels
+        0 ms  _SetTargetFrameworkMonikerAttribute        1 appels
+        0 ms  _SplitProjectReferencesByFileExistence     1 appels
+        0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 appels
+        0 ms  BeforeCompile                              1 appels
+        0 ms  BuildOnlySettings                          1 appels
         0 ms  BeforeResolveReferences                    1 appels
+        0 ms  Compile                                    1 appels
+        0 ms  CoreBuild                                  1 appels
         0 ms  SetWin32ManifestProperties                 1 appels
-        1 ms  GetCopyToOutputDirectoryXamlAppDefs        1 appels
-        1 ms  GenerateTargetFrameworkMonikerAttribute    1 appels
-        1 ms  GetReferenceAssemblyPaths                  1 appels
-        1 ms  _GenerateCompileInputs                     1 appels
-        1 ms  CreateCustomManifestResourceNames          1 appels
         1 ms  ResolveProjectReferences                   1 appels
-        1 ms  SplitResourcesByCulture                    1 appels
-        1 ms  PreXsdCodeGen                              1 appels
-        1 ms  CleanXsdCodeGen                            1 appels
-        1 ms  _SetEmbeddedWin32ManifestProperties        1 appels
-        2 ms  _CopyAppConfigFile                         1 appels
-        2 ms  CreateManifestResourceNames                1 appels
-        2 ms  AssignProjectConfiguration                 1 appels
-        2 ms  _CopyFilesMarkedCopyLocal                  1 appels
-        2 ms  AssignTargetPaths                          1 appels
-        4 ms  PrepareForBuild                            1 appels
-        4 ms  IncrementalClean                           1 appels
-        5 ms  _CheckForInvalidConfigurationAndPlatform   1 appels
-        6 ms  _CleanGetCurrentAndPriorFileWrites         1 appels
-        7 ms  CopyFilesToOutputDirectory                 1 appels
-        9 ms  ValidateSolutionConfiguration              1 appels
-       16 ms  CoreResGen                                 1 appels
-       35 ms  ResolveAssemblyReferences                  1 appels
-      122 ms  CoreCompile                                1 appels
-      301 ms  Build                                      2 appels
+        2 ms  GetReferenceAssemblyPaths                  1 appels
+        2 ms  _GenerateSatelliteAssemblyInputs           1 appels
+        2 ms  SplitResourcesByCulture                    1 appels
+        2 ms  _SetEmbeddedWin32ManifestProperties        1 appels
+        3 ms  AssignProjectConfiguration                 1 appels
+        5 ms  PrepareForBuild                            1 appels
+        6 ms  _CheckForInvalidConfigurationAndPlatform   1 appels
+        8 ms  _CopyAppConfigFile                         1 appels
+        8 ms  AssignTargetPaths                          1 appels
+       10 ms  ValidateSolutionConfiguration              1 appels
+       10 ms  CopyFilesToOutputDirectory                 1 appels
+       10 ms  IncrementalClean                           1 appels
+       20 ms  CoreResGen                                 1 appels
+       40 ms  ResolveAssemblyReferences                  1 appels
+      141 ms  CoreCompile                                1 appels
+      352 ms  Build                                      2 appels
 
 Résumé de performance des tâches :
-        0 ms  MakeDir                                    1 appels
+        0 ms  ReadLinesFromFile                          1 appels
         0 ms  Delete                                     2 appels
-        1 ms  ReadLinesFromFile                          1 appels
+        0 ms  ConvertToAbsolutePath                      1 appels
+        0 ms  AssignCulture                              1 appels
+        0 ms  GetFrameworkPath                           1 appels
+        0 ms  CreateCSharpManifestResourceName           1 appels
+        0 ms  AssignTargetPath                           6 appels
+        0 ms  RemoveDuplicates                           2 appels
+        0 ms  CallTarget                                 1 appels
         1 ms  GetReferenceAssemblyPaths                  1 appels
-        1 ms  CreateCSharpManifestResourceName           1 appels
-        1 ms  ConvertToAbsolutePath                      1 appels
-        1 ms  AssignCulture                              1 appels
-        1 ms  CallTarget                                 1 appels
-        1 ms  GetFrameworkPath                           1 appels
-        2 ms  RemoveDuplicates                           2 appels
+        1 ms  MakeDir                                    1 appels
+        2 ms  Message                                    4 appels
         2 ms  AssignProjectConfiguration                 1 appels
-        2 ms  AssignTargetPath                           6 appels
-        4 ms  FindAppConfigFile                          1 appels
-        4 ms  Message                                    4 appels
-        5 ms  FindUnderPath                              5 appels
-        7 ms  Copy                                       3 appels
-       15 ms  GenerateResource                           1 appels
-       35 ms  ResolveAssemblyReference                   1 appels
-      120 ms  Csc                                        1 appels
-      300 ms  MSBuild                                    1 appels
+        2 ms  Copy                                       3 appels
+        3 ms  FindAppConfigFile                          1 appels
+        8 ms  FindUnderPath                              5 appels
+       20 ms  GenerateResource                           1 appels
+       37 ms  ResolveAssemblyReference                   1 appels
+      141 ms  Csc                                        1 appels
+      352 ms  MSBuild                                    1 appels
 
 La génération a réussi.
     0 Avertissement(s)
     0 Erreur(s)
 
-Temps écoulé 00:00:00.34
+Temps écoulé 00:00:00.40
