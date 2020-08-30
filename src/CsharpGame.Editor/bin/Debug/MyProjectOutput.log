@@ -1,0 +1,2428 @@
+La génération a démarré 30/08/2020 02:44:26.
+Environnement au début de la génération :
+ALLUSERSPROFILE = C:\ProgramData
+APPDATA = C:\Users\hp\AppData\Roaming
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+COMPUTERNAME = DESKTOP-O92NTL5
+ComSpec = C:\WINDOWS\system32\cmd.exe
+DriverData = C:\Windows\System32\Drivers\DriverData
+ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO = 1
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING = Default
+HOMEDRIVE = C:
+HOMEPATH = \Users\hp
+LOCALAPPDATA = C:\Users\hp\AppData\Local
+LOGONSERVER = \\DESKTOP-O92NTL5
+MSBuildLoadMicrosoftTargetsReadOnly = true
+MSBUILDLOGTASKINPUTS = 1
+NUMBER_OF_PROCESSORS = 4
+OneDrive = C:\Users\hp\OneDrive
+OS = Windows_NT
+Path = C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\composer;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\hp\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python37\;C:\Users\hp\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python38-32\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\Composer\vendor\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\.dotnet\tools
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PkgDefApplicationConfigFile = C:\Users\hp\AppData\Local\Microsoft\VisualStudio\16.0_3ed19932\devenv.exe.config
+PROCESSOR_ARCHITECTURE = x86
+PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 3c03
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files (x86)
+ProgramFiles(x86) = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC = C:\Users\Public
+ServiceHubLogSessionKey = FAF7732C
+SESSIONNAME = Console
+SystemDrive = C:
+SystemRoot = C:\WINDOWS
+TEMP = C:\Users\hp\AppData\Local\Temp
+ThreadedWaitDialogDpiContext = -4
+TMP = C:\Users\hp\AppData\Local\Temp
+USERDOMAIN = DESKTOP-O92NTL5
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-O92NTL5
+USERNAME = hp
+USERPROFILE = C:\Users\hp
+VisualStudioDir = C:\Users\hp\Documents\Visual Studio 2019
+VisualStudioEdition = Microsoft Visual Studio Community 2019
+VisualStudioVersion = 16.0
+VSAPPIDDIR = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\
+VSAPPIDNAME = devenv.exe
+VSLANG = 1036
+VSSKUEDITION = Community
+windir = C:\WINDOWS
+_NO_DEBUG_HEAP = 1
+
+Projet "C:\Users\hp\Documents\Games\Empty.sln" sur le nœud 1 (cibles par défaut).
+Propriétés initiales :
+_NO_DEBUG_HEAP = 1
+ALLUSERSPROFILE = C:\ProgramData
+APPDATA = C:\Users\hp\AppData\Roaming
+AspNetConfiguration = Debug
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+COMPUTERNAME = DESKTOP-O92NTL5
+ComSpec = C:\WINDOWS\system32\cmd.exe
+Configuration = Debug
+CurrentSolutionConfigurationContents = <SolutionConfiguration>
+  <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+DriverData = C:\Windows\System32\Drivers\DriverData
+ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO = 1
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING = Default
+FrameworkSDKRoot = 
+HOMEDRIVE = C:
+HOMEPATH = \Users\hp
+LOCALAPPDATA = C:\Users\hp\AppData\Local
+LOGONSERVER = \\DESKTOP-O92NTL5
+MSBuildBinPath = C:\Windows\Microsoft.NET\Framework\v4.0.30319
+MSBuildExtensionsPath = C:\Program Files (x86)\MSBuild
+MSBuildExtensionsPath32 = C:\Program Files (x86)\MSBuild
+MSBuildExtensionsPath64 = C:\Program Files\MSBuild
+MSBuildLoadMicrosoftTargetsReadOnly = true
+MSBUILDLOGTASKINPUTS = 1
+MSBuildNodeCount = 1
+MSBuildProgramFiles32 = C:\Program Files (x86)
+MSBuildProjectDefaultTargets = Build
+MSBuildProjectDirectory = C:\Users\hp\Documents\Games
+MSBuildProjectDirectoryNoRoot = Users\hp\Documents\Games
+MSBuildProjectExtension = .metaproj
+MSBuildProjectFile = Empty.sln.metaproj
+MSBuildProjectFullPath = C:\Users\hp\Documents\Games\Empty.sln.metaproj
+MSBuildProjectName = Empty.sln
+MSBuildRuntimeVersion = 4.0.30319
+MSBuildStartupDirectory = D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug
+MSBuildToolsPath = C:\Windows\Microsoft.NET\Framework\v4.0.30319
+MSBuildToolsPath32 = C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+MSBuildToolsRoot = C:\Windows\Microsoft.NET\Framework\
+MSBuildToolsVersion = 4.0
+MSBuildUserExtensionsPath = C:\Users\hp\AppData\Local\Microsoft\MSBuild
+NUMBER_OF_PROCESSORS = 4
+OneDrive = C:\Users\hp\OneDrive
+OS = Windows_NT
+Path = C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\composer;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\hp\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python37\;C:\Users\hp\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python38-32\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\Composer\vendor\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\.dotnet\tools
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PkgDefApplicationConfigFile = C:\Users\hp\AppData\Local\Microsoft\VisualStudio\16.0_3ed19932\devenv.exe.config
+Platform = Any CPU
+PROCESSOR_ARCHITECTURE = x86
+PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 3c03
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC = C:\Users\Public
+SDK35ToolsPath = 
+SDK40ToolsPath = 
+ServiceHubLogSessionKey = FAF7732C
+SESSIONNAME = Console
+SolutionDir = C:\Users\hp\Documents\Games\
+SolutionExt = .sln
+SolutionFileName = Empty.sln
+SolutionName = Empty
+SolutionPath = C:\Users\hp\Documents\Games\Empty.sln
+SystemDrive = C:
+SystemRoot = C:\WINDOWS
+TargetFrameworkVersion = v4.0
+TEMP = C:\Users\hp\AppData\Local\Temp
+ThreadedWaitDialogDpiContext = -4
+TMP = C:\Users\hp\AppData\Local\Temp
+USERDOMAIN = DESKTOP-O92NTL5
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-O92NTL5
+USERNAME = hp
+USERPROFILE = C:\Users\hp
+VisualStudioDir = C:\Users\hp\Documents\Visual Studio 2019
+VisualStudioEdition = Microsoft Visual Studio Community 2019
+VisualStudioVersion = 16.0
+VSAPPIDDIR = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\
+VSAPPIDNAME = devenv.exe
+VSLANG = 1036
+VSSKUEDITION = Community
+windir = C:\WINDOWS
+
+Éléments initiaux :
+ProjectReference
+    C:\Users\hp\Documents\Games\Empty\Empty.csproj
+        ToolsVersion = 
+        SkipNonexistentProjects = False
+        AdditionalProperties = Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=16.0
+        Configuration = Debug
+        Platform = AnyCPU
+
+Génération à l'aide des outils version "2.0".
+Cible "ValidateSolutionConfiguration : (IdCible:2)" dans le fichier "C:\Users\hp\Documents\Games\Empty.sln.metaproj" du projet "C:\Users\hp\Documents\Games\Empty.sln" (point d'entrée) :
+Tâche "Error" ignorée en raison d'une fausse condition ; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) a été évaluée comme (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' != 'true')).
+Tâche "Warning" ignorée en raison d'une fausse condition ; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) a été évaluée comme (('<SolutionConfiguration>
+  <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>' == '') and ('' == 'true')).
+Utilisation de la tâche "Message" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "Message" (IDTâche:2)
+  Paramètre de tâche :Text=Génération de la configuration de solution "Debug|Any CPU". (IDTâche:2)
+  Génération de la configuration de solution "Debug|Any CPU". (IDTâche:2)
+Exécution de la tâche "Message" terminée. (IDTâche:2)
+Génération de la cible "ValidateSolutionConfiguration" terminée dans le projet "Empty.sln". : (IdCible:2)
+Cible "ValidateToolsVersions : (IdCible:3)" dans le fichier "C:\Users\hp\Documents\Games\Empty.sln.metaproj" du projet "C:\Users\hp\Documents\Games\Empty.sln" (point d'entrée) :
+Tâche "Error" ignorée en raison d'une fausse condition ; ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) a été évaluée comme ('4.0' == '2.0' and ('' != '2.0' and '' != '')).
+Génération de la cible "ValidateToolsVersions" terminée dans le projet "Empty.sln". : (IdCible:3)
+Cible "ValidateProjects : (IdCible:4)" dans le fichier "C:\Users\hp\Documents\Games\Empty.sln.metaproj" du projet "C:\Users\hp\Documents\Games\Empty.sln" (point d'entrée) :
+Génération de la cible "ValidateProjects" terminée dans le projet "Empty.sln". : (IdCible:4)
+Cible "Build : (IdCible:5)" dans le fichier "C:\Users\hp\Documents\Games\Empty.sln.metaproj" du projet "C:\Users\hp\Documents\Games\Empty.sln" (point d'entrée) :
+Utilisation de la tâche "MSBuild" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "MSBuild" (IDTâche:3)
+  Paramètre de tâche :
+      Projects=
+          C:\Users\hp\Documents\Games\Empty\Empty.csproj
+                  AdditionalProperties=Configuration=Debug; Platform=AnyCPU; VisualStudioVersion=16.0
+                  Configuration=Debug
+                  Platform=AnyCPU
+                  SkipNonexistentProjects=False
+                  ToolsVersion= (IDTâche:3)
+  Paramètre de tâche :BuildInParallel=True (IDTâche:3)
+  Paramètre de tâche :
+      Properties=
+          BuildingSolutionFile=true
+          CurrentSolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  </SolutionConfiguration>
+          SolutionDir=C:\Users\hp\Documents\Games\
+          SolutionExt=.sln
+          SolutionFileName=Empty.sln
+          SolutionName=Empty
+          SolutionPath=C:\Users\hp\Documents\Games\Empty.sln (IDTâche:3)
+  Paramètre de tâche :SkipNonexistentProjects=False (IDTâche:3)
+  Propriétés globales : (IDTâche:3)
+    BuildingSolutionFile=true (IDTâche:3)
+    CurrentSolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  </SolutionConfiguration> (IDTâche:3)
+    SolutionDir=C:\Users\hp\Documents\Games\ (IDTâche:3)
+    SolutionExt=.sln (IDTâche:3)
+    SolutionFileName=Empty.sln (IDTâche:3)
+    SolutionName=Empty (IDTâche:3)
+    SolutionPath=C:\Users\hp\Documents\Games\Empty.sln (IDTâche:3)
+  Propriétés supplémentaires du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj": (IDTâche:3)
+    Configuration=Debug (IDTâche:3)
+    Platform=AnyCPU (IDTâche:3)
+    VisualStudioVersion=16.0 (IDTâche:3)
+Remplacement de la cible "GetFrameworkPaths" du projet "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" par la cible "GetFrameworkPaths" du projet "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets".
+Remplacement de la cible "SatelliteDllsProjectOutputGroup" du projet "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" par la cible "SatelliteDllsProjectOutputGroup" du projet "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets".
+Le projet "C:\Users\hp\Documents\Games\Empty.sln" (1) génère "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (2) sur le nœud 1 (cibles par défaut).
+Propriétés initiales :
+_AfterCompileWinFXInternalDependsOn = 
+        PrepareResourcesForSatelliteAssemblies;
+        MergeLocalizationDirectives;
+        AfterCompileWinFX
+    
+_CompileTargetNameForLocalType = _CompileTemporaryAssembly
+_DebugSymbolsProduced = true
+_DeploymentApplicationManifestIdentity = Empty.exe
+_DeploymentBuiltUpdateInterval = 0
+_DeploymentBuiltUpdateIntervalUnits = Days
+_DeploymentDeployManifestIdentity = Empty.application
+_DeploymentFileMappingExtension = 
+_DeploymentPublishableProjectDefault = true
+_DeploymentTargetApplicationManifestFileName = Empty.exe.manifest
+_DeploymentUrl = 
+_DocumentationFileProduced = false
+_GetChildProjectCopyToOutputDirectoryItems = true
+_NO_DEBUG_HEAP = 1
+_OriginalConfiguration = Debug
+_OriginalPlatform = AnyCPU
+_ProjectDefaultTargets = Build
+_RequireMCPass2ForMainAssembly = false
+_RequireMCPass2ForSatelliteAssemblyOnly = false
+_ResolveReferenceDependencies = false
+_ResourceNameInMainAssembly = Empty.g.resources
+_SGenDllCreated = false
+_SGenDllName = Empty.XmlSerializers.dll
+_SGenGenerateSerializationAssembliesConfig = Off
+AddAdditionalExplicitAssemblyReferences = true
+AddAppConfigToBuildOutputs = true
+AdditionalExplicitAssemblyReferences = System.Core;
+AllowedReferenceAssemblyFileExtensions = 
+      .winmd;
+      .dll;
+      .exe
+    
+AllowedReferenceRelatedFileExtensions = 
+      .pdb;
+      .xml;
+      .pri
+    
+ALLUSERSPROFILE = C:\ProgramData
+AlwaysCompileMarkupFilesInSeparateDomain = true
+APPDATA = C:\Users\hp\AppData\Roaming
+AssemblyFoldersSuffix = AssemblyFoldersEx
+AssemblyName = Empty
+AssemblySearchPaths = 
+      {CandidateAssemblyFiles};
+      ;
+      {HintPathFromItem};
+      {TargetFrameworkDirectory};
+      {Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};
+      {AssemblyFolders};
+      {GAC};
+      {RawFileName};
+      bin\Debug\
+    
+AssignTargetPathsDependsOn = 
+AutoGenerateBindingRedirects = true
+AutoUnifyAssemblyReferences = false
+AvailablePlatforms = Any CPU,x86,x64
+BaseIntermediateOutputPath = obj\
+BuildCompileAction = Build
+BuildDependsOn = 
+      EntityDeploy;
+      
+      BeforeBuild;
+      CoreBuild;
+      AfterBuild
+    
+    
+BuildGenerateSourcesAction = Build
+BuildingProject = false
+BuildingSolutionFile = true
+BuildInParallel = true
+BuildLinkAction = Build
+BuildProjectReferences = true
+BuildSystem = MSBuild
+BuildTaskAssembly = PresentationBuildTasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+BuiltProjectOutputGroupDependsOn = PrepareForBuild
+CleanDependsOn = 
+      
+      BeforeClean;
+      UnmanagedUnregistration;
+      CoreClean;
+      CleanReferencedProjects;
+      CleanPublishFolder;
+      AfterClean
+    ;
+      EntityClean;
+    
+CleanFile = Empty.csproj.FileListAbsolute.txt
+CodeAnalysisTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+CompileDependsOn = 
+        
+      ResolveReferences;
+      ResolveKeySource;
+      SetWin32ManifestProperties;
+      _GenerateCompileInputs;
+      BeforeCompile;
+      _TimeStampBeforeCompile;
+      CoreCompile;
+      _TimeStampAfterCompile;
+      AfterCompile;
+    ;
+        _AfterCompileWinFXInternal
+    
+CompileLicxFilesDependsOn = 
+CompileTargetNameForTemporaryAssembly = CompileTemporaryAssembly
+ComputeIntermediateSatelliteAssembliesDependsOn = 
+      CreateManifestResourceNames
+    
+COMPUTERNAME = DESKTOP-O92NTL5
+ComReferenceExecuteAsTool = false
+ComReferenceNoClassMembers = false
+ComSpec = C:\WINDOWS\system32\cmd.exe
+Configuration = Debug
+ConfigurationName = Debug
+ConsiderPlatformAsProcessorArchitecture = true
+ContentFilesProjectOutputGroupDependsOn = PrepareForBuild;AssignTargetPaths
+ContinueOnError = false
+CoreBuildDependsOn = 
+      BuildOnlySettings;
+      PrepareForBuild;
+      PreBuildEvent;
+      ResolveReferences;
+      PrepareResources;
+      ResolveKeySource;
+      Compile;
+      ExportWindowsMDFile;
+      UnmanagedUnregistration;
+      GenerateSerializationAssemblies;
+      CreateSatelliteAssemblies;
+      GenerateManifests;
+      GetTargetPath;
+      PrepareForRun;
+      UnmanagedRegistration;
+      IncrementalClean;
+      PostBuildEvent
+    
+CoreCleanDependsOn = 
+CoreCompileDependsOn = _ComputeNonExistentFileProperty
+CoreResGenDependsOn = 
+CreateCustomManifestResourceNamesDependsOn = 
+CreateHardLinksForCopyAdditionalFilesIfPossible = false
+CreateManifestResourceNamesDependsOn = 
+CreateSatelliteAssembliesDependsOn = 
+      _GenerateSatelliteAssemblyInputs;
+      ComputeIntermediateSatelliteAssemblies;
+      GenerateSatelliteAssemblies
+    
+CurrentSolutionConfigurationContents = <SolutionConfiguration>
+  <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+CustomAfterMicrosoftCommonTargets = C:\Program Files (x86)\MSBuild\v4.0\Custom.After.Microsoft.Common.targets
+CustomAfterMicrosoftCSharpTargets = C:\Program Files (x86)\MSBuild\v4.0\Custom.After.Microsoft.CSharp.targets
+CustomBeforeMicrosoftCommonTargets = C:\Program Files (x86)\MSBuild\v4.0\Custom.Before.Microsoft.Common.targets
+CustomBeforeMicrosoftCSharpTargets = C:\Program Files (x86)\MSBuild\v4.0\Custom.Before.Microsoft.CSharp.targets
+DebugSymbols = true
+DebugSymbolsProjectOutputGroupDependsOn = 
+DebugType = full
+DefaultLanguageSourceExtension = .cs
+DeferredValidationErrorsFileName = obj\Debug\\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+DefineConstants = DEBUG;TRACE
+DelaySign = 
+DeploymentType = Installed
+DesignTimeIntermediateOutputPath = obj\Debug\InProcessTempFiles\
+DesignTimeResolveAssemblyReferencesDependsOn = 
+      GetFrameworkPaths;
+      GetReferenceAssemblyPaths;
+      ResolveReferences
+    
+Deterministic = true
+DevEnvDir = *Undefined*
+DocumentationProjectOutputGroupDependsOn = 
+DriverData = C:\Windows\System32\Drivers\DriverData
+EmbeddedWin32Manifest = 
+ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO = 1
+EntityDeployDependsOn = 
+EntityDeployIntermediateResourcePath = obj\Debug\edmxResourcesToEmbed\
+ErrorReport = prompt
+ExpandSDKAllowedReferenceExtensions = 
+      .winmd;
+      .dll
+    
+ExpandSDKReferencesDependsOn = 
+      ResolveSDKReferences
+    
+FileAlignment = 512
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING = Default
+Framework20Dir = @(_TargetFramework20DirectoryItem)
+Framework30Dir = @(_TargetFramework30DirectoryItem)
+Framework35Dir = @(_TargetFramework35DirectoryItem)
+Framework40Dir = @(_TargetFramework40DirectoryItem)
+FrameworkDir = @(_TargetFramework40DirectoryItem)
+FrameworkPathOverride = C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2
+FrameworkRegistryBase = Software\Microsoft\.NETFramework
+FrameworkSDKDir = @(_TargetFrameworkSDKDirectoryItem)
+FrameworkSDKRoot = 
+FullReferenceAssemblyNames = Full
+GenerateClickOnceManifests = 
+GenerateCompiledExpressionsTempFilePathForEditing = obj\Debug\\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+GenerateCompiledExpressionsTempFilePathForTypeInfer = obj\Debug\\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+GenerateCompiledExpressionsTempFilePathForValidation = obj\Debug\\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+GeneratedFileExtension = .g.cs
+GenerateManifestsDependsOn = 
+      SetWin32ManifestProperties;
+      GenerateApplicationManifest;
+      GenerateDeploymentManifest
+    
+GenerateTargetFrameworkAttribute = true
+GetCopyToOutputDirectoryItemsDependsOn = 
+      AssignTargetPaths;
+      _SplitProjectReferencesByFileExistence
+    
+GetFrameworkPathsDependsOn = 
+GetReferenceAssemblyPathsDependsOn = 
+        ;
+        GetWinFXPath
+    
+GetTargetPathDependsOn = 
+HighEntropyVA = true
+HOMEDRIVE = C:
+HOMEPATH = \Users\hp
+HostInBrowser = false
+ImplicitlyExpandDesignTimeFacades = true
+ImplicitlyExpandDesignTimeFacadesDependsOn = 
+      ;
+      GetReferenceAssemblyPaths
+    
+ImportByWildcardAfterMicrosoftCommonTargets = true
+ImportByWildcardAfterMicrosoftCSharpTargets = true
+ImportByWildcardAfterMicrosoftNetFrameworkProps = true
+ImportByWildcardAfterMicrosoftNetFrameworkTargets = true
+ImportByWildcardBeforeMicrosoftCommonTargets = true
+ImportByWildcardBeforeMicrosoftCSharpTargets = true
+ImportByWildcardBeforeMicrosoftNetFrameworkProps = true
+ImportByWildcardBeforeMicrosoftNetFrameworkTargets = true
+ImportUserLocationsByWildcardAfterMicrosoftCommonTargets = true
+ImportUserLocationsByWildcardAfterMicrosoftCSharpTargets = true
+ImportUserLocationsByWildcardAfterMicrosoftNetFrameworkProps = true
+ImportUserLocationsByWildcardAfterMicrosoftNetFrameworkTargets = true
+ImportUserLocationsByWildcardBeforeMicrosoftCommonTargets = true
+ImportUserLocationsByWildcardBeforeMicrosoftCSharpTargets = true
+ImportUserLocationsByWildcardBeforeMicrosoftNetFrameworkProps = true
+ImportUserLocationsByWildcardBeforeMicrosoftNetFrameworkTargets = true
+IntermediateOutputPath = obj\Debug\
+IsApplication = true
+Language = C#
+LoadTimeSensitiveProperties = 
+      ;
+    
+LoadTimeSensitiveTargets = 
+      ;
+      XamlMarkupCompilePass1;
+    
+LOCALAPPDATA = C:\Users\hp\AppData\Local
+LocalizationDirectivesToLocFile = None
+LOGONSERVER = \\DESKTOP-O92NTL5
+MarkupCompilePass2ForMainAssemblyDependsOn = 
+                     GenerateTemporaryTargetAssembly;
+                     MarkupCompilePass2;
+                     AfterMarkupCompilePass2;
+                     CleanupTemporaryTargetAssembly
+       
+MaxTargetPath = 100
+MsAppxPackageTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v16.0\AppxPackage\Microsoft.AppXPackage.Targets
+MSBuildAllProjects = ;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.props;C:\Users\hp\Documents\Games\Empty\Empty.csproj;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets;C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets
+MSBuildBinPath = C:\Windows\Microsoft.NET\Framework\v4.0.30319
+MSBuildExtensionsPath = C:\Program Files (x86)\MSBuild
+MSBuildExtensionsPath32 = C:\Program Files (x86)\MSBuild
+MSBuildExtensionsPath64 = C:\Program Files\MSBuild
+MSBuildLoadMicrosoftTargetsReadOnly = true
+MSBUILDLOGTASKINPUTS = 1
+MSBuildNodeCount = 1
+MSBuildProgramFiles32 = C:\Program Files (x86)
+MSBuildProjectDefaultTargets = Build
+MSBuildProjectDirectory = C:\Users\hp\Documents\Games\Empty
+MSBuildProjectDirectoryNoRoot = Users\hp\Documents\Games\Empty
+MSBuildProjectExtension = .csproj
+MSBuildProjectFile = Empty.csproj
+MSBuildProjectFullPath = C:\Users\hp\Documents\Games\Empty\Empty.csproj
+MSBuildProjectName = Empty
+MSBuildRuntimeVersion = 4.0.30319
+MSBuildStartupDirectory = D:\GitHub\CsharpGame\src\CsharpGame.Editor\bin\Debug
+MSBuildToolsPath = C:\Windows\Microsoft.NET\Framework\v4.0.30319
+MSBuildToolsPath32 = C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+MSBuildToolsRoot = C:\Windows\Microsoft.NET\Framework\
+MSBuildToolsVersion = 4.0
+MSBuildUserExtensionsPath = C:\Users\hp\AppData\Local\Microsoft\MSBuild
+MsTestToolsTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v16.0\TeamTest\Microsoft.TeamTest.targets
+NoCompilerStandardLib = true
+NUMBER_OF_PROCESSORS = 4
+OneDrive = C:\Users\hp\OneDrive
+Optimize = false
+OS = Windows_NT
+OSVersion = 5.1.2600.0
+OutDir = bin\Debug\
+OutputPath = bin\Debug\
+OutputType = WinExe
+OverwriteReadOnlyFiles = false
+Path = C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\composer;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\hp\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python37\;C:\Users\hp\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python38-32\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\Composer\vendor\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\.dotnet\tools
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PkgDefApplicationConfigFile = C:\Users\hp\AppData\Local\Microsoft\VisualStudio\16.0_3ed19932\devenv.exe.config
+Platform = AnyCPU
+PlatformName = AnyCPU
+PlatformTarget = AnyCPU
+PlatformTargetAsMSBuildArchitecture = CurrentArchitecture
+PlatformTargetAsMSBuildArchitectureExplicitlySet = false
+PostBuildEventDependsOn = 
+PreBuildEventDependsOn = 
+Prefer32Bit = true
+PrepareForBuildDependsOn = GetFrameworkPaths;GetReferenceAssemblyPaths
+PrepareForRunDependsOn = 
+      CopyFilesToOutputDirectory
+    
+PrepareResourceNamesDependsOn = 
+                    AssignWinFXEmbeddedResource;
+                    
+      AssignTargetPaths;
+      SplitResourcesByCulture;
+      CreateManifestResourceNames;
+      CreateCustomManifestResourceNames
+    
+      
+PrepareResourcesDependsOn = 
+      ValidationExtension;
+      ExpressionBuildExtension;
+      
+      XamlMarkupCompilePass1;
+      XamlMarkupCompilePass2;
+      
+                MarkupCompilePass1;
+                AfterMarkupCompilePass1;
+                MarkupCompilePass2ForMainAssembly;
+                FileClassification;
+                MainResourcesGeneration;
+                
+      PrepareResourceNames;
+      ResGen;
+      CompileLicxFiles
+    
+       
+    
+    
+PROCESSOR_ARCHITECTURE = x86
+PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 3c03
+ProcessorArchitecture = msil
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+ProjectDesignTimeAssemblyResolutionSearchPaths = 
+      {CandidateAssemblyFiles};
+      ;
+      {HintPathFromItem};
+      {TargetFrameworkDirectory};
+      {Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};
+      {RawFileName};
+      C:\Users\hp\Documents\Games\Empty\bin\Debug\
+    
+ProjectDir = C:\Users\hp\Documents\Games\Empty\
+ProjectExt = .csproj
+ProjectFileName = Empty.csproj
+ProjectFlavor = Client
+ProjectGuid = {E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}
+ProjectName = Empty
+ProjectPath = C:\Users\hp\Documents\Games\Empty\Empty.csproj
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC = C:\Users\Public
+PublishableProject = true
+PublishBuildDependsOn = 
+            BuildOnlySettings;
+            PrepareForBuild;
+            ResolveReferences;
+            PrepareResources;
+            ResolveKeySource;
+            PrepareResourcesForSatelliteAssemblies;
+            GenerateSerializationAssemblies;
+            CreateSatelliteAssemblies;
+        
+PublishDependsOn = 
+      SetGenerateManifests;
+      Build;
+      PublishOnly
+    
+PublishDir = bin\Debug\app.publish\
+PublishOnlyDependsOn = 
+      SetGenerateManifests;
+      PublishBuild;
+      BeforePublish;
+      GenerateManifests;
+      CopyFilesToOutputDirectory;
+      CleanPublishFolder;
+      _CopyFilesToPublishFolder;
+      _DeploymentGenerateBootstrapper;
+      ResolveKeySource;
+      _DeploymentSignClickOnceDeployment;
+      AfterPublish
+    
+RebuildDependsOn = 
+      BeforeRebuild;
+      Clean;
+      Build;
+      AfterRebuild;
+    
+ReportingServicesTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v16.0\ReportingServices\Microsoft.ReportingServices.targets
+ResGenDependsOn = ResolveAssemblyReferences;SplitResourcesByCulture;BeforeResGen;CoreResGen;AfterResGen
+ResGenExecuteAsTool = false
+ResolveAssemblyReferencesDependsOn = 
+      GetFrameworkPaths;
+      GetReferenceAssemblyPaths;
+      PrepareForBuild;
+      ResolveSDKReferences;
+      ExpandSDKReferences;
+    
+ResolveReferencesDependsOn = 
+      
+      BeforeResolveReferences;
+      AssignProjectConfiguration;
+      ResolveProjectReferences;
+      ResolveNativeReferences;
+      ResolveAssemblyReferences;
+      ResolveComReferences;
+      AfterResolveReferences
+    ;
+      ImplicitlyExpandDesignTimeFacades
+    
+ResolveSDKReferencesDependsOn = 
+      GetInstalledSDKLocations
+    
+RootNamespace = Empty
+RunAfterInstall = true
+RunDependsOn = 
+SatelliteDllsProjectOutputGroupDependsOn = PrepareForBuild;PrepareResourceNames
+SDK35ToolsPath = 
+SDK40ToolsPath = 
+SDKRedistOutputGroupDependsOn = ResolveSDKReferences;ExpandSDKReferences
+SDKReferenceDirectoryRoot = C:\Users\hp\AppData\Local\Microsoft SDKs;C:\Program Files (x86)\Microsoft SDKs
+SDKReferenceRegistryRoot = Software\Microsoft\Microsoft SDKs
+ServiceHubLogSessionKey = FAF7732C
+SESSIONNAME = Console
+SGenFilesOutputGroupDependsOn = 
+SGenShouldGenerateSerializer = true
+SGenUseProxyTypes = true
+SkipCopyUnchangedFiles = true
+SolutionDir = C:\Users\hp\Documents\Games\
+SolutionExt = .sln
+SolutionFileName = Empty.sln
+SolutionName = Empty
+SolutionPath = C:\Users\hp\Documents\Games\Empty.sln
+SourceFilesProjectOutputGroupDependsOn = PrepareForBuild;AssignTargetPaths
+SubsystemVersion = 6.00
+SystemDrive = C:
+SystemRoot = C:\WINDOWS
+TargetCulture = *
+TargetDeployManifestFileName = Empty.application
+TargetDir = C:\Users\hp\Documents\Games\Empty\bin\Debug\
+TargetedFrameworkDir = @(_TargetedFrameworkDirectoryItem)
+TargetedRuntimeVersion = v4.0.30319
+TargetedSDKArchitecture = msil
+TargetedSDKConfiguration = Debug
+TargetExt = .exe
+TargetFileName = Empty.exe
+TargetFrameworkAsMSBuildRuntime = CurrentRuntime
+TargetFrameworkIdentifier = .NETFramework
+TargetFrameworkMoniker = .NETFramework,Version=v4.7.2
+TargetFrameworkMonikerAssemblyAttributesPath = C:\Users\hp\AppData\Local\Temp\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+TargetFrameworkSDKToolsDirectory = 
+TargetFrameworkVersion = v4.7.2
+TargetName = Empty
+TargetPath = C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe
+TargetPlatformIdentifier = Windows
+TargetPlatformMoniker = Windows,Version=7.0
+TargetPlatformRegistryBase = Software\Microsoft\Microsoft SDKs\Windows
+TargetPlatformSdkPath = 
+TargetPlatformVersion = 7.0
+TargetRuntime = Managed
+TaskKeyToken = 31bf3856ad364e35
+TaskVersion = 4.0.0.0
+TEMP = C:\Users\hp\AppData\Local\Temp
+ThreadedWaitDialogDpiContext = -4
+TMP = C:\Users\hp\AppData\Local\Temp
+UnmanagedRegistrationDependsOn = 
+UnmanagedUnregistrationDependsOn = 
+UpgradeSubsetToProfile = true
+UseCommonOutputDirectory = false
+UseHostCompilerIfAvailable = true
+USERDOMAIN = DESKTOP-O92NTL5
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-O92NTL5
+USERNAME = hp
+USERPROFILE = C:\Users\hp
+UseSourcePath = true
+Utf8Output = true
+Version = 1.0.0.0
+VisualStudioDir = C:\Users\hp\Documents\Visual Studio 2019
+VisualStudioEdition = Microsoft Visual Studio Community 2019
+VisualStudioVersion = 16.0
+VSAPPIDDIR = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\
+VSAPPIDNAME = devenv.exe
+VSLANG = 1036
+VSSKUEDITION = Community
+WarningLevel = 4
+WebReference_EnableLegacyEventingModel = false
+WebReference_EnableProperties = true
+WebReference_EnableSQLTypes = true
+windir = C:\WINDOWS
+WorkflowBuildExtensionAssemblyName = Microsoft.Activities.Build, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+WorkflowBuildExtensionKeyToken = 31bf3856ad364e35
+WorkflowBuildExtensionVersion = 4.0.0.0
+XamlBuildTaskAssemblyName = XamlBuildTask, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+XamlBuildTaskLocation = C:\Windows\Microsoft.NET\Framework\v4.0.30319
+XamlDebuggingInformation = true
+XamlGenCodeFileNames = Empty.csproj.XamlGeneratedCodeFileListAbsolute.txt
+XamlGenMarkupFileNames = Empty.csproj.XamlGeneratedXamlFileListAbsolute.txt
+XamlPass2FlagFile = Empty.csproj.XamlPass2Flag.txt
+XamlRequiresCompilationPass2 = false
+XamlTemporaryAssemblyName = Empty
+YieldDuringToolExecution = true
+
+Éléments initiaux :
+_ApplicationManifestFinal
+    bin\Debug\Empty.exe.manifest
+        TargetPath = Empty.exe.manifest
+_DebugSymbolsIntermediatePath
+    obj\Debug\Empty.pdb
+_DebugSymbolsOutputPath
+    bin\Debug\Empty.pdb
+_DeploymentManifestEntryPoint
+    obj\Debug\Empty.exe
+        TargetPath = Empty.exe
+_ExplicitReference
+    C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+_OutputPathItem
+    bin\Debug\
+_ResolveComReferenceCache
+    obj\Debug\Empty.csproj.ResolveComReference.cache
+_UnmanagedRegistrationCache
+    obj\Empty.csproj.UnmanagedRegistration.cache
+AppConfigFileDestination
+    bin\Debug\Empty.exe.config
+ApplicationManifest
+    obj\Debug\Empty.exe.manifest
+        TargetPath = Empty.exe.manifest
+AvailableItemName
+    EntityDeploy
+BuiltProjectOutputGroupKeyOutput
+    C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.exe
+        IsKeyOutput = true
+        FinalOutputPath = C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe
+        TargetPath = Empty.exe
+Compile
+    Form1.cs
+        SubType = Form
+    Form1.Designer.cs
+        DependentUpon = Form1.cs
+    Game.cs
+    Program.cs
+    Properties\AssemblyInfo.cs
+    Properties\Resources.Designer.cs
+        AutoGen = True
+        DependentUpon = Resources.resx
+    Properties\Settings.Designer.cs
+        AutoGen = True
+        DependentUpon = Settings.settings
+        DesignTimeSharedInput = True
+DebugSymbolsProjectOutputGroupOutput
+    C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb
+        FinalOutputPath = C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb
+        TargetPath = Empty.pdb
+DeployManifest
+    obj\Debug\Empty.application
+        TargetPath = Empty.application
+EmbeddedResource
+    Form1.resx
+        DependentUpon = Form1.cs
+    Properties\Resources.resx
+        Generator = ResXFileCodeGenerator
+        LastGenOutput = Resources.Designer.cs
+        SubType = Designer
+IntermediateAssembly
+    obj\Debug\Empty.exe
+None
+    App.config
+    Properties\Settings.settings
+        Generator = SettingsSingleFileGenerator
+        LastGenOutput = Settings.Designer.cs
+Reference
+    CsharpGame.Engine
+        HintPath = D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+    Microsoft.CSharp
+    System
+    System.Core
+    System.Data
+    System.Data.DataSetExtensions
+    System.Deployment
+    System.Drawing
+    System.Net.Http
+    System.Windows.Forms
+    System.Xml
+    System.Xml.Linq
+XamlBuildTaskTypeGenerationExtensionName
+    Microsoft.Activities.Build.BeforeInitializeComponentExtension
+        AssemblyName = Microsoft.Activities.Build, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+        Visible = false
+    Microsoft.Activities.Build.Debugger.DebugBuildExtension
+        AssemblyName = Microsoft.Activities.Build, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+        Visible = false
+
+Génération à l'aide des outils version "15.0".
+Le fichier projet contient ToolsVersion="15.0". Cet ensemble d'outils est peut-être inconnu ou manquant. Dans ce cas, vous pouvez résoudre le problème en installant la version appropriée de MSBuild. Sinon, il est possible que la build ait été forcée vers un ToolsVersion spécifique pour des raisons liées à une stratégie. Projet traité comme si ToolsVersion="4.0". Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkId=291333.
+Cible "_CheckForInvalidConfigurationAndPlatform : (IdCible:6)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (point d'entrée) :
+Tâche "Error" ignorée en raison d'une fausse condition ; ( '$(_InvalidConfigurationError)' == 'true' ) a été évaluée comme ( '' == 'true' ).
+Tâche "Warning" ignorée en raison d'une fausse condition ; ( '$(_InvalidConfigurationWarning)' == 'true' ) a été évaluée comme ( '' == 'true' ).
+Utilisation de la tâche "Message" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "Message" (IDTâche:4)
+  Paramètre de tâche :Text=Configuration=Debug (IDTâche:4)
+  Paramètre de tâche :Importance=Low (IDTâche:4)
+  Configuration=Debug (IDTâche:4)
+Exécution de la tâche "Message" terminée. (IDTâche:4)
+Tâche "Message" (IDTâche:5)
+  Paramètre de tâche :Text=Platform=AnyCPU (IDTâche:5)
+  Paramètre de tâche :Importance=Low (IDTâche:5)
+  Platform=AnyCPU (IDTâche:5)
+Exécution de la tâche "Message" terminée. (IDTâche:5)
+Tâche "Error" ignorée en raison d'une fausse condition ; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) a été évaluée comme ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Tâche "Error" ignorée en raison d'une fausse condition ; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) a été évaluée comme ('obj\' != '' and !HasTrailingSlash('obj\')).
+Tâche "Error" ignorée en raison d'une fausse condition ; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) a été évaluée comme ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
+Génération de la cible "_CheckForInvalidConfigurationAndPlatform" terminée dans le projet "Empty.csproj". : (IdCible:6)
+Cible "EntityDeploy" ignorée en raison d'une fausse condition ; ('@(EntityDeploy)' != '') a été évaluée comme ('' != '').
+Cible "BeforeBuild : (IdCible:7)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Build" en dépend) :
+Génération de la cible "BeforeBuild" terminée dans le projet "Empty.csproj". : (IdCible:7)
+Cible "BuildOnlySettings : (IdCible:8)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "BuildOnlySettings" terminée dans le projet "Empty.csproj". : (IdCible:8)
+Cible "GetFrameworkPaths : (IdCible:9)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareForBuild" en dépend) :
+Génération de la cible "GetFrameworkPaths" terminée dans le projet "Empty.csproj". : (IdCible:9)
+Cible "GetWinFXPath" ignorée en raison d'une fausse condition ; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) a été évaluée comme (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+Cible "GetReferenceAssemblyPaths : (IdCible:10)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareForBuild" en dépend) :
+Utilisation de la tâche "GetReferenceAssemblyPaths" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "GetReferenceAssemblyPaths" (IDTâche:6)
+  Paramètre de tâche :TargetFrameworkMoniker=.NETFramework,Version=v4.7.2 (IDTâche:6)
+Exécution de la tâche "GetReferenceAssemblyPaths" terminée. (IDTâche:6)
+Génération de la cible "GetReferenceAssemblyPaths" terminée dans le projet "Empty.csproj". : (IdCible:10)
+Cible "PrepareForBuild : (IdCible:11)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Utilisation de la tâche "FindAppConfigFile" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "FindAppConfigFile" (IDTâche:7)
+  Paramètre de tâche :
+      PrimaryList=
+          Properties\Settings.settings
+                  Generator=SettingsSingleFileGenerator
+                  LastGenOutput=Settings.Designer.cs
+          App.config (IDTâche:7)
+  Paramètre de tâche :TargetPath=Empty.exe.config (IDTâche:7)
+  "App.config" trouvé. (IDTâche:7)
+Exécution de la tâche "FindAppConfigFile" terminée. (IDTâche:7)
+Utilisation de la tâche "MakeDir" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "MakeDir" (IDTâche:8)
+  Paramètre de tâche :
+      Directories=
+          bin\Debug\
+          obj\Debug\ (IDTâche:8)
+Exécution de la tâche "MakeDir" terminée. (IDTâche:8)
+Génération de la cible "PrepareForBuild" terminée dans le projet "Empty.csproj". : (IdCible:11)
+Cible "PreBuildEvent" ignorée en raison d'une fausse condition ; ('$(PreBuildEvent)'!='') a été évaluée comme (''!='').
+Cible "BeforeResolveReferences : (IdCible:12)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveReferences" en dépend) :
+Génération de la cible "BeforeResolveReferences" terminée dans le projet "Empty.csproj". : (IdCible:12)
+Cible "AssignProjectConfiguration : (IdCible:13)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveReferences" en dépend) :
+Utilisation de la tâche "AssignProjectConfiguration" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "AssignProjectConfiguration" (IDTâche:9)
+  Paramètre de tâche :CurrentProject=C:\Users\hp\Documents\Games\Empty\Empty.csproj (IDTâche:9)
+  Paramètre de tâche :CurrentProjectConfiguration=Debug (IDTâche:9)
+  Paramètre de tâche :CurrentProjectPlatform=AnyCPU (IDTâche:9)
+  Paramètre de tâche :OutputType=WinExe (IDTâche:9)
+  Paramètre de tâche :ResolveConfigurationPlatformUsingMappings=False (IDTâche:9)
+  Paramètre de tâche :SolutionConfigurationContents=<SolutionConfiguration>
+    <ProjectConfiguration Project="{E1B6E938-B3C6-4882-83CA-4476A7ED5BF6}" AbsolutePath="C:\Users\hp\Documents\Games\Empty\Empty.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  </SolutionConfiguration> (IDTâche:9)
+  Paramètre de tâche :AddSyntheticProjectReferencesForSolutionDependencies=True (IDTâche:9)
+  Paramètre de tâche :OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True (IDTâche:9)
+  Paramètre de tâche :ShouldUnsetParentConfigurationAndPlatform=True (IDTâche:9)
+Exécution de la tâche "AssignProjectConfiguration" terminée. (IDTâche:9)
+Génération de la cible "AssignProjectConfiguration" terminée dans le projet "Empty.csproj". : (IdCible:13)
+Cible "AssignProjectConfiguration" ignorée. Avait été générée correctement.
+Cible "_SplitProjectReferencesByFileExistence : (IdCible:14)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveProjectReferences" en dépend) :
+Tâche "ResolveNonMSBuildProjectOutput" ignorée en raison d'une fausse condition ; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') a été évaluée comme (''=='true' and ''!='').
+Génération de la cible "_SplitProjectReferencesByFileExistence" terminée dans le projet "Empty.csproj". : (IdCible:14)
+Cible "ResolveProjectReferences : (IdCible:15)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveReferences" en dépend) :
+Tâche "MSBuild" ignorée en raison d'une fausse condition ; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') a été évaluée comme ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '16.0' != '10.0' and '' != '').
+Tâche "MSBuild" ignorée en raison d'une fausse condition ; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') a été évaluée comme ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '16.0' == '10.0' and '' != '').
+Tâche "MSBuild" ignorée en raison d'une fausse condition ; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') a été évaluée comme ('' == 'true' and '' != '' and '' != 'true' and 'true' == 'true' and '' != '').
+Tâche "MSBuild" ignorée en raison d'une fausse condition ; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') a été évaluée comme ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') a été évaluée comme ('' != '' and '' != '').
+Génération de la cible "ResolveProjectReferences" terminée dans le projet "Empty.csproj". : (IdCible:15)
+Cible "ResolveNativeReferences" ignorée en raison d'une fausse condition ; ('@(NativeReference)'!='') a été évaluée comme (''!='').
+Cible "GetFrameworkPaths" ignorée. Avait été générée correctement.
+Cible "GetReferenceAssemblyPaths" ignorée. Avait été générée correctement.
+Cible "PrepareForBuild" ignorée. Avait été générée correctement.
+Cible "GetInstalledSDKLocations : (IdCible:16)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveSDKReferences" en dépend) :
+Tâche "GetInstalledSDKLocations" ignorée en raison d'une fausse condition ; ('@(SDKReference)' != '') a été évaluée comme ('' != '').
+Génération de la cible "GetInstalledSDKLocations" terminée dans le projet "Empty.csproj". : (IdCible:16)
+Cible "ResolveSDKReferences : (IdCible:17)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveAssemblyReferences" en dépend) :
+Tâche "ResolveSDKReference" ignorée en raison d'une fausse condition ; ('@(SDKReference)'!='') a été évaluée comme (''!='').
+Génération de la cible "ResolveSDKReferences" terminée dans le projet "Empty.csproj". : (IdCible:17)
+Cible "ResolveSDKReferences" ignorée. Avait été générée correctement.
+Cible "ExpandSDKReferences : (IdCible:18)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveAssemblyReferences" en dépend) :
+Tâche "GetSDKReferenceFiles" ignorée en raison d'une fausse condition ; ('@(ResolvedSDKReference)'!='') a été évaluée comme (''!='').
+Génération de la cible "ExpandSDKReferences" terminée dans le projet "Empty.csproj". : (IdCible:18)
+Cible "ResolveAssemblyReferences : (IdCible:19)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveReferences" en dépend) :
+Utilisation de la tâche "ResolveAssemblyReference" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "ResolveAssemblyReference" (IDTâche:10)
+  Paramètre de tâche :
+      Assemblies=
+          CsharpGame.Engine
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+          System
+          System.Xml.Linq
+          System.Data.DataSetExtensions
+          Microsoft.CSharp
+          System.Data
+          System.Deployment
+          System.Drawing
+          System.Net.Http
+          System.Windows.Forms
+          System.Xml
+          System.Core
+                  Implicit=true (IDTâche:10)
+  Paramètre de tâche :AssemblyFiles=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll (IDTâche:10)
+  Paramètre de tâche :
+      TargetFrameworkDirectories=
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\ (IDTâche:10)
+  Paramètre de tâche :
+      CandidateAssemblyFiles=
+          Properties\Settings.settings
+          App.config (IDTâche:10)
+  Paramètre de tâche :
+      SearchPaths=
+          {CandidateAssemblyFiles}
+          {HintPathFromItem}
+          {TargetFrameworkDirectory}
+          {Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}
+          {AssemblyFolders}
+          {GAC}
+          {RawFileName}
+          bin\Debug\ (IDTâche:10)
+  Paramètre de tâche :
+      AllowedAssemblyExtensions=
+          .winmd
+          .dll
+          .exe (IDTâche:10)
+  Paramètre de tâche :
+      AllowedRelatedFileExtensions=
+          .pdb
+          .xml
+          .pri (IDTâche:10)
+  Paramètre de tâche :TargetProcessorArchitecture=msil (IDTâche:10)
+  Paramètre de tâche :AppConfigFile=App.config (IDTâche:10)
+  Paramètre de tâche :AutoUnify=False (IDTâche:10)
+  Paramètre de tâche :FindSatellites=True (IDTâche:10)
+  Paramètre de tâche :FindSerializationAssemblies=True (IDTâche:10)
+  Paramètre de tâche :FindRelatedFiles=True (IDTâche:10)
+  Paramètre de tâche :Silent=False (IDTâche:10)
+  Paramètre de tâche :TargetFrameworkVersion=v4.7.2 (IDTâche:10)
+  Paramètre de tâche :TargetFrameworkMoniker=.NETFramework,Version=v4.7.2 (IDTâche:10)
+  Paramètre de tâche :TargetFrameworkMonikerDisplayName=.NET Framework 4.7.2 (IDTâche:10)
+  Paramètre de tâche :TargetedRuntimeVersion=v4.0.30319 (IDTâche:10)
+  Paramètre de tâche :StateFile=obj\Debug\Empty.csprojResolveAssemblyReference.cache (IDTâche:10)
+  Paramètre de tâche :FullTargetFrameworkSubsetNames=Full (IDTâche:10)
+  Paramètre de tâche :FullFrameworkFolders=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\ (IDTâche:10)
+  Paramètre de tâche :WarnOrErrorOnTargetArchitectureMismatch=Warning (IDTâche:10)
+  TargetFrameworkMoniker : (IDTâche:10)
+      .NETFramework,Version=v4.7.2 (IDTâche:10)
+  TargetFrameworkMonikerDisplayName : (IDTâche:10)
+      .NET Framework 4.7.2 (IDTâche:10)
+  TargetedRuntimeVersion : (IDTâche:10)
+      v4.0.30319 (IDTâche:10)
+  Assemblies : (IDTâche:10)
+      CsharpGame.Engine (IDTâche:10)
+          HintPath = 'D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll' (IDTâche:10)
+      System (IDTâche:10)
+      System.Xml.Linq (IDTâche:10)
+      System.Data.DataSetExtensions (IDTâche:10)
+      Microsoft.CSharp (IDTâche:10)
+      System.Data (IDTâche:10)
+      System.Deployment (IDTâche:10)
+      System.Drawing (IDTâche:10)
+      System.Net.Http (IDTâche:10)
+      System.Windows.Forms (IDTâche:10)
+      System.Xml (IDTâche:10)
+      System.Core (IDTâche:10)
+  AssemblyFiles : (IDTâche:10)
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll (IDTâche:10)
+  CandidateAssemblyFiles : (IDTâche:10)
+  TargetFrameworkDirectories : (IDTâche:10)
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\ (IDTâche:10)
+  InstalledAssemblyTables : (IDTâche:10)
+  IgnoreInstalledAssemblyTable : (IDTâche:10)
+      False (IDTâche:10)
+  SearchPaths : (IDTâche:10)
+      {CandidateAssemblyFiles} (IDTâche:10)
+      {HintPathFromItem} (IDTâche:10)
+      {TargetFrameworkDirectory} (IDTâche:10)
+      {Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx} (IDTâche:10)
+      {AssemblyFolders} (IDTâche:10)
+      {GAC} (IDTâche:10)
+      {RawFileName} (IDTâche:10)
+      bin\Debug\ (IDTâche:10)
+  AllowedAssemblyExtensions : (IDTâche:10)
+      .winmd (IDTâche:10)
+      .dll (IDTâche:10)
+      .exe (IDTâche:10)
+  AllowedRelatedFileExtensions : (IDTâche:10)
+      .pdb (IDTâche:10)
+      .xml (IDTâche:10)
+      .pri (IDTâche:10)
+  AppConfigFile : (IDTâche:10)
+      App.config (IDTâche:10)
+  AutoUnify : (IDTâche:10)
+      False (IDTâche:10)
+  CopyLocalDependenciesWhenParentReferenceInGac : (IDTâche:10)
+      True (IDTâche:10)
+  FindDependencies : (IDTâche:10)
+      True (IDTâche:10)
+  TargetProcessorArchitecture : (IDTâche:10)
+      msil (IDTâche:10)
+  StateFile : (IDTâche:10)
+      obj\Debug\Empty.csprojResolveAssemblyReference.cache (IDTâche:10)
+  InstalledAssemblySubsetTables : (IDTâche:10)
+  IgnoreInstalledAssemblySubsetTable : (IDTâche:10)
+      False (IDTâche:10)
+  TargetFrameworkSubsets : (IDTâche:10)
+  FullTargetFrameworkSubsetNames : (IDTâche:10)
+      Full (IDTâche:10)
+  ProfileName : (IDTâche:10)
+       (IDTâche:10)
+  FullFrameworkFolders : (IDTâche:10)
+      C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\ (IDTâche:10)
+  LatestTargetFrameworkDirectories : (IDTâche:10)
+  ProfileTablesLocation : (IDTâche:10)
+  Référence primaire "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll". (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null". (IDTâche:10)
+      Le chemin de fichier résolu est "D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{HintPathFromItem}". (IDTâche:10)
+      Fichier associé "D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.pdb" trouvé. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+  Référence primaire "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089". (IDTâche:10)
+      Le chemin de fichier résolu est "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll". (IDTâche:10)
+      Référence trouvée dans l'emplacement du chemin d'accès de recherche "{TargetFrameworkDirectory}". (IDTâche:10)
+          Pour SearchPath "{TargetFrameworkDirectory}". (IDTâche:10)
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.winmd" a été envisagé, mais il n'existe pas. (IDTâche:10)
+      Cette référence n'est pas "CopyLocal", car il s'agit d'un fichier requis. (IDTâche:10)
+      L'ImageRuntimeVersion pour cette référence est "v4.0.30319". (IDTâche:10)
+Exécution de la tâche "ResolveAssemblyReference" terminée. (IDTâche:10)
+Génération de la cible "ResolveAssemblyReferences" terminée dans le projet "Empty.csproj". : (IdCible:19)
+Cible "ResolveComReferences" ignorée en raison d'une fausse condition ; ('@(COMReference)'!='' or '@(COMFileReference)'!='') a été évaluée comme (''!='' or ''!='').
+Cible "AfterResolveReferences : (IdCible:20)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveReferences" en dépend) :
+Génération de la cible "AfterResolveReferences" terminée dans le projet "Empty.csproj". : (IdCible:20)
+Cible "GetReferenceAssemblyPaths" ignorée. Avait été générée correctement.
+Cible "ImplicitlyExpandDesignTimeFacades : (IdCible:21)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResolveReferences" en dépend) :
+Tâche "Message" ignorée en raison d'une fausse condition ; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') a été évaluée comme ('{HintPathFromItem}' == 'ImplicitlyExpandDesignTimeFacades').
+Tâche "Message" ignorée en raison d'une fausse condition ; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') a été évaluée comme ('{TargetFrameworkDirectory}' == 'ImplicitlyExpandDesignTimeFacades').
+Tâche "Message" ignorée en raison d'une fausse condition ; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') a été évaluée comme ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll' == 'ImplicitlyExpandDesignTimeFacades').
+Génération de la cible "ImplicitlyExpandDesignTimeFacades" terminée dans le projet "Empty.csproj". : (IdCible:21)
+Cible "ResolveReferences : (IdCible:22)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "ResolveReferences" terminée dans le projet "Empty.csproj". : (IdCible:22)
+Cible "ValidationExtension : (IdCible:23)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WorkflowBuildExtensions.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResources" en dépend) :
+Tâche "WorkflowBuildMessageTask" ignorée en raison d'une fausse condition ; ('$(SkipWorkflowValidation)'!='' and '$(SkipWorkflowValidation)'!='true' and '$(SkipWorkflowValidation)'!='false') a été évaluée comme (''!='' and ''!='true' and ''!='false').
+Génération de la cible "ValidationExtension" terminée dans le projet "Empty.csproj". : (IdCible:23)
+Cible "ExpressionBuildExtension : (IdCible:24)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WorkflowBuildExtensions.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResources" en dépend) :
+Tâche "WorkflowBuildMessageTask" ignorée en raison d'une fausse condition ; ('$(DisableWorkflowCompiledExpressions)'!='' and '$(DisableWorkflowCompiledExpressions)'!='true' and '$(DisableWorkflowCompiledExpressions)'!='false') a été évaluée comme (''!='' and ''!='true' and ''!='false').
+Génération de la cible "ExpressionBuildExtension" terminée dans le projet "Empty.csproj". : (IdCible:24)
+Cible "XamlMarkupCompilePass1" ignorée en raison d'une fausse condition ; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') a été évaluée comme ('' != '' or '' != '').
+Cible "XamlMarkupCompileReadGeneratedFileList" ignorée en raison d'une fausse condition ; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') a été évaluée comme ('' != '' or '' != '').
+Cible "XamlMarkupCompileAddFilesGenerated" ignorée en raison d'une fausse condition ; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') a été évaluée comme ('' != '' or '' != '').
+Cible "XamlMarkupCompilePass2" ignorée en raison d'une fausse condition ; ('$(XamlRequiresCompilationPass2)' == 'true' ) a été évaluée comme ('false' == 'true' ).
+Cible "XamlMarkupCompileReadPass2Flag" ignorée en raison d'une fausse condition ; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') a été évaluée comme ('' != '' or '' != '').
+Cible "XamlMarkupCompileAddExtensionFilesGenerated" ignorée en raison d'une fausse condition ; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') a été évaluée comme ('' != '' or '' != '').
+Cible "AddDeferredValidationErrorsFileToFileWrites" ignorée en raison d'une fausse condition ; (Exists('$(DeferredValidationErrorsFileName)')) a été évaluée comme (Exists('obj\Debug\\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml')).
+Cible "ReportValidationBuildExtensionErrors" ignorée en raison d'une fausse condition ; ('$(SkipWorkflowValidation)' != 'true' and ('@(XamlPage)' != '' or '@(XamlAppDef)' != '')) a été évaluée comme ('' != 'true' and ('' != '' or '' != '')).
+Cible "MarkupCompilePass1" ignorée en raison d'une fausse condition ; ('@(Page)' != '' or '@(ApplicationDefinition)' != '' ) a été évaluée comme ('' != '' or '' != '' ).
+Cible "AfterMarkupCompilePass1 : (IdCible:25)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResources" en dépend) :
+Génération de la cible "AfterMarkupCompilePass1" terminée dans le projet "Empty.csproj". : (IdCible:25)
+Cible "MarkupCompilePass2ForMainAssembly" ignorée en raison d'une fausse condition ; ('$(_RequireMCPass2ForMainAssembly)' == 'true' ) a été évaluée comme ('false' == 'true' ).
+Cible "FileClassification : (IdCible:26)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResources" en dépend) :
+Tâche "FileClassifier" ignorée en raison d'une fausse condition ; ('@(GeneratedBaml)' != '' or '@(Resource)' != '' or '@(Font)' != '') a été évaluée comme ('' != '' or '' != '' or '' != '').
+Tâche "Message" ignorée en raison d'une fausse condition ; ('$(MSBuildTargetsVerbose)'=='true') a été évaluée comme (''=='true').
+Tâche "Message" ignorée en raison d'une fausse condition ; ('$(MSBuildTargetsVerbose)'=='true') a été évaluée comme (''=='true').
+Génération de la cible "FileClassification" terminée dans le projet "Empty.csproj". : (IdCible:26)
+Cible "MainResourcesGeneration" ignorée en raison d'une fausse condition ; ('@(MainEmbeddedFiles)' != '') a été évaluée comme ('' != '').
+Cible "AssignWinFXEmbeddedResource" ignorée en raison d'une fausse condition ; ('@(WinFXEmbeddedResource)' != '') a été évaluée comme ('' != '').
+Cible "AssignTargetPaths : (IdCible:27)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResourceNames" en dépend) :
+Utilisation de la tâche "AssignTargetPath" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "AssignTargetPath" (IDTâche:11)
+  Paramètre de tâche :
+      Files=
+          Form1.resx
+                  DependentUpon=Form1.cs
+          Properties\Resources.resx
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  SubType=Designer (IDTâche:11)
+  Paramètre de tâche :RootFolder=C:\Users\hp\Documents\Games\Empty (IDTâche:11)
+Exécution de la tâche "AssignTargetPath" terminée. (IDTâche:11)
+Tâche "AssignTargetPath" (IDTâche:12)
+  Paramètre de tâche :RootFolder=C:\Users\hp\Documents\Games\Empty (IDTâche:12)
+Exécution de la tâche "AssignTargetPath" terminée. (IDTâche:12)
+Tâche "AssignTargetPath" (IDTâche:13)
+  Paramètre de tâche :
+      Files=
+          Properties\Settings.settings
+                  Generator=SettingsSingleFileGenerator
+                  LastGenOutput=Settings.Designer.cs
+          App.config (IDTâche:13)
+  Paramètre de tâche :RootFolder=C:\Users\hp\Documents\Games\Empty (IDTâche:13)
+Exécution de la tâche "AssignTargetPath" terminée. (IDTâche:13)
+Tâche "AssignTargetPath" (IDTâche:14)
+  Paramètre de tâche :RootFolder=C:\Users\hp\Documents\Games\Empty (IDTâche:14)
+Exécution de la tâche "AssignTargetPath" terminée. (IDTâche:14)
+Tâche "AssignTargetPath" ignorée en raison d'une fausse condition ; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') a été évaluée comme (''=='' and '.settings'=='.manifest').
+Tâche "AssignTargetPath" ignorée en raison d'une fausse condition ; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') a été évaluée comme (''=='' and '.config'=='.manifest').
+Génération de la cible "AssignTargetPaths" terminée dans le projet "Empty.csproj". : (IdCible:27)
+Cible "AssignTargetPaths" ignorée. Avait été générée correctement.
+Cible "SplitResourcesByCulture : (IdCible:28)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResourceNames" en dépend) :
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ResxWithNoCulture)'!='') a été évaluée comme (''!='').
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ResxWithCulture)'!='') a été évaluée comme (''!='').
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(NonResxWithCulture)'!='') a été évaluée comme (''!='').
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(NonResxWithNoCulture)'!='') a été évaluée comme (''!='').
+Utilisation de la tâche "AssignCulture" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "AssignCulture" (IDTâche:15)
+  Paramètre de tâche :
+      Files=
+          Form1.resx
+                  DependentUpon=Form1.cs
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+          Properties\Resources.resx
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx (IDTâche:15)
+  La culture de "" a été assignée au fichier "Form1.resx". (IDTâche:15)
+  La culture de "" a été assignée au fichier "Properties\Resources.resx". (IDTâche:15)
+Exécution de la tâche "AssignCulture" terminée. (IDTâche:15)
+Génération de la cible "SplitResourcesByCulture" terminée dans le projet "Empty.csproj". : (IdCible:28)
+Cible "CreateManifestResourceNames : (IdCible:29)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResourceNames" en dépend) :
+Utilisation de la tâche "CreateCSharpManifestResourceName" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "CreateCSharpManifestResourceName" (IDTâche:16)
+  Paramètre de tâche :
+      ResourceFiles=
+          Form1.resx
+                  DependentUpon=Form1.cs
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          Properties\Resources.resx
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false (IDTâche:16)
+  Paramètre de tâche :RootNamespace=Empty (IDTâche:16)
+  L'espace de noms racine est 'Empty'. (IDTâche:16)
+  Le fichier de ressources 'Form1.resx' dépend de 'Form1.cs'. (IDTâche:16)
+  Le fichier de ressources 'Form1.resx' obtient le nom de ressource de manifeste 'Empty.Form1'. (IDTâche:16)
+  Le fichier de ressources 'Properties\Resources.resx' ne dépend d'aucun autre fichier. (IDTâche:16)
+  Le fichier de ressources 'Properties\Resources.resx' obtient le nom de ressource de manifeste 'Empty.Properties.Resources'. (IDTâche:16)
+Exécution de la tâche "CreateCSharpManifestResourceName" terminée. (IDTâche:16)
+Tâche "CreateCSharpManifestResourceName" ignorée en raison d'une fausse condition ; ('%(EmbeddedResource.ManifestResourceName)' == '' and '%(EmbeddedResource.WithCulture)' == 'true' and '%(EmbeddedResource.Type)' == 'Non-Resx') a été évaluée comme ('' == '' and 'false' == 'true' and 'Resx' == 'Non-Resx').
+Génération de la cible "CreateManifestResourceNames" terminée dans le projet "Empty.csproj". : (IdCible:29)
+Cible "CreateCustomManifestResourceNames : (IdCible:30)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResourceNames" en dépend) :
+Génération de la cible "CreateCustomManifestResourceNames" terminée dans le projet "Empty.csproj". : (IdCible:30)
+Cible "PrepareResourceNames : (IdCible:31)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResources" en dépend) :
+Génération de la cible "PrepareResourceNames" terminée dans le projet "Empty.csproj". : (IdCible:31)
+Cible "ResolveAssemblyReferences" ignorée. Avait été générée correctement.
+Cible "SplitResourcesByCulture" ignorée. Avait été générée correctement.
+Cible "BeforeResGen : (IdCible:32)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResGen" en dépend) :
+Génération de la cible "BeforeResGen" terminée dans le projet "Empty.csproj". : (IdCible:32)
+Cible "CoreResGen : (IdCible:33)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResGen" en dépend) :
+Utilisation de la tâche "GenerateResource" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "GenerateResource" (IDTâche:17)
+  Paramètre de tâche :
+      Sources=
+          Form1.resx
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          Properties\Resources.resx
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false (IDTâche:17)
+  Paramètre de tâche :UseSourcePath=True (IDTâche:17)
+  Paramètre de tâche :
+      References=
+          D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=Microsoft.CSharp
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  Implicit=true
+                  OriginalItemSpec=System.Core
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data.DataSetExtensions
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Deployment
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Drawing
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Net.Http
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.2.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Windows.Forms
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml.Linq
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0 (IDTâche:17)
+  Paramètre de tâche :
+      AdditionalInputs=
+          C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets
+          C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.props
+          C:\Users\hp\Documents\Games\Empty\Empty.csproj
+          C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets
+          C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets
+          C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets (IDTâche:17)
+  Paramètre de tâche :StateFile=obj\Debug\Empty.csproj.GenerateResource.Cache (IDTâche:17)
+  Paramètre de tâche :
+      OutputResources=
+          obj\Debug\Empty.Form1.resources
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          obj\Debug\Empty.Properties.Resources.resources
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false (IDTâche:17)
+  Paramètre de tâche :ExecuteAsTool=False (IDTâche:17)
+  Aucune ressource n'apparaît obsolète par rapport aux fichiers sources. La génération des ressources sera ignorée. (IDTâche:17)
+Exécution de la tâche "GenerateResource" terminée. (IDTâche:17)
+Tâche "GenerateResource" ignorée en raison d'une fausse condition ; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' == 'CLR2') a été évaluée comme ('Resx' == 'Resx' and '' != 'false' and 'CurrentRuntime' == 'CLR2').
+Génération de la cible "CoreResGen" terminée dans le projet "Empty.csproj". : (IdCible:33)
+Cible "AfterResGen : (IdCible:34)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "ResGen" en dépend) :
+Génération de la cible "AfterResGen" terminée dans le projet "Empty.csproj". : (IdCible:34)
+Cible "ResGen : (IdCible:35)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareResources" en dépend) :
+Génération de la cible "ResGen" terminée dans le projet "Empty.csproj". : (IdCible:35)
+Cible "CompileLicxFiles" ignorée en raison d'une fausse condition ; ('@(_LicxFile)'!='') a été évaluée comme (''!='').
+Cible "PrepareResources : (IdCible:36)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "PrepareResources" terminée dans le projet "Empty.csproj". : (IdCible:36)
+Cible "ResolveKeySource" ignorée en raison d'une fausse condition ; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') a été évaluée comme ( == 'true' or  == 'true').
+Cible "ResolveReferences" ignorée. Avait été générée correctement.
+Cible "ResolveKeySource" ignorée en raison d'une fausse condition ; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') a été évaluée comme ( == 'true' or  == 'true').
+Cible "ResolveComReferences" ignorée en raison d'une fausse condition ; ('@(COMReference)'!='' or '@(COMFileReference)'!='') a été évaluée comme (''!='' or ''!='').
+Cible "ResolveNativeReferences" ignorée en raison d'une fausse condition ; ('@(NativeReference)'!='') a été évaluée comme (''!='').
+Cible "_SetExternalWin32ManifestProperties" ignorée en raison d'une fausse condition ; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') a été évaluée comme (''=='true' or ''!='' or ''!='').
+Cible "_SetEmbeddedWin32ManifestProperties : (IdCible:37)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "SetWin32ManifestProperties" en dépend) :
+Utilisation de la tâche "GetFrameworkPath" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "GetFrameworkPath" (IDTâche:18)
+Exécution de la tâche "GetFrameworkPath" terminée. (IDTâche:18)
+Génération de la cible "_SetEmbeddedWin32ManifestProperties" terminée dans le projet "Empty.csproj". : (IdCible:37)
+Cible "SetWin32ManifestProperties : (IdCible:38)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Compile" en dépend) :
+Génération de la cible "SetWin32ManifestProperties" terminée dans le projet "Empty.csproj". : (IdCible:38)
+Cible "_GenerateCompileInputs : (IdCible:39)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Compile" en dépend) :
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') a été évaluée comme ('obj\Debug\Empty.Form1.resources;obj\Debug\Empty.Properties.Resources.resources'!='' and 'true'=='').
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') a été évaluée comme (''!='' and ''=='').
+Génération de la cible "_GenerateCompileInputs" terminée dans le projet "Empty.csproj". : (IdCible:39)
+Cible "PrepareForBuild" ignorée. Avait été générée correctement.
+Cible "GetReferenceAssemblyPaths" ignorée. Avait été générée correctement.
+Cible "_SetTargetFrameworkMonikerAttribute : (IdCible:40)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "GenerateTargetFrameworkMonikerAttribute" en dépend) :
+Génération de la cible "_SetTargetFrameworkMonikerAttribute" terminée dans le projet "Empty.csproj". : (IdCible:40)
+Cible "GenerateTargetFrameworkMonikerAttribute : (IdCible:41)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "BeforeCompile" en dépend) :
+La cible est ignorée "GenerateTargetFrameworkMonikerAttribute", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.
+Fichiers d'entrée : C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets
+Fichiers de sortie : C:\Users\hp\AppData\Local\Temp\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+Génération de la cible "GenerateTargetFrameworkMonikerAttribute" terminée dans le projet "Empty.csproj". : (IdCible:41)
+Cible "GenerateAdditionalSources" ignorée en raison d'une fausse condition ; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') a été évaluée comme ('' != '' and '' == 'true').
+Cible "BeforeCompile : (IdCible:42)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Compile" en dépend) :
+Génération de la cible "BeforeCompile" terminée dans le projet "Empty.csproj". : (IdCible:42)
+Cible "_TimeStampBeforeCompile" ignorée en raison d'une fausse condition ; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) a été évaluée comme (''=='OnOutputUpdated' or (''=='true' and 'WinExe'=='library')).
+Cible "_ComputeNonExistentFileProperty" ignorée en raison d'une fausse condition ; (('$(BuildingInsideVisualStudio)' == 'true') and ('$(BuildingOutOfProcess)' != 'true') and (('$(BuildingProject)' == 'false') or ('$(UseHostCompilerIfAvailable)' == 'true'))) a été évaluée comme (('' == 'true') and ('' != 'true') and (('true' == 'false') or ('true' == 'true'))).
+Cible "PreXsdCodeGen : (IdCible:43)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreCompile" en dépend) :
+Utilisation de la tâche "CallTarget" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "CallTarget" (IDTâche:19)
+  Paramètre de tâche :Targets=CleanXsdCodeGen (IDTâche:19)
+Cible "CleanXsdCodeGen : (IdCible:44)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PreXsdCodeGen" en dépend) :
+Utilisation de la tâche "Delete" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "Delete" (IDTâche:20)
+Exécution de la tâche "Delete" terminée. (IDTâche:20)
+Génération de la cible "CleanXsdCodeGen" terminée dans le projet "Empty.csproj". : (IdCible:44)
+Exécution de la tâche "CallTarget" terminée. (IDTâche:19)
+Génération de la cible "PreXsdCodeGen" terminée dans le projet "Empty.csproj". : (IdCible:43)
+Cible "XsdCodeGen" ignorée en raison d'une fausse condition ; ( '$(XsdCodeGenPreCondition)' == 'True' ) a été évaluée comme ( 'False' == 'True' ).
+Cible "CoreCompile : (IdCible:45)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.CSharp.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Compile" en dépend) :
+Génération complète de la cible "CoreCompile".
+Le fichier d'entrée "Game.cs" est plus récent que le fichier de sortie "obj\Debug\Empty.pdb".
+Utilisation de la tâche "Csc" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "Csc" (IDTâche:21)
+  Paramètre de tâche :DebugType=full (IDTâche:21)
+  Paramètre de tâche :DefineConstants=DEBUG;TRACE (IDTâche:21)
+  Paramètre de tâche :DisabledWarnings=;1701;1702 (IDTâche:21)
+  Paramètre de tâche :EmitDebugInformation=True (IDTâche:21)
+  Paramètre de tâche :ErrorReport=prompt (IDTâche:21)
+  Paramètre de tâche :FileAlignment=512 (IDTâche:21)
+  Paramètre de tâche :HighEntropyVA=True (IDTâche:21)
+  Paramètre de tâche :NoConfig=True (IDTâche:21)
+  Paramètre de tâche :NoStandardLib=True (IDTâche:21)
+  Paramètre de tâche :Optimize=False (IDTâche:21)
+  Paramètre de tâche :OutputAssembly=obj\Debug\Empty.exe (IDTâche:21)
+  Paramètre de tâche :Platform=AnyCPU (IDTâche:21)
+  Paramètre de tâche :Prefer32Bit=True (IDTâche:21)
+  Paramètre de tâche :
+      References=
+          D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=Microsoft.CSharp
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  Implicit=true
+                  OriginalItemSpec=System.Core
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data.DataSetExtensions
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Deployment
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Drawing
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Net.Http
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.2.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Windows.Forms
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml.Linq
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0 (IDTâche:21)
+  Paramètre de tâche :
+      Resources=
+          obj\Debug\Empty.Form1.resources
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  OutputResource=obj\Debug\Empty.Form1.resources
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          obj\Debug\Empty.Properties.Resources.resources
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  OutputResource=obj\Debug\Empty.Properties.Resources.resources
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false (IDTâche:21)
+  Paramètre de tâche :
+      Sources=
+          Form1.cs
+                  SubType=Form
+          Form1.Designer.cs
+                  DependentUpon=Form1.cs
+          Game.cs
+          Program.cs
+          Properties\AssemblyInfo.cs
+          Properties\Resources.Designer.cs
+                  AutoGen=True
+                  DependentUpon=Resources.resx
+          Properties\Settings.Designer.cs
+                  AutoGen=True
+                  DependentUpon=Settings.settings
+                  DesignTimeSharedInput=True
+          C:\Users\hp\AppData\Local\Temp\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs (IDTâche:21)
+  Paramètre de tâche :SubsystemVersion=6.00 (IDTâche:21)
+  Paramètre de tâche :TargetType=WinExe (IDTâche:21)
+  Paramètre de tâche :ToolPath=C:\Windows\Microsoft.NET\Framework\v4.0.30319 (IDTâche:21)
+  Paramètre de tâche :UseHostCompilerIfAvailable=True (IDTâche:21)
+  Paramètre de tâche :Utf8Output=True (IDTâche:21)
+  Paramètre de tâche :WarningLevel=4 (IDTâche:21)
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Empty.exe /subsystemversion:6.00 /resource:obj\Debug\Empty.Form1.resources /resource:obj\Debug\Empty.Properties.Resources.resources /target:winexe /utf8output Form1.cs Form1.Designer.cs Game.cs Program.cs Properties\AssemblyInfo.cs Properties\Resources.Designer.cs Properties\Settings.Designer.cs "C:\Users\hp\AppData\Local\Temp\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" (IDTâche:21)
+  Microsoft (R) Visual C# Compiler version 4.8.3752.0 (IDTâche:21)
+   (IDTâche:21)
+  for C# 5 (IDTâche:21)
+  Copyright (C) Microsoft Corporation. All rights reserved. (IDTâche:21)
+   (IDTâche:21)
+   (IDTâche:21)
+   (IDTâche:21)
+  This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240 (IDTâche:21)
+   (IDTâche:21)
+Exécution de la tâche "Csc" terminée. (IDTâche:21)
+Tâche "CallTarget" ignorée en raison d'une fausse condition ; ('$(TargetsTriggeredByCompilation)' != '') a été évaluée comme ('' != '').
+Génération de la cible "CoreCompile" terminée dans le projet "Empty.csproj". : (IdCible:45)
+Cible "_TimeStampAfterCompile" ignorée en raison d'une fausse condition ; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) a été évaluée comme (''=='OnOutputUpdated' or (''=='true' and 'WinExe'=='library')).
+Cible "AfterCompile : (IdCible:46)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Compile" en dépend) :
+Génération de la cible "AfterCompile" terminée dans le projet "Empty.csproj". : (IdCible:46)
+Cible "PrepareResourcesForSatelliteAssemblies" ignorée en raison d'une fausse condition ; ('$(UICulture)' != '') a été évaluée comme ('' != '').
+Cible "MergeLocalizationDirectives" ignorée en raison d'une fausse condition ; ('@(GeneratedLocalizationFiles)' !='') a été évaluée comme ('' !='').
+Cible "AfterCompileWinFX : (IdCible:47)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "_AfterCompileWinFXInternal" en dépend) :
+Génération de la cible "AfterCompileWinFX" terminée dans le projet "Empty.csproj". : (IdCible:47)
+Cible "_AfterCompileWinFXInternal : (IdCible:48)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFX.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Compile" en dépend) :
+Génération de la cible "_AfterCompileWinFXInternal" terminée dans le projet "Empty.csproj". : (IdCible:48)
+Cible "Compile : (IdCible:49)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "Compile" terminée dans le projet "Empty.csproj". : (IdCible:49)
+Cible "DeferredValidation" ignorée en raison d'une fausse condition ; ('$(SkipWorkflowValidation)' != 'true' and ('@(XamlPage)' != '' or '@(XamlAppDef)' != '')) a été évaluée comme ('' != 'true' and ('' != '' or '' != '')).
+Cible "ExportWindowsMDFile" ignorée en raison d'une fausse condition ; ('$(ExportWinMDFile)' == 'true') a été évaluée comme ('' == 'true').
+Cible "UnmanagedUnregistration" ignorée en raison d'une fausse condition ; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) a été évaluée comme ((('' != '' or '' != 'true' or 'WinExe' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\Empty.csproj.UnmanagedRegistration.cache')).
+Cible "GenerateSerializationAssemblies" ignorée en raison d'une fausse condition ; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) a été évaluée comme ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Cible "_GenerateSatelliteAssemblyInputs : (IdCible:50)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CreateSatelliteAssemblies" en dépend) :
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') a été évaluée comme (''!='' and ''=='').
+Tâche "Warning" ignorée en raison d'une fausse condition ; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') a été évaluée comme (''!='' and ''=='').
+Génération de la cible "_GenerateSatelliteAssemblyInputs" terminée dans le projet "Empty.csproj". : (IdCible:50)
+Cible "CreateManifestResourceNames" ignorée. Avait été générée correctement.
+Cible "ComputeIntermediateSatelliteAssemblies : (IdCible:51)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CreateSatelliteAssemblies" en dépend) :
+Génération de la cible "ComputeIntermediateSatelliteAssemblies" terminée dans le projet "Empty.csproj". : (IdCible:51)
+Cible "GenerateSatelliteAssemblies" ignorée en raison d'une fausse condition ; ('@(_SatelliteAssemblyResourceInputs)' != '') a été évaluée comme ('' != '').
+Cible "CreateSatelliteAssemblies : (IdCible:52)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "CreateSatelliteAssemblies" terminée dans le projet "Empty.csproj". : (IdCible:52)
+Cible "GenerateManifests" ignorée en raison d'une fausse condition ; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='' or '$(GenerateAppxManifest)' == 'true') a été évaluée comme (''=='true' or ''!='' or ''!='' or '' == 'true').
+Cible "GetTargetPath : (IdCible:53)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "GetTargetPath" terminée dans le projet "Empty.csproj". : (IdCible:53)
+Cible "ComputeIntermediateSatelliteAssemblies" ignorée. Avait été générée correctement.
+Cible "_CopyFilesMarkedCopyLocal : (IdCible:54)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CopyFilesToOutputDirectory" en dépend) :
+Utilisation de la tâche "Copy" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "Copy" (IDTâche:22)
+  Paramètre de tâche :
+      SourceFiles=
+          D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0 (IDTâche:22)
+  Paramètre de tâche :
+      DestinationFiles=
+          bin\Debug\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          bin\Debug\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0 (IDTâche:22)
+  Paramètre de tâche :SkipUnchangedFiles=True (IDTâche:22)
+  Paramètre de tâche :OverwriteReadOnlyFiles=False (IDTâche:22)
+  Paramètre de tâche :UseHardlinksIfPossible=False (IDTâche:22)
+  Impossible de copier le fichier "D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll" vers le fichier "bin\Debug\CsharpGame.Engine.dll", car le paramètre "SkipUnchangedFiles" a la valeur "true" dans le projet, et la taille des fichiers et les horodatages correspondent. (IDTâche:22)
+  Impossible de copier le fichier "D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.pdb" vers le fichier "bin\Debug\CsharpGame.Engine.pdb", car le paramètre "SkipUnchangedFiles" a la valeur "true" dans le projet, et la taille des fichiers et les horodatages correspondent. (IDTâche:22)
+Exécution de la tâche "Copy" terminée. (IDTâche:22)
+Génération de la cible "_CopyFilesMarkedCopyLocal" terminée dans le projet "Empty.csproj". : (IdCible:54)
+Cible "AssignTargetPaths" ignorée. Avait été générée correctement.
+Cible "_SplitProjectReferencesByFileExistence" ignorée. Avait été générée correctement.
+Cible "GetCopyToOutputDirectoryXamlAppDefs : (IdCible:55)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "GetCopyToOutputDirectoryItems" en dépend) :
+Tâche "AssignTargetPath" (IDTâche:23)
+  Paramètre de tâche :RootFolder=C:\Users\hp\Documents\Games\Empty (IDTâche:23)
+Exécution de la tâche "AssignTargetPath" terminée. (IDTâche:23)
+Génération de la cible "GetCopyToOutputDirectoryXamlAppDefs" terminée dans le projet "Empty.csproj". : (IdCible:55)
+Cible "GetCopyToOutputDirectoryItems : (IdCible:56)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "_CopySourceItemsToOutputDirectory" en dépend) :
+Tâche "MSBuild" ignorée en raison d'une fausse condition ; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') a été évaluée comme ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+Tâche "AssignTargetPath" (IDTâche:24)
+  Paramètre de tâche :RootFolder=C:\Users\hp\Documents\Games\Empty (IDTâche:24)
+Exécution de la tâche "AssignTargetPath" terminée. (IDTâche:24)
+Génération de la cible "GetCopyToOutputDirectoryItems" terminée dans le projet "Empty.csproj". : (IdCible:56)
+Cible "_CopyOutOfDateSourceItemsToOutputDirectory" ignorée en raison d'une fausse condition ; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) a été évaluée comme ( '' != '' ).
+Cible "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" ignorée en raison d'une fausse condition ; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) a été évaluée comme ( '' != '' ).
+Cible "_CopySourceItemsToOutputDirectory : (IdCible:57)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CopyFilesToOutputDirectory" en dépend) :
+Génération de la cible "_CopySourceItemsToOutputDirectory" terminée dans le projet "Empty.csproj". : (IdCible:57)
+Cible "_CopyAppConfigFile : (IdCible:58)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CopyFilesToOutputDirectory" en dépend) :
+La cible est ignorée "_CopyAppConfigFile", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.
+Fichiers d'entrée : App.config
+Fichiers de sortie : bin\Debug\Empty.exe.config
+Génération de la cible "_CopyAppConfigFile" terminée dans le projet "Empty.csproj". : (IdCible:58)
+Cible "_CopyManifestFiles" ignorée en raison d'une fausse condition ; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) a été évaluée comme ( ''=='true' or ''=='true' ).
+Cible "_CheckForCompileOutputs : (IdCible:59)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CopyFilesToOutputDirectory" en dépend) :
+Génération de la cible "_CheckForCompileOutputs" terminée dans le projet "Empty.csproj". : (IdCible:59)
+Cible "_SGenCheckForOutputs" ignorée en raison d'une fausse condition ; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) a été évaluée comme ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Cible "CopyFilesToOutputDirectory : (IdCible:60)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "PrepareForRun" en dépend) :
+Tâche "Copy" (IDTâche:25)
+  Paramètre de tâche :SourceFiles=obj\Debug\Empty.exe (IDTâche:25)
+  Paramètre de tâche :DestinationFolder=bin\Debug\ (IDTâche:25)
+  Paramètre de tâche :SkipUnchangedFiles=True (IDTâche:25)
+  Paramètre de tâche :OverwriteReadOnlyFiles=False (IDTâche:25)
+  Paramètre de tâche :UseHardlinksIfPossible=False (IDTâche:25)
+  Copie du fichier de "obj\Debug\Empty.exe" vers "bin\Debug\Empty.exe". (IDTâche:25)
+Exécution de la tâche "Copy" terminée. (IDTâche:25)
+Tâche "Message" (IDTâche:26)
+  Paramètre de tâche :Importance=High (IDTâche:26)
+  Paramètre de tâche :Text=Empty -> C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe (IDTâche:26)
+  Empty -> C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe (IDTâche:26)
+Exécution de la tâche "Message" terminée. (IDTâche:26)
+Tâche "Copy" ignorée en raison d'une fausse condition ; ('@(AddModules)' != '') a été évaluée comme ('' != '').
+Tâche "Copy" ignorée en raison d'une fausse condition ; ('$(_SGenDllCreated)'=='true') a été évaluée comme ('false'=='true').
+Tâche "Copy" (IDTâche:27)
+  Paramètre de tâche :SourceFiles=obj\Debug\Empty.pdb (IDTâche:27)
+  Paramètre de tâche :DestinationFiles=bin\Debug\Empty.pdb (IDTâche:27)
+  Paramètre de tâche :SkipUnchangedFiles=True (IDTâche:27)
+  Paramètre de tâche :OverwriteReadOnlyFiles=False (IDTâche:27)
+  Paramètre de tâche :UseHardlinksIfPossible=False (IDTâche:27)
+  Copie du fichier de "obj\Debug\Empty.pdb" vers "bin\Debug\Empty.pdb". (IDTâche:27)
+Exécution de la tâche "Copy" terminée. (IDTâche:27)
+Tâche "Copy" ignorée en raison d'une fausse condition ; ('$(_DocumentationFileProduced)'=='true') a été évaluée comme ('false'=='true').
+Tâche "Copy" ignorée en raison d'une fausse condition ; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') a été évaluée comme ('' != '').
+Tâche "Copy" ignorée en raison d'une fausse condition ; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) a été évaluée comme ('' != '' or '' != '' or '' != '' or '' != '' ).
+Tâche "Copy" ignorée en raison d'une fausse condition ; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') a été évaluée comme ('' != 'true' and '' != '').
+Tâche "Message" ignorée en raison d'une fausse condition ; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') a été évaluée comme ('' != 'true' and '' != '').
+Génération de la cible "CopyFilesToOutputDirectory" terminée dans le projet "Empty.csproj". : (IdCible:60)
+Cible "PrepareForRun : (IdCible:61)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Génération de la cible "PrepareForRun" terminée dans le projet "Empty.csproj". : (IdCible:61)
+Cible "UnmanagedRegistration" ignorée en raison d'une fausse condition ; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') a été évaluée comme (''=='true' and 'WinExe'=='library').
+Cible "_CheckForCompileOutputs" ignorée. Avait été générée correctement.
+Cible "_SGenCheckForOutputs" ignorée en raison d'une fausse condition ; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) a été évaluée comme ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Cible "_CleanGetCurrentAndPriorFileWrites : (IdCible:62)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "IncrementalClean" en dépend) :
+Utilisation de la tâche "ReadLinesFromFile" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "ReadLinesFromFile" (IDTâche:28)
+  Paramètre de tâche :File=obj\Debug\Empty.csproj.FileListAbsolute.txt (IDTâche:28)
+Exécution de la tâche "ReadLinesFromFile" terminée. (IDTâche:28)
+Utilisation de la tâche "ConvertToAbsolutePath" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "ConvertToAbsolutePath" (IDTâche:29)
+  Paramètre de tâche :
+      Paths=
+          D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=Microsoft.CSharp
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  Implicit=true
+                  OriginalItemSpec=System.Core
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data.DataSetExtensions
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Deployment
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Drawing
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Net.Http
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.2.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Windows.Forms
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml.Linq
+                  Redist=Microsoft-Windows-CLRCoreComp.4.7.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0 (IDTâche:29)
+Exécution de la tâche "ConvertToAbsolutePath" terminée. (IDTâche:29)
+Utilisation de la tâche "FindUnderPath" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "FindUnderPath" (IDTâche:30)
+  Paramètre de tâche :Path=C:\Users\hp\Documents\Games\Empty (IDTâche:30)
+  Paramètre de tâche :
+      Files=
+          bin\Debug\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          bin\Debug\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0 (IDTâche:30)
+  Paramètre de tâche :UpdateToAbsolutePaths=True (IDTâche:30)
+  Le chemin de comparaison est "C:\Users\hp\Documents\Games\Empty". (IDTâche:30)
+Exécution de la tâche "FindUnderPath" terminée. (IDTâche:30)
+Tâche "FindUnderPath" (IDTâche:31)
+  Paramètre de tâche :Path=bin\Debug\ (IDTâche:31)
+  Paramètre de tâche :
+      Files=
+          obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          obj\Debug\Empty.Form1.resources
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          obj\Debug\Empty.Properties.Resources.resources
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false
+          obj\Debug\Empty.csproj.GenerateResource.Cache
+          bin\Debug\Empty.exe.config
+                  OriginalItemSpec=App.config
+                  TargetPath=Empty.exe.config
+          obj\Debug\Empty.exe
+          obj\Debug\Empty.pdb
+          bin\Debug\Empty.exe
+                  OriginalItemSpec=obj\Debug\Empty.exe
+          bin\Debug\Empty.pdb
+                  OriginalItemSpec=obj\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0 (IDTâche:31)
+  Paramètre de tâche :UpdateToAbsolutePaths=True (IDTâche:31)
+  Le chemin de comparaison est "bin\Debug\". (IDTâche:31)
+Exécution de la tâche "FindUnderPath" terminée. (IDTâche:31)
+Tâche "FindUnderPath" (IDTâche:32)
+  Paramètre de tâche :Path=obj\Debug\ (IDTâche:32)
+  Paramètre de tâche :
+      Files=
+          obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          obj\Debug\Empty.Form1.resources
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          obj\Debug\Empty.Properties.Resources.resources
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false
+          obj\Debug\Empty.csproj.GenerateResource.Cache
+          bin\Debug\Empty.exe.config
+                  OriginalItemSpec=App.config
+                  TargetPath=Empty.exe.config
+          obj\Debug\Empty.exe
+          obj\Debug\Empty.pdb
+          bin\Debug\Empty.exe
+                  OriginalItemSpec=obj\Debug\Empty.exe
+          bin\Debug\Empty.pdb
+                  OriginalItemSpec=obj\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0 (IDTâche:32)
+  Paramètre de tâche :UpdateToAbsolutePaths=True (IDTâche:32)
+  Le chemin de comparaison est "obj\Debug\". (IDTâche:32)
+Exécution de la tâche "FindUnderPath" terminée. (IDTâche:32)
+Utilisation de la tâche "RemoveDuplicates" à partir de l'assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Tâche "RemoveDuplicates" (IDTâche:33)
+  Paramètre de tâche :
+      Inputs=
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe.config
+                  OriginalItemSpec=App.config
+                  TargetPath=Empty.exe.config
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe
+                  OriginalItemSpec=obj\Debug\Empty.exe
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb
+                  OriginalItemSpec=obj\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Form1.resources
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Properties.Resources.resources
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.exe
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb (IDTâche:33)
+Exécution de la tâche "RemoveDuplicates" terminée. (IDTâche:33)
+Génération de la cible "_CleanGetCurrentAndPriorFileWrites" terminée dans le projet "Empty.csproj". : (IdCible:62)
+Cible "IncrementalClean : (IdCible:63)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "CoreBuild" en dépend) :
+Tâche "FindUnderPath" (IDTâche:34)
+  Paramètre de tâche :Path=bin\Debug\ (IDTâche:34)
+  Paramètre de tâche :
+      Files=
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe.config
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.pdb
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csprojAssemblyReference.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Form1.resources
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CoreCompileInputs.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CopyComplete
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.exe
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe.config
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Form1.resources
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.exe
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.pdb (IDTâche:34)
+  Le chemin de comparaison est "bin\Debug\". (IDTâche:34)
+Exécution de la tâche "FindUnderPath" terminée. (IDTâche:34)
+Tâche "FindUnderPath" (IDTâche:35)
+  Paramètre de tâche :Path=obj\Debug\ (IDTâche:35)
+  Paramètre de tâche :
+      Files=
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe.config
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.pdb
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csprojAssemblyReference.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Form1.resources
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CoreCompileInputs.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CopyComplete
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.exe
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe.config
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Form1.resources
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.exe
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.pdb (IDTâche:35)
+  Le chemin de comparaison est "obj\Debug\". (IDTâche:35)
+Exécution de la tâche "FindUnderPath" terminée. (IDTâche:35)
+Tâche "Delete" (IDTâche:36)
+  Paramètre de tâche :TreatErrorsAsWarnings=True (IDTâche:36)
+Exécution de la tâche "Delete" terminée. (IDTâche:36)
+Tâche "RemoveDuplicates" (IDTâche:37)
+  Paramètre de tâche :
+      Inputs=
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe.config
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.pdb
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+          C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csprojAssemblyReference.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Form1.resources
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CoreCompileInputs.cache
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CopyComplete
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.exe
+          C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe.config
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.dll
+          D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Form1.resources
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.exe
+          D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Form1.resources
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Properties.Resources.resources
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.exe
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe.config
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe.config
+                  OriginalItemSpec=App.config
+                  TargetPath=Empty.exe.config
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe
+                  OriginalItemSpec=obj\Debug\Empty.exe
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb
+                  OriginalItemSpec=obj\Debug\Empty.pdb
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll
+                  CopyLocal=true
+                  FusionName=CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=CsharpGame.Engine
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb
+                  CopyLocal=true
+                  FusionName=
+                  HintPath=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  OriginalItemSpec=D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll
+                  ResolvedFrom={HintPathFromItem}
+                  Version=1.0.0.0
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Form1.resources
+                  DependentUpon=Form1.cs
+                  ManifestResourceName=Empty.Form1
+                  OriginalItemSpec=Form1.resx
+                  TargetPath=Form1.resx
+                  Type=Resx
+                  WithCulture=false
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Properties.Resources.resources
+                  Generator=ResXFileCodeGenerator
+                  LastGenOutput=Resources.Designer.cs
+                  ManifestResourceName=Empty.Properties.Resources
+                  OriginalItemSpec=Properties\Resources.resx
+                  SubType=Designer
+                  TargetPath=Properties\Resources.resx
+                  Type=Resx
+                  WithCulture=false
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.exe
+          C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb (IDTâche:37)
+Exécution de la tâche "RemoveDuplicates" terminée. (IDTâche:37)
+Tâche "WriteLinesToFile" ignorée en raison d'une fausse condition ; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') a été évaluée comme ('C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe.config;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.pdb;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.dll;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csprojAssemblyReference.cache;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Form1.resources;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.cache;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CoreCompileInputs.cache;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CopyComplete;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.exe;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.pdb;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe.config;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.pdb;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.dll;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Form1.resources;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.exe;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.pdb;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Form1.resources;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Properties.Resources.resources;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.exe;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb;C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe.config;C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe;C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb;C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll;C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache'!='C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe.config;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.exe;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\Empty.pdb;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.dll;C:\Users\hp\source\repos\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csprojAssemblyReference.cache;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Form1.resources;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.cache;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CoreCompileInputs.cache;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.csproj.CopyComplete;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.exe;C:\Users\hp\source\repos\Empty\Empty\obj\Debug\Empty.pdb;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe.config;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.exe;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\Empty.pdb;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.dll;D:\GitHub\CsharpGame\src\Empty\Empty\bin\Debug\CsharpGame.Engine.pdb;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Form1.resources;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.Properties.Resources.resources;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.exe;D:\GitHub\CsharpGame\src\Empty\Empty\obj\Debug\Empty.pdb;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Form1.resources;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.Properties.Resources.resources;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csproj.GenerateResource.Cache;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.exe;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.pdb;C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe.config;C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.exe;C:\Users\hp\Documents\Games\Empty\bin\Debug\Empty.pdb;C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.dll;C:\Users\hp\Documents\Games\Empty\bin\Debug\CsharpGame.Engine.pdb;C:\Users\hp\Documents\Games\Empty\obj\Debug\Empty.csprojResolveAssemblyReference.cache').
+Génération de la cible "IncrementalClean" terminée dans le projet "Empty.csproj". : (IdCible:63)
+Cible "PostBuildEvent" ignorée en raison d'une fausse condition ; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) a été évaluée comme ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
+Cible "CoreBuild : (IdCible:64)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Build" en dépend) :
+Génération de la cible "CoreBuild" terminée dans le projet "Empty.csproj". : (IdCible:64)
+Cible "AfterBuild : (IdCible:65)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (la cible "Build" en dépend) :
+Génération de la cible "AfterBuild" terminée dans le projet "Empty.csproj". : (IdCible:65)
+Cible "Build : (IdCible:66)" dans le fichier "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" (point d'entrée) :
+Génération de la cible "Build" terminée dans le projet "Empty.csproj". : (IdCible:66)
+Génération du projet "C:\Users\hp\Documents\Games\Empty\Empty.csproj" terminée (cibles par défaut).
+
+Exécution de la tâche "MSBuild" terminée. (IDTâche:3)
+Génération de la cible "Build" terminée dans le projet "Empty.sln". : (IdCible:5)
+Génération du projet "C:\Users\hp\Documents\Games\Empty.sln" terminée (cibles par défaut).
+
+
+Résumé de performance des projets :
+      267 ms  C:\Users\hp\Documents\Games\Empty\Empty.csproj   1 appels
+      318 ms  C:\Users\hp\Documents\Games\Empty.sln      1 appels
+
+Résumé de performance cible :
+        0 ms  ExpressionBuildExtension                   1 appels
+        0 ms  CreateSatelliteAssemblies                  1 appels
+        0 ms  BeforeResGen                               1 appels
+        0 ms  ResGen                                     1 appels
+        0 ms  ValidationExtension                        1 appels
+        0 ms  ResolveReferences                          1 appels
+        0 ms  _SetTargetFrameworkMonikerAttribute        1 appels
+        0 ms  _SplitProjectReferencesByFileExistence     1 appels
+        0 ms  GetInstalledSDKLocations                   1 appels
+        0 ms  AfterCompileWinFX                          1 appels
+        0 ms  PrepareForRun                              1 appels
+        0 ms  AfterMarkupCompilePass1                    1 appels
+        0 ms  AfterResolveReferences                     1 appels
+        0 ms  ValidateProjects                           1 appels
+        0 ms  ResolveSDKReferences                       1 appels
+        0 ms  _AfterCompileWinFXInternal                 1 appels
+        0 ms  GetTargetPath                              1 appels
+        0 ms  AfterResGen                                1 appels
+        0 ms  _CopySourceItemsToOutputDirectory          1 appels
+        0 ms  GetCopyToOutputDirectoryItems              1 appels
+        0 ms  GetFrameworkPaths                          1 appels
+        0 ms  AfterCompile                               1 appels
+        0 ms  CoreBuild                                  1 appels
+        0 ms  BeforeBuild                                1 appels
+        0 ms  ImplicitlyExpandDesignTimeFacades          1 appels
+        0 ms  FileClassification                         1 appels
+        0 ms  AfterBuild                                 1 appels
+        0 ms  _CheckForCompileOutputs                    1 appels
+        0 ms  _GenerateSatelliteAssemblyInputs           1 appels
+        0 ms  ExpandSDKReferences                        1 appels
+        0 ms  ValidateToolsVersions                      1 appels
+        0 ms  PrepareResourceNames                       1 appels
+        0 ms  Compile                                    1 appels
+        0 ms  BuildOnlySettings                          1 appels
+        0 ms  ComputeIntermediateSatelliteAssemblies     1 appels
+        0 ms  BeforeCompile                              1 appels
+        0 ms  PrepareResources                           1 appels
+        0 ms  BeforeResolveReferences                    1 appels
+        0 ms  SetWin32ManifestProperties                 1 appels
+        1 ms  GetCopyToOutputDirectoryXamlAppDefs        1 appels
+        1 ms  GenerateTargetFrameworkMonikerAttribute    1 appels
+        1 ms  GetReferenceAssemblyPaths                  1 appels
+        1 ms  _GenerateCompileInputs                     1 appels
+        1 ms  CreateCustomManifestResourceNames          1 appels
+        1 ms  ResolveProjectReferences                   1 appels
+        1 ms  SplitResourcesByCulture                    1 appels
+        1 ms  PreXsdCodeGen                              1 appels
+        1 ms  CleanXsdCodeGen                            1 appels
+        1 ms  _SetEmbeddedWin32ManifestProperties        1 appels
+        2 ms  _CopyAppConfigFile                         1 appels
+        2 ms  CreateManifestResourceNames                1 appels
+        2 ms  AssignProjectConfiguration                 1 appels
+        2 ms  _CopyFilesMarkedCopyLocal                  1 appels
+        2 ms  AssignTargetPaths                          1 appels
+        4 ms  PrepareForBuild                            1 appels
+        4 ms  IncrementalClean                           1 appels
+        5 ms  _CheckForInvalidConfigurationAndPlatform   1 appels
+        6 ms  _CleanGetCurrentAndPriorFileWrites         1 appels
+        7 ms  CopyFilesToOutputDirectory                 1 appels
+        9 ms  ValidateSolutionConfiguration              1 appels
+       16 ms  CoreResGen                                 1 appels
+       35 ms  ResolveAssemblyReferences                  1 appels
+      122 ms  CoreCompile                                1 appels
+      301 ms  Build                                      2 appels
+
+Résumé de performance des tâches :
+        0 ms  MakeDir                                    1 appels
+        0 ms  Delete                                     2 appels
+        1 ms  ReadLinesFromFile                          1 appels
+        1 ms  GetReferenceAssemblyPaths                  1 appels
+        1 ms  CreateCSharpManifestResourceName           1 appels
+        1 ms  ConvertToAbsolutePath                      1 appels
+        1 ms  AssignCulture                              1 appels
+        1 ms  CallTarget                                 1 appels
+        1 ms  GetFrameworkPath                           1 appels
+        2 ms  RemoveDuplicates                           2 appels
+        2 ms  AssignProjectConfiguration                 1 appels
+        2 ms  AssignTargetPath                           6 appels
+        4 ms  FindAppConfigFile                          1 appels
+        4 ms  Message                                    4 appels
+        5 ms  FindUnderPath                              5 appels
+        7 ms  Copy                                       3 appels
+       15 ms  GenerateResource                           1 appels
+       35 ms  ResolveAssemblyReference                   1 appels
+      120 ms  Csc                                        1 appels
+      300 ms  MSBuild                                    1 appels
+
+La génération a réussi.
+    0 Avertissement(s)
+    0 Erreur(s)
+
+Temps écoulé 00:00:00.34

@@ -1,14 +1,22 @@
 ﻿using CsharpGame.Editor.forms;
 using CsharpGame.Engine.Base;
+using Microsoft.CSharp;
 using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Build.Evaluation;
+using Microsoft.Build.Execution;
+using CsharpGame.Editor.lib;
 
 namespace CsharpGame.Editor
 {
@@ -19,60 +27,107 @@ namespace CsharpGame.Editor
             InitializeComponent();
         }
 
-        CsharpGame.Engine.Base.Engine Engine { get; set; }
+        private string ProjectPath { get; set; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Engine = new Engine.Base.Engine(drawingArea);
+            disableAdding();
             InitTheInterface();
         }
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            Engine.Start();
-            disableAdding();
+            CompileGame();
+        }
+
+        private void NewProject(string DestinationPath)
+        {
+            string startupPath = System.IO.Directory.GetCurrentDirectory();
+            string SourcePath = $"{startupPath}/../../../_Empty";
+            //Now Create all of the directories
+            foreach (string dirPath in Directory.GetDirectories(SourcePath, "*",
+                SearchOption.AllDirectories))
+                Directory.CreateDirectory(dirPath.Replace(SourcePath, DestinationPath));
+
+            //Copy all the files & Replaces any files with the same name
+            foreach (string newPath in Directory.GetFiles(SourcePath, "*.*",
+                SearchOption.AllDirectories))
+                File.Copy(newPath, newPath.Replace(SourcePath, DestinationPath), true);
+
+            InitTheInterface();
+        }
+
+        private bool CompileGame()
+        {
+            string projectFile = $@"{ProjectPath}\Empty.sln -flp:logfile=MyProjectOutput.log;verbosity=diagnostic";
+            string projectExe = $@"{ProjectPath}\Empty\bin\Debug\Empty.exe";
+            string strCmdText = $@"C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe {projectFile} -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic";
+
+            try
+            {
+                File.Delete(projectExe);
+            }
+            catch
+            {
+
+            }
+
+            var p = new Process();
+            p.StartInfo = new ProcessStartInfo(@"C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe");
+            p.StartInfo.Arguments = string.Format(projectFile);
+            p.Start();
+            p.WaitForExit();
+            try
+            {
+                Process.Start(projectExe);
+
+            }
+            catch
+            {
+                MessageBox.Show("An error is occuperd, please check your code!");
+                return false;
+            }
+            return true;
         }
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
-            Engine.Stop();
-            enableAdding();
+            KillGame();
+        }
+
+        private void KillGame()
+        {
+            Process[] proccess = Process.GetProcessesByName("Game");
+            foreach (var process in proccess)
+            {
+                process.Kill();
+            }
         }
 
         private void InitTheInterface()
         {
-            RefreshScenesList();
+            InitContent();
         }
 
-        private void list_scenes_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        private bool InitContent()
         {
-            list_layers.Items.Clear();
-            if (list_scenes.SelectedItems.Count > 0)
+            contentList.Items.Clear();
+            if (string.IsNullOrEmpty(ProjectPath))
+                return false;
+            string path = ProjectPath;
+            List<string> forbidenFiles = new List<string> { "Form1.Designer", "Program", "AssemblyInfo", "Resources.Designer", "Settings.Designer" };
+            string[] files = Directory.GetFiles(path, "*.cs", SearchOption.AllDirectories);
+            foreach (string file in files)
             {
-                Scene scene = Engine.Scenes[(int)(list_scenes.SelectedItems[0] as ListViewItem).Tag];
-                if (scene != null)
+                var match = forbidenFiles.FirstOrDefault(stringToCheck => stringToCheck.Contains(Path.GetFileNameWithoutExtension(file)));
+
+                if (match == null)
                 {
-                    foreach (KeyValuePair<int, Layer> layer in scene.Layers)
-                    {
-                        list_layers.Items.Add(new ListViewItem { Text = $"{layer.Value.Name} [{layer.Value.z_order}]", Tag = layer.Key });
-                    }
+                    ListViewItem item = new ListViewItem() { Text = Path.GetFileNameWithoutExtension(file), Tag = file };
+                    contentList.Items.Add(item);
                 }
             }
-        }
-
-        public void RefreshScenesList()
-        {
-            list_scenes.Items.Clear();
-            list_layers.Items.Clear();
-            list_gameobjects.Items.Clear();
-            foreach (KeyValuePair<int, Scene> scene in Engine.Scenes)
-            {
-                list_scenes.Items.Add(new ListViewItem { Text = scene.Value.Name, Tag = scene.Key });
-            }
-        }
-
-        private void list_gameobjects_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
-        {
+            return true;
         }
 
         private void enableAdding()
@@ -88,41 +143,168 @@ namespace CsharpGame.Editor
         private void btn_add_scene_Click(object sender, EventArgs e)
         {
             NewScene newScene = new NewScene();
-            newScene.Engine = Engine;
-            newScene.ShowDialog();
-            RefreshScenesList();
+            //newScene.Engine = Engine;
+            //newScene.ShowDialog();
+            //RefreshScenesList();
         }
 
         private void btn_add_layer_Click(object sender, EventArgs e)
         {
             NewLayer newLayer = new NewLayer();
-            newLayer.Engine = Engine;
-            newLayer.ShowDialog();
-            RefreshScenesList();
+            //newLayer.Engine = Engine;
+            //newLayer.ShowDialog();
+            //RefreshScenesList();
         }
 
         private void btn_add_gameobject_Click(object sender, EventArgs e)
         {
             NewGameObject newGameObject = new NewGameObject();
-            newGameObject.Engine = Engine;
-            newGameObject.ShowDialog();
-            RefreshScenesList();
+            //newGameObject.Engine = Engine;
+            //newGameObject.ShowDialog();
+            //RefreshScenesList();
         }
 
-        private void list_layers_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        private void nouveauToolStripButton_Click(object sender, EventArgs e)
         {
-            list_gameobjects.Items.Clear();
-            if (list_layers.SelectedItems.Count > 0)
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                Scene scene = Engine.Scenes[(int)(list_scenes.SelectedItems[0] as ListViewItem).Tag];
-                Layer layer = scene.Layers[(int)(list_layers.SelectedItems[0] as ListViewItem).Tag];
-                if (scene != null)
+                ProjectPath = System.IO.Path.GetDirectoryName(saveFileDialog1.FileName);
+                NewProject(ProjectPath);
+                enableAdding();
+            }
+        }
+
+        private void ouvrirToolStripButton_Click(object sender, EventArgs e)
+        {
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    foreach (GameObject @object in layer.RegistredObjects())
+                    ProjectPath =  fbd.SelectedPath;
+                    InitTheInterface();
+                    enableAdding();
+                }
+            }
+        }
+
+        private void contentList_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if(contentList.SelectedItems.Count > 0)
+            {
+                ListViewItem item = contentList.SelectedItems[0];
+                bool found = false;
+                TabPage tp = null;
+                foreach(TabPage p in code_edit_panel.Controls)
+                {
+                    if(p.Tag == item.Tag)
                     {
-                        list_gameobjects.Items.Add(new ListViewItem { Text = $"{@object.Name} [{@object.Position.X}, {@object.Position.Y}]", Tag = @object.Name });
+                        found = true;
+                        tp = p;
+                        break;
                     }
                 }
+
+                if (!found)
+                {
+                    string text = File.ReadAllText(item.Tag.ToString());
+                    tp = new TabPage(item.Text);
+                    tp.Tag = item.Tag;
+                    tp.Leave += tabPage_Leave;
+                    tp.ContextMenuStrip = tabsMenu;
+                    code_edit_panel.TabPages.Add(tp);
+
+                    SyntaxHighlighter.SyntaxRichTextBox m_syntaxRichTextBox = new SyntaxHighlighter.SyntaxRichTextBox();
+                    m_syntaxRichTextBox.Dock = DockStyle.Fill;
+                    m_syntaxRichTextBox.BorderStyle = BorderStyle.None;
+                    m_syntaxRichTextBox.Margin = new Padding(0);
+                    m_syntaxRichTextBox.AcceptsTab = true;
+                    m_syntaxRichTextBox.Font = new Font(new FontFamily("Consolas"), 11);
+
+                    // Add the keywords to the list.
+                    List<string> keywords = new List<string>() { "public", "class", "void", "bool", "namespace", "using", "return", "base", "string", "int", "float", "double",
+                    "char", "true", "false", "new", "private", "protected", "static", "override", "readonly", "System" };
+                    m_syntaxRichTextBox.Settings.Keywords.AddRange(keywords);
+
+                    // Set the comment identifier. 
+                    // For Lua this is two minus-signs after each other (--).
+                    // For C++ code we would set this property to "//".
+                    m_syntaxRichTextBox.Settings.Comment = "//";
+
+                    // Set the colors that will be used.
+                    m_syntaxRichTextBox.Settings.KeywordColor = Color.Blue;
+                    m_syntaxRichTextBox.Settings.CommentColor = Color.Green;
+                    m_syntaxRichTextBox.Settings.StringColor = Color.Brown;
+                    m_syntaxRichTextBox.Settings.IntegerColor = Color.BlueViolet;
+
+                    // Let's not process strings and integers.
+                    m_syntaxRichTextBox.Settings.EnableStrings = true;
+                    m_syntaxRichTextBox.Settings.EnableIntegers = true;
+
+                    // Let's make the settings we just set valid by compiling
+                    // the keywords to a regular expression.
+                    m_syntaxRichTextBox.CompileKeywords();
+
+                    // Load a file and update the syntax highlighting.
+                    m_syntaxRichTextBox.LoadFile(item.Tag.ToString(), RichTextBoxStreamType.PlainText);
+                    m_syntaxRichTextBox.ProcessAllLines();
+
+                    //RichTextBox tb = new RichTextBox();
+                    //tb.Dock = DockStyle.Fill;
+                    //tb.BorderStyle = BorderStyle.None;
+                    //tb.Margin = new Padding(0);
+                    //tb.Text = text;
+                    tp.Controls.Add(m_syntaxRichTextBox);
+                }
+
+                if(tp != null)
+                    code_edit_panel.SelectedTab = tp;
+            }
+        }
+
+        private void tabPage_Leave(object sender, EventArgs e)
+        {
+            TabPage tabPage = (TabPage)sender;
+            if(tabPage != null)
+            {
+                string path = tabPage.Tag.ToString();
+                if (!string.IsNullOrEmpty(path))
+                {
+                    RichTextBox rich = tabPage.Controls.OfType<RichTextBox>().FirstOrDefault();
+                    if (rich != null)
+                    {
+                        rich.SaveFile(path, RichTextBoxStreamType.PlainText);
+                    }
+                }
+            }
+        }
+
+        private void saveTabsMenu_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem toolStripMenuItem = (ToolStripMenuItem)sender;
+            TabPage tabPage = (TabPage)toolStripMenuItem.Owner.Parent;
+            if (tabPage != null)
+            {
+                string path = tabPage.Tag.ToString();
+                if (!string.IsNullOrEmpty(path))
+                {
+                    RichTextBox rich = tabPage.Controls.OfType<RichTextBox>().FirstOrDefault();
+                    if (rich != null)
+                    {
+                        rich.SaveFile(path, RichTextBoxStreamType.PlainText);
+                    }
+                }
+            }
+        }
+
+        private void closeTabsMenu_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem toolStripMenuItem = (ToolStripMenuItem)sender;
+            TabPage tabPage = (TabPage)toolStripMenuItem.Owner.Parent;
+            if (tabPage != null)
+            {
+                tabPage.Parent.Controls.Remove(tabPage);
             }
         }
     }

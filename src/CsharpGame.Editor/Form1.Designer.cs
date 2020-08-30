@@ -28,16 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.list_scenes = new System.Windows.Forms.ListView();
-            this.list_layers = new System.Windows.Forms.ListView();
-            this.list_gameobjects = new System.Windows.Forms.ListView();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.drawingArea = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.nouveauToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ouvrirToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -55,14 +50,22 @@
             this.btn_add_gameobject = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_start = new System.Windows.Forms.ToolStripButton();
             this.btn_stop = new System.Windows.Forms.ToolStripButton();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.code_edit_panel = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txt_code_first = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.contentList = new System.Windows.Forms.ListView();
+            this.tabsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saveTabsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeTabsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.code_edit_panel.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tabsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -98,8 +101,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel2.Controls.Add(this.code_edit_panel, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.splitContainer1, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 25);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -108,88 +111,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1184, 714);
             this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.list_scenes, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.list_layers, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.list_gameobjects, 0, 3);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(177, 714);
-            this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // list_scenes
-            // 
-            this.list_scenes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_scenes.HideSelection = false;
-            this.list_scenes.Location = new System.Drawing.Point(0, 178);
-            this.list_scenes.Margin = new System.Windows.Forms.Padding(0);
-            this.list_scenes.Name = "list_scenes";
-            this.list_scenes.Size = new System.Drawing.Size(177, 178);
-            this.list_scenes.TabIndex = 0;
-            this.list_scenes.UseCompatibleStateImageBehavior = false;
-            this.list_scenes.View = System.Windows.Forms.View.List;
-            this.list_scenes.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.list_scenes_ItemSelectionChanged);
-            // 
-            // list_layers
-            // 
-            this.list_layers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_layers.HideSelection = false;
-            this.list_layers.Location = new System.Drawing.Point(0, 356);
-            this.list_layers.Margin = new System.Windows.Forms.Padding(0);
-            this.list_layers.Name = "list_layers";
-            this.list_layers.Size = new System.Drawing.Size(177, 178);
-            this.list_layers.TabIndex = 1;
-            this.list_layers.UseCompatibleStateImageBehavior = false;
-            this.list_layers.View = System.Windows.Forms.View.List;
-            this.list_layers.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.list_layers_ItemSelectionChanged);
-            // 
-            // list_gameobjects
-            // 
-            this.list_gameobjects.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_gameobjects.HideSelection = false;
-            this.list_gameobjects.Location = new System.Drawing.Point(0, 534);
-            this.list_gameobjects.Margin = new System.Windows.Forms.Padding(0);
-            this.list_gameobjects.Name = "list_gameobjects";
-            this.list_gameobjects.Size = new System.Drawing.Size(177, 180);
-            this.list_gameobjects.TabIndex = 2;
-            this.list_gameobjects.UseCompatibleStateImageBehavior = false;
-            this.list_gameobjects.View = System.Windows.Forms.View.List;
-            this.list_gameobjects.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.list_gameobjects_ItemSelectionChanged);
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(177, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.drawingArea);
-            this.splitContainer1.Size = new System.Drawing.Size(828, 714);
-            this.splitContainer1.SplitterDistance = 398;
-            this.splitContainer1.TabIndex = 1;
-            // 
-            // drawingArea
-            // 
-            this.drawingArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.drawingArea.Location = new System.Drawing.Point(0, 0);
-            this.drawingArea.Margin = new System.Windows.Forms.Padding(0);
-            this.drawingArea.Name = "drawingArea";
-            this.drawingArea.Size = new System.Drawing.Size(398, 714);
-            this.drawingArea.TabIndex = 0;
-            this.drawingArea.TabStop = false;
             // 
             // toolStrip1
             // 
@@ -222,6 +143,7 @@
             this.nouveauToolStripButton.Name = "nouveauToolStripButton";
             this.nouveauToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.nouveauToolStripButton.Text = "&Nouveau";
+            this.nouveauToolStripButton.Click += new System.EventHandler(this.nouveauToolStripButton_Click);
             // 
             // ouvrirToolStripButton
             // 
@@ -231,6 +153,7 @@
             this.ouvrirToolStripButton.Name = "ouvrirToolStripButton";
             this.ouvrirToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.ouvrirToolStripButton.Text = "&Ouvrir";
+            this.ouvrirToolStripButton.Click += new System.EventHandler(this.ouvrirToolStripButton_Click);
             // 
             // enregistrerToolStripButton
             // 
@@ -312,21 +235,21 @@
             // btn_add_scene
             // 
             this.btn_add_scene.Name = "btn_add_scene";
-            this.btn_add_scene.Size = new System.Drawing.Size(180, 22);
+            this.btn_add_scene.Size = new System.Drawing.Size(143, 22);
             this.btn_add_scene.Text = "Scene";
             this.btn_add_scene.Click += new System.EventHandler(this.btn_add_scene_Click);
             // 
             // btn_add_layer
             // 
             this.btn_add_layer.Name = "btn_add_layer";
-            this.btn_add_layer.Size = new System.Drawing.Size(180, 22);
+            this.btn_add_layer.Size = new System.Drawing.Size(143, 22);
             this.btn_add_layer.Text = "Layer";
             this.btn_add_layer.Click += new System.EventHandler(this.btn_add_layer_Click);
             // 
             // btn_add_gameobject
             // 
             this.btn_add_gameobject.Name = "btn_add_gameobject";
-            this.btn_add_gameobject.Size = new System.Drawing.Size(180, 22);
+            this.btn_add_gameobject.Size = new System.Drawing.Size(143, 22);
             this.btn_add_gameobject.Text = "Game Object";
             this.btn_add_gameobject.Click += new System.EventHandler(this.btn_add_gameobject_Click);
             // 
@@ -351,28 +274,111 @@
             this.btn_stop.Text = "Stop";
             this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
             // 
+            // code_edit_panel
+            // 
+            this.code_edit_panel.Controls.Add(this.tabPage1);
+            this.code_edit_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.code_edit_panel.Location = new System.Drawing.Point(177, 0);
+            this.code_edit_panel.Margin = new System.Windows.Forms.Padding(0);
+            this.code_edit_panel.Name = "code_edit_panel";
+            this.code_edit_panel.SelectedIndex = 0;
+            this.code_edit_panel.Size = new System.Drawing.Size(828, 714);
+            this.code_edit_panel.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.ContextMenuStrip = this.tabsMenu;
+            this.tabPage1.Controls.Add(this.txt_code_first);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(820, 688);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Welcome!";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txt_code_first
+            // 
+            this.txt_code_first.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_code_first.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_code_first.Enabled = false;
+            this.txt_code_first.Location = new System.Drawing.Point(3, 3);
+            this.txt_code_first.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_code_first.Name = "txt_code_first";
+            this.txt_code_first.Size = new System.Drawing.Size(814, 682);
+            this.txt_code_first.TabIndex = 0;
+            this.txt_code_first.Text = "";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.contentList, 0, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(177, 714);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // contentList
+            // 
+            this.contentList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentList.HideSelection = false;
+            this.contentList.Location = new System.Drawing.Point(0, 178);
+            this.contentList.Margin = new System.Windows.Forms.Padding(0);
+            this.contentList.Name = "contentList";
+            this.contentList.Size = new System.Drawing.Size(177, 178);
+            this.contentList.TabIndex = 0;
+            this.contentList.UseCompatibleStateImageBehavior = false;
+            this.contentList.View = System.Windows.Forms.View.List;
+            this.contentList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.contentList_MouseDoubleClick);
+            // 
+            // tabsMenu
+            // 
+            this.tabsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveTabsMenu,
+            this.closeTabsMenu});
+            this.tabsMenu.Name = "tabsMenu";
+            this.tabsMenu.Size = new System.Drawing.Size(104, 48);
+            // 
+            // saveTabsMenu
+            // 
+            this.saveTabsMenu.Name = "saveTabsMenu";
+            this.saveTabsMenu.Size = new System.Drawing.Size(180, 22);
+            this.saveTabsMenu.Text = "Save";
+            this.saveTabsMenu.Click += new System.EventHandler(this.saveTabsMenu_Click);
+            // 
+            // closeTabsMenu
+            // 
+            this.closeTabsMenu.Name = "closeTabsMenu";
+            this.closeTabsMenu.Size = new System.Drawing.Size(180, 22);
+            this.closeTabsMenu.Text = "Close";
+            this.closeTabsMenu.Click += new System.EventHandler(this.closeTabsMenu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Csharp Game : Editor";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.code_edit_panel.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tabsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -382,10 +388,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ListView list_scenes;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.PictureBox drawingArea;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton nouveauToolStripButton;
         private System.Windows.Forms.ToolStripButton ouvrirToolStripButton;
@@ -399,12 +401,19 @@
         private System.Windows.Forms.ToolStripButton ToolStripButton;
         private System.Windows.Forms.ToolStripButton btn_start;
         private System.Windows.Forms.ToolStripButton btn_stop;
-        private System.Windows.Forms.ListView list_layers;
-        private System.Windows.Forms.ListView list_gameobjects;
         private System.Windows.Forms.ToolStripDropDownButton btn_adding;
         private System.Windows.Forms.ToolStripMenuItem btn_add_scene;
         private System.Windows.Forms.ToolStripMenuItem btn_add_layer;
         private System.Windows.Forms.ToolStripMenuItem btn_add_gameobject;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.TabControl code_edit_panel;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.RichTextBox txt_code_first;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.ListView contentList;
+        private System.Windows.Forms.ContextMenuStrip tabsMenu;
+        private System.Windows.Forms.ToolStripMenuItem saveTabsMenu;
+        private System.Windows.Forms.ToolStripMenuItem closeTabsMenu;
     }
 }
 
