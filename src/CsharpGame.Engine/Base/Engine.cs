@@ -281,6 +281,22 @@ namespace CsharpGame.Engine.Base
         }
 
         /// <summary>
+        /// Check if the mouse cursor is on top of a gameObject
+        /// </summary>
+        /// <param name="gameObject"></param>
+        /// <returns></returns>
+        public bool MouseOnTopOf(GameObject gameObject)
+        {
+            if (gameObject == null)
+                return false;
+
+            return (MousePosition().X < gameObject.Position.X + gameObject.Sprite.Width &&
+               MousePosition().X + 1 > gameObject.Position.X &&
+               MousePosition().Y < gameObject.Position.Y + gameObject.Sprite.Height &&
+               MousePosition().Y + 1 > gameObject.Position.Y);
+        }
+
+        /// <summary>
         /// Check if the user is clicking a specific key
         /// </summary>
         /// <param name="keys"></param>

@@ -163,6 +163,17 @@ This function return the Mouse position relative to the picturebox.
 Player.Position = new PointF(10, MousePosition().Y);
 ```
 
+#### MouseOnTopOf
+
+This function return if the mouse cursor is on top of a gameobject
+
+```C#
+if(Engine.MouseOnTopOf(PlayBtn))
+    PlayBtn.SetAnimation("playOn");
+else
+    PlayBtn.SetAnimation("playOff");
+```
+
 #### MouseClicked
 
 This function return a bool value, when a mouse button is clicked.

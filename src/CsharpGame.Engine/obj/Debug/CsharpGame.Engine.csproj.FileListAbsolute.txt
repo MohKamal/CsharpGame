@@ -14,3 +14,4 @@ D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Debug\CsharpGame.Engine.csproj.Ge
 D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Debug\CsharpGame.Engine.csproj.CoreCompileInputs.cache
 D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Debug\CsharpGame.Engine.dll
 D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Debug\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Engine\obj\Debug\CsharpGame.Engine.csprojAssemblyReference.cache
