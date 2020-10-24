@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,27 +20,22 @@ namespace CsharpGame.Editor.forms
             InitializeComponent();
         }
 
-        public Engine.Base.Engine Engine { get; set; }
+        public string ProjectPath { get; set; }
 
         private void NewLayer_Load(object sender, EventArgs e)
         {
-            if(Engine == null)
-            {
-                MessageBox.Show("No Engine was found", "Engine error");
-                this.Close();
-            }
+            list_scene.Items.Clear();
+            if (Directory.Exists($@"{ProjectPath}\Empty\Scenes"))
+                Directory.CreateDirectory($@"{ProjectPath}\Empty\Scenes");
 
-            if(Engine.Scenes.Count <= 0)
+            DirectoryInfo d = new DirectoryInfo($@"{ProjectPath}\Empty\Scenes");//Assuming Test is your Folder
+            FileInfo[] Files = d.GetFiles("*.cs"); //Getting Text files
+            foreach (FileInfo file in Files)
             {
-                MessageBox.Show("No scene was found, please add a scene at least", "Engine error");
-                this.Close();
-            }
-
-            foreach(KeyValuePair<int, Scene> scene in Engine.Scenes)
-            {
-                ComboBoxItem item = new ComboBoxItem() { Text = scene.Value.Name, Value = scene.Key };
+                ComboBoxItem item = new ComboBoxItem() { Text = Path.GetFileNameWithoutExtension(file.Name), Value = file.Name };
                 list_scene.Items.Add(item);
             }
+            list_scene.SelectedIndex = 0;
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
@@ -55,18 +51,82 @@ namespace CsharpGame.Editor.forms
         private void Add()
         {
             if (string.IsNullOrEmpty(txt_name.Text))
-            {
                 MessageBox.Show("Please, give a name to the layer", "Adding error");
-            }
             else
             {
-                Scene scene = Engine.Scenes[(int)(list_scene.SelectedItem as ComboBoxItem).Value];
-                if (scene != null)
+                if (System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier(txt_name.Text))
                 {
-                    Layer layer = new Layer(txt_name.Text);
-                    scene.RegisterLayer(layer);
-                    this.Close();
+                    if (list_scene.SelectedItem != null)
+                    {
+                        ComboBoxItem item = (list_scene.SelectedItem as ComboBoxItem);
+                        UpdateFile(item.Text, txt_name.Text);
+                        this.Close();
+                    }
+                    else
+                        MessageBox.Show("Please, select a scene class", "Adding error");
+                }else
+                    MessageBox.Show("Please, set a correct layer name, like a class name :{ !!!!");
+            }
+        }
+
+        private void UpdateFile(string className, string layerName)
+        {
+            string FilePath = $@"{ProjectPath}\Empty\Scenes\{className}.cs";
+
+            var text = new StringBuilder();
+
+            bool addVarPosition = false;
+            bool addLine = false;
+
+            bool addInitPostition = false;
+            bool addinitLine = false;
+
+            foreach (string s in File.ReadAllLines(FilePath))
+            {
+                text.AppendLine(s);
+
+                if (s.Contains($"public class {className} : Scene"))
+                    addVarPosition = true;
+
+                if (addVarPosition)
+                {
+                    if (s.Contains("{"))
+                    {
+                        addLine = true;
+                    }
                 }
+
+                if (addLine)
+                {
+                    text.AppendLine($"{Environment.NewLine}\t//Creating Layer Variable{Environment.NewLine}\tprivate Layer {layerName}" + " { get; set; }");
+                    addVarPosition = false;
+                    addLine = false;
+                }
+
+                if (s.Contains("public override bool OnCreate()"))
+                {
+                    addInitPostition = true;
+                }
+
+                if (addInitPostition)
+                {
+                    if (s.Contains("{"))
+                        addinitLine = true;
+                }
+
+                if (addinitLine)
+                {
+                    text.AppendLine($"\t\t//Init the {layerName} Variable{Environment.NewLine}\t\t{layerName} = new Layer(\"{layerName}\");");
+                    text.AppendLine($"\t\t//Register the Layer Variable to the scene{Environment.NewLine}\t\tRegisterLayer({layerName});");
+                    text.AppendLine("\t\t//Register gameobject to the layer");
+                    addInitPostition = false;
+                    addinitLine = false;
+                }
+            }
+
+            using (var file = new StreamWriter(File.Create(FilePath)))
+            {
+                file.Write(text.ToString());
             }
         }
 

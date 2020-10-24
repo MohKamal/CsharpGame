@@ -16,6 +16,7 @@ D:\GitHub\CsharpGame\src\CsharpGame.Test\bin\Debug\CsharpGame.Test.exe
 D:\GitHub\CsharpGame\src\CsharpGame.Test\bin\Debug\CsharpGame.Test.pdb
 D:\GitHub\CsharpGame\src\CsharpGame.Test\bin\Debug\CsharpGame.Engine.dll
 D:\GitHub\CsharpGame\src\CsharpGame.Test\bin\Debug\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\CsharpGame.Test\bin\Debug\CsharpGame.Engine.dll.config
 D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.csprojAssemblyReference.cache
 D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.Form1.resources
 D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.Properties.Resources.resources
@@ -24,4 +25,3 @@ D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.csproj.CoreCo
 D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.csproj.CopyComplete
 D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.exe
 D:\GitHub\CsharpGame\src\CsharpGame.Test\obj\Debug\CsharpGame.Test.pdb
-D:\GitHub\CsharpGame\src\CsharpGame.Test\bin\Debug\CsharpGame.Engine.dll.config

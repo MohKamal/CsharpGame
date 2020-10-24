@@ -28,6 +28,7 @@ namespace CsharpGame.Editor
         }
 
         private string ProjectPath { get; set; }
+        public int ScenesCount { get; set; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -130,7 +131,41 @@ namespace CsharpGame.Editor
                     contentList.Items.Add(item);
                 }
             }
+            ListDirectory(treeViewContent, path);
+
             return true;
+        }
+
+        private void ListDirectory(TreeView treeView, string path)
+        {
+            treeView.Nodes.Clear();
+            var rootDirectoryInfo = new DirectoryInfo(path);
+            TreeNode node = CreateDirectoryNode(rootDirectoryInfo);
+            if(node != null) 
+                treeView.Nodes.Add(node);
+        }
+
+        private static TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
+        {
+            List<string> forbidenFiles = new List<string> { "Form1.Designer", "Program", "AssemblyInfo", "Resources.Designer", "Settings.Designer" };
+                var directoryNode = new TreeNode(directoryInfo.Name);
+
+                foreach (var directory in directoryInfo.GetDirectories())
+                    directoryNode.Nodes.Add(CreateDirectoryNode(directory));
+                foreach (var file in directoryInfo.GetFiles())
+                {
+                    FileInfo fi = new FileInfo(file.Name);
+                    if (fi.Extension == ".cs")
+                    {
+                        var match = forbidenFiles.FirstOrDefault(stringToCheck => stringToCheck.Contains(Path.GetFileNameWithoutExtension(file.Name)));
+
+                        if (match == null)
+                        {
+                            directoryNode.Nodes.Add(new TreeNode(file.Name) { Tag = file.FullName });
+                        }
+                    }
+                }
+                return directoryNode;
         }
 
         private void enableAdding()
@@ -149,19 +184,25 @@ namespace CsharpGame.Editor
             newScene.ProjectPath = ProjectPath;
             newScene.ShowDialog();
             InitTheInterface();
-            RefreshFile($@"{ProjectPath}\Empty\Game.cs");
+            RefeshAllTabs();
         }
 
         private void btn_add_layer_Click(object sender, EventArgs e)
         {
             NewLayer newLayer = new NewLayer();
+            newLayer.ProjectPath = ProjectPath;
             newLayer.ShowDialog();
+            InitTheInterface();
+            RefeshAllTabs();
         }
 
         private void btn_add_gameobject_Click(object sender, EventArgs e)
         {
             NewGameObject newGameObject = new NewGameObject();
+            newGameObject.ProjectPath = ProjectPath;
             newGameObject.ShowDialog();
+            InitTheInterface();
+            RefeshAllTabs();
         }
 
         private void nouveauToolStripButton_Click(object sender, EventArgs e)
@@ -204,64 +245,70 @@ namespace CsharpGame.Editor
             TabPage tp = null;
             foreach (TabPage p in code_edit_panel.Controls)
             {
-                if (p.Tag == item.Tag)
+                if (p.Tag != null)
                 {
-                    found = true;
-                    tp = p;
-                    break;
+                    if (p.Tag.ToString() == item.Tag.ToString())
+                    {
+                        found = true;
+                        tp = p;
+                        break;
+                    }
                 }
             }
 
             if (!found)
             {
-                string text = File.ReadAllText(item.Tag.ToString());
-                tp = new TabPage($"{item.Text}        ");
-                tp.Tag = item.Tag;
-                tp.Leave += tabPage_Leave;
-                code_edit_panel.TabPages.Add(tp);
+                if (item.Tag != null)
+                {
+                    string text = File.ReadAllText(item.Tag.ToString());
+                    tp = new TabPage($"{item.Text}        ");
+                    tp.Tag = item.Tag;
+                    tp.Leave += tabPage_Leave;
+                    code_edit_panel.TabPages.Add(tp);
 
-                SyntaxHighlighter.SyntaxRichTextBox m_syntaxRichTextBox = new SyntaxHighlighter.SyntaxRichTextBox();
-                m_syntaxRichTextBox.Dock = DockStyle.Fill;
-                m_syntaxRichTextBox.BorderStyle = BorderStyle.None;
-                m_syntaxRichTextBox.Margin = new Padding(0);
-                m_syntaxRichTextBox.AcceptsTab = true;
-                m_syntaxRichTextBox.Font = new Font(new FontFamily("Consolas"), 11);
-                m_syntaxRichTextBox.KeyDown += M_syntaxRichTextBox_KeyDown;
+                    SyntaxHighlighter.SyntaxRichTextBox m_syntaxRichTextBox = new SyntaxHighlighter.SyntaxRichTextBox();
+                    m_syntaxRichTextBox.Dock = DockStyle.Fill;
+                    m_syntaxRichTextBox.BorderStyle = BorderStyle.None;
+                    m_syntaxRichTextBox.Margin = new Padding(0);
+                    m_syntaxRichTextBox.AcceptsTab = true;
+                    m_syntaxRichTextBox.Font = new Font(new FontFamily("Consolas"), 11);
+                    m_syntaxRichTextBox.KeyDown += M_syntaxRichTextBox_KeyDown;
 
-                // Add the keywords to the list.
-                List<string> keywords = new List<string>() { "public", "class", "void", "bool", "namespace", "using", "return", "base", "string", "int", "float", "double",
+                    // Add the keywords to the list.
+                    List<string> keywords = new List<string>() { "public", "class", "void", "bool", "namespace", "using", "return", "base", "string", "int", "float", "double",
                     "char", "true", "false", "new", "private", "protected", "static", "override", "readonly", "System", "this" };
-                m_syntaxRichTextBox.Settings.Keywords.AddRange(keywords);
+                    m_syntaxRichTextBox.Settings.Keywords.AddRange(keywords);
 
-                // Set the comment identifier. 
-                // For Lua this is two minus-signs after each other (--).
-                // For C++ code we would set this property to "//".
-                m_syntaxRichTextBox.Settings.Comment = "//";
+                    // Set the comment identifier. 
+                    // For Lua this is two minus-signs after each other (--).
+                    // For C++ code we would set this property to "//".
+                    m_syntaxRichTextBox.Settings.Comment = "//";
 
-                // Set the colors that will be used.
-                m_syntaxRichTextBox.Settings.KeywordColor = Color.Blue;
-                m_syntaxRichTextBox.Settings.CommentColor = Color.Green;
-                m_syntaxRichTextBox.Settings.StringColor = Color.Brown;
-                m_syntaxRichTextBox.Settings.IntegerColor = Color.BlueViolet;
+                    // Set the colors that will be used.
+                    m_syntaxRichTextBox.Settings.KeywordColor = Color.Blue;
+                    m_syntaxRichTextBox.Settings.CommentColor = Color.Green;
+                    m_syntaxRichTextBox.Settings.StringColor = Color.Brown;
+                    m_syntaxRichTextBox.Settings.IntegerColor = Color.BlueViolet;
 
-                // Let's not process strings and integers.
-                m_syntaxRichTextBox.Settings.EnableStrings = true;
-                m_syntaxRichTextBox.Settings.EnableIntegers = true;
+                    // Let's not process strings and integers.
+                    m_syntaxRichTextBox.Settings.EnableStrings = true;
+                    m_syntaxRichTextBox.Settings.EnableIntegers = true;
 
-                // Let's make the settings we just set valid by compiling
-                // the keywords to a regular expression.
-                m_syntaxRichTextBox.CompileKeywords();
+                    // Let's make the settings we just set valid by compiling
+                    // the keywords to a regular expression.
+                    m_syntaxRichTextBox.CompileKeywords();
 
-                // Load a file and update the syntax highlighting.
-                m_syntaxRichTextBox.LoadFile(item.Tag.ToString(), RichTextBoxStreamType.PlainText);
-                m_syntaxRichTextBox.ProcessAllLines();
+                    // Load a file and update the syntax highlighting.
+                    m_syntaxRichTextBox.LoadFile(item.Tag.ToString(), RichTextBoxStreamType.PlainText);
+                    m_syntaxRichTextBox.ProcessAllLines();
 
-                //RichTextBox tb = new RichTextBox();
-                //tb.Dock = DockStyle.Fill;
-                //tb.BorderStyle = BorderStyle.None;
-                //tb.Margin = new Padding(0);
-                //tb.Text = text;
-                tp.Controls.Add(m_syntaxRichTextBox);
+                    //RichTextBox tb = new RichTextBox();
+                    //tb.Dock = DockStyle.Fill;
+                    //tb.BorderStyle = BorderStyle.None;
+                    //tb.Margin = new Padding(0);
+                    //tb.Text = text;
+                    tp.Controls.Add(m_syntaxRichTextBox);
+                }
             }
 
             if (tp != null)
@@ -283,6 +330,17 @@ namespace CsharpGame.Editor
                     case Keys.C:
                         MessageBox.Show("Copu");
                         break;
+                }
+            }
+        }
+
+        private void RefeshAllTabs()
+        {
+            foreach(TabPage p in code_edit_panel.TabPages)
+            {
+                if(p.Tag != null)
+                {
+                    RefreshFile(p.Tag.ToString());
                 }
             }
         }
@@ -384,6 +442,14 @@ namespace CsharpGame.Editor
                         break;
                     }
                 }
+            }
+        }
+
+        private void treeViewContent_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if(treeViewContent.SelectedNode != null)
+            {
+                LoadFile(new ListViewItem() { Text = treeViewContent.SelectedNode.Text, Tag = treeViewContent.SelectedNode.Tag });
             }
         }
     }

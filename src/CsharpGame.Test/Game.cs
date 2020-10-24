@@ -20,16 +20,17 @@ namespace CsharpGame.Test
         public override bool OnCreate()
         {
             //Platfromer = new CustomPlatform(this);
-            TileGame = new TileGame(this);
-            //Menu = new MenuScene(this);
-            //RegisterScene(Menu);
+            //TileGame = new TileGame(this);
+            Menu = new MenuScene(this);
+            RegisterScene(Menu);
+            GoToScene(Menu);
             return true;
         }
 
         public override bool OnUpdate(double ElapsedTime)
         {
             //Platfromer.Run((float)ElapsedTime);
-            TileGame.Run((float)ElapsedTime);
+            //TileGame.Run((float)ElapsedTime);
             return true;
         }
     }

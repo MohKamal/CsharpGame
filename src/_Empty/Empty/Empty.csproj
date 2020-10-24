@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CsharpGame.Engine">
-      <HintPath>D:\GitHub\CsharpGame\src\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll</HintPath>
+    <Reference Include="CsharpGame.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CsharpGame.Engine\bin\Release\CsharpGame.Engine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

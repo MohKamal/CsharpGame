@@ -41,6 +41,7 @@
             this.txt_code_first = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.contentList = new System.Windows.Forms.ListView();
+            this.treeViewContent = new System.Windows.Forms.TreeView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.nouveauToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ouvrirToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -178,16 +179,17 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.contentList, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.contentList, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.treeViewContent, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(177, 714);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
@@ -195,14 +197,24 @@
             // 
             this.contentList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contentList.HideSelection = false;
-            this.contentList.Location = new System.Drawing.Point(0, 178);
+            this.contentList.Location = new System.Drawing.Point(0, 499);
             this.contentList.Margin = new System.Windows.Forms.Padding(0);
             this.contentList.Name = "contentList";
-            this.contentList.Size = new System.Drawing.Size(177, 178);
+            this.contentList.Size = new System.Drawing.Size(177, 215);
             this.contentList.TabIndex = 0;
             this.contentList.UseCompatibleStateImageBehavior = false;
             this.contentList.View = System.Windows.Forms.View.List;
             this.contentList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.contentList_MouseDoubleClick);
+            // 
+            // treeViewContent
+            // 
+            this.treeViewContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeViewContent.Location = new System.Drawing.Point(0, 214);
+            this.treeViewContent.Margin = new System.Windows.Forms.Padding(0);
+            this.treeViewContent.Name = "treeViewContent";
+            this.treeViewContent.Size = new System.Drawing.Size(177, 285);
+            this.treeViewContent.TabIndex = 1;
+            this.treeViewContent.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeViewContent_NodeMouseDoubleClick);
             // 
             // toolStrip1
             // 
@@ -419,6 +431,7 @@
         private System.Windows.Forms.ContextMenuStrip tabsMenu;
         private System.Windows.Forms.ToolStripMenuItem saveTabsMenu;
         private System.Windows.Forms.ToolStripMenuItem closeTabsMenu;
+        private System.Windows.Forms.TreeView treeViewContent;
     }
 }
 

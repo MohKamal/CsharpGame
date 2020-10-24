@@ -62,7 +62,7 @@ namespace CsharpGame.Editor.forms
 
         private void UpdateFile(string className, string sceneName)
         {
-            string FilePath = $@"{ProjectPath}\Empty\Game.cs"; ;
+            string FilePath = $@"{ProjectPath}\Empty\Game.cs";
 
             var text = new StringBuilder();
 
@@ -104,7 +104,7 @@ namespace CsharpGame.Editor.forms
 
                 if (addLine)
                 {
-                    text.AppendLine($"{Environment.NewLine}\t//Creating {className} Variable{Environment.NewLine}\tprivate {className} {className.ToLower()}" + " { get; set; }" );
+                    text.AppendLine($"\t//Creating {className} Variable{Environment.NewLine}\tprivate {className} {className.ToLower()}" + " { get; set; }" );
                     addVarPosition = false;
                     addLine = false;
                 }
@@ -122,8 +122,10 @@ namespace CsharpGame.Editor.forms
 
                 if (addinitLine)
                 {
-                    text.AppendLine($"{Environment.NewLine}\t\t//Inin the {className} Variable{Environment.NewLine}\t\t{className.ToLower()} = new {className}(this);");
-                    text.AppendLine($"{Environment.NewLine}//Register the {className} Variable to the engine{Environment.NewLine}\t\tRegisterScene({className.ToLower()});");
+                    text.AppendLine($"\t\t//Init the {className} Variable{Environment.NewLine}\t\t{className.ToLower()} = new {className}(this);");
+                    text.AppendLine($"\t\t//Register the {className} Variable to the engine{Environment.NewLine}\t\tRegisterScene({className.ToLower()});");
+                    text.AppendLine($"\t\t//Set this scene as the first scene");
+                    text.AppendLine($"\t\t//GoToScene({className.ToLower()};");
                     addInitPostition = false;
                     addinitLine = false;
                 }

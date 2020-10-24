@@ -58,7 +58,7 @@
             this.btn_add.Location = new System.Drawing.Point(179, 61);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(75, 23);
-            this.btn_add.TabIndex = 2;
+            this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
@@ -68,7 +68,7 @@
             this.btn_cancel.Location = new System.Drawing.Point(98, 61);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(75, 23);
-            this.btn_cancel.TabIndex = 3;
+            this.btn_cancel.TabIndex = 4;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -78,7 +78,8 @@
             this.txt_class_name.Location = new System.Drawing.Point(121, 32);
             this.txt_class_name.Name = "txt_class_name";
             this.txt_class_name.Size = new System.Drawing.Size(135, 20);
-            this.txt_class_name.TabIndex = 5;
+            this.txt_class_name.TabIndex = 2;
+            this.txt_class_name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_name_KeyDown);
             // 
             // label2
             // 

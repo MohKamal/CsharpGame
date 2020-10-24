@@ -335,6 +335,7 @@ namespace CsharpGame.Engine.Base
             //Draw registred game object
             foreach (GameObject gameObject in _GameObjects)
                 Drawer.GameObject(gameObject);
+
             //Apply new frame to the picturebox
             Drawer.ToScreen();
 

@@ -16,6 +16,7 @@ D:\GitHub\CsharpGame\src\CSharpGame.PingPong\bin\Debug\CSharpGame.PingPong.exe
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\bin\Debug\CSharpGame.PingPong.pdb
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\bin\Debug\CsharpGame.Engine.dll
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\bin\Debug\CsharpGame.Engine.pdb
+D:\GitHub\CsharpGame\src\CSharpGame.PingPong\bin\Debug\CsharpGame.Engine.dll.config
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.csprojAssemblyReference.cache
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.Form1.resources
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.Properties.Resources.resources
@@ -24,4 +25,3 @@ D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.cspro
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.csproj.CopyComplete
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.exe
 D:\GitHub\CsharpGame\src\CSharpGame.PingPong\obj\Debug\CSharpGame.PingPong.pdb
-D:\GitHub\CsharpGame\src\CSharpGame.PingPong\bin\Debug\CsharpGame.Engine.dll.config
