@@ -15,5 +15,9 @@ namespace CsharpGame.Engine.MapTile.Simple
         {
             Movable = true;
         }
+        public LogicTile() : base()
+        {
+            Movable = true;
+        }
     }
 }

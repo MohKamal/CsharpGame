@@ -22,6 +22,12 @@ namespace CsharpGame.Engine.MapTile.Simple
             Size = size;
         }
 
+        public Tile()
+        {
+            ID = Guid.NewGuid();
+            Size = new Size(32, 32);
+        }
+
         public List<Edge> Connections { get; set; } = new List<Edge>();
 
         public double? MinCostToStart { get; set; }
@@ -29,7 +35,7 @@ namespace CsharpGame.Engine.MapTile.Simple
         public bool Visited { get; set; }
         public double StraightLineDistanceToEnd { get; set; }
 
-        internal void ConnectClosestNodes(Tile[,] nodes)
+        public void ConnectClosestNodes(Tile[,] nodes)
         {
             //var connections = new List<Edge>();
             //foreach (var node in nodes)
@@ -205,7 +211,7 @@ namespace CsharpGame.Engine.MapTile.Simple
             return Math.Sqrt(Math.Pow(Position.X - end.Position.X, 2) + Math.Pow(Position.Y - end.Position.Y, 2));
         }
 
-        internal bool ToCloseToAny(List<Tile> nodes)
+        public bool ToCloseToAny(List<Tile> nodes)
         {
             foreach (var node in nodes)
             {

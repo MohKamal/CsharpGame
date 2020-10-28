@@ -30,6 +30,17 @@ namespace CsharpGame.Engine.MapTile.Simple
             GenerateTileGrid();
         }
 
+        public Layout()
+        {
+            Name = "Default";
+            Size = new Size(100, 100);
+            TilesSize = new Size(32, 32);
+            Grid = new Tile[Size.Width, Size.Height];
+            LogicGrid = new LogicTile[Size.Width, Size.Height];
+            LogicLayout = false;
+            GenerateTileGrid();
+        }
+
         // Instantiate random number generator.  
         private readonly Random _random = new Random();
         /// <summary>

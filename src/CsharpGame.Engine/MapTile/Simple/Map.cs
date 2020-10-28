@@ -24,6 +24,14 @@ namespace CsharpGame.Engine.MapTile.Simple
             _Layouts = new Dictionary<int, Layout>();
         }
 
+        public Map()
+        {
+            Name = "Default";
+            Size = new Size(100, 100);
+            TilesSize = new Size(32, 32);
+            _Layouts = new Dictionary<int, Layout>();
+        }
+
         /// <summary>
         /// Add layout to the map
         /// </summary>

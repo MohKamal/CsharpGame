@@ -338,7 +338,9 @@ namespace CsharpGame.Engine.Base
                     CurrentScene.Created();
                 }
 
+                //Execute user logic
                 CurrentScene.OnUpdate(ElapsedTime);
+                //Get layers by z-order
                 var sortedDict = from entry in CurrentScene.Layers orderby entry.Key ascending select entry;
                 foreach (KeyValuePair<int, Layer> entry in sortedDict)
                 {
