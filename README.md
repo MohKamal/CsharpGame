@@ -143,12 +143,12 @@ This function is used to add you game objects to the engine, so they will be dra
     }
 ```
 
-#### ScreenWith & ScreenHeight
+#### ScreenWidth & ScreenHeight
 
 This function return the picturebox where the game is drawed Size.
 
 ```C#
-    if (Ball.Position.X >= (ScreenWith() - Ball.Sprite.Width))
+    if (Ball.Position.X >= (ScreenWidth() - Ball.Sprite.Width))
         ballSpeedX = Rnd.Next(-10, 0);
 
     if (Ball.Position.Y >= (ScreenHeight() - Ball.Sprite.Height))
@@ -409,6 +409,14 @@ To make them simple, you can define a GameObject and registred to the Engine, so
     }
 ```
 
+### Hide & Show
+
+To Hide a registred Gameobject, you can use the Hide and Show functions
+
+```C#
+    Player.Hide();
+```
+
 ### Collisions
 
 #### Simple collision
@@ -548,6 +556,11 @@ public class MenuScene : Scene
     public override bool OnUpdate(double ElapsedTime)
     {
         return base.OnUpdate(double ElapsedTime);
+    }
+
+    public override bool OnDestroy()
+    {
+        return base.OnDestroy();
     }
 }
 ```

@@ -136,7 +136,7 @@ namespace CsharpGame.Engine.Base
         /// Screen Width
         /// </summary>
         /// <returns></returns>
-        public int ScreenWith()
+        public int ScreenWidth()
         {
             return DrawingArea.Width - 1;
         }
@@ -346,13 +346,19 @@ namespace CsharpGame.Engine.Base
                 {
                     //Draw registred game object
                     foreach (GameObject gameObject in entry.Value.RegistredObjects())
-                        Drawer.GameObject(gameObject);
+                    {
+                        if (gameObject.ShowIt)
+                            Drawer.GameObject(gameObject);
+                    }
                 }
             }
 
             //Draw registred game object
             foreach (GameObject gameObject in _GameObjects)
-                Drawer.GameObject(gameObject);
+            {
+                if (gameObject.ShowIt)
+                    Drawer.GameObject(gameObject);
+            }
 
             //Apply new frame to the picturebox
             Drawer.ToScreen();
@@ -374,7 +380,7 @@ namespace CsharpGame.Engine.Base
 
 
             if (DisplayFPS)
-                Drawer.String($"FPS: {FPS}", "Arial", 10f, Color.Red, new PointF(ScreenWith() - 100, 10));
+                Drawer.String($"FPS: {FPS}", "Arial", 10f, Color.Red, new PointF(ScreenWidth() - 100, 10));
         }
 
         /// <summary>

@@ -74,7 +74,7 @@ namespace CSharpGame.PingPong
                 Score--;
             }
 
-            if (Ball.Position.X >= (ScreenWith() - Ball.Sprite.Width))
+            if (Ball.Position.X >= (ScreenWidth() - Ball.Sprite.Width))
                 ballSpeedX = Rnd.Next(-10, 0);
 
             if (Ball.Position.Y <= 0)
@@ -100,7 +100,7 @@ namespace CSharpGame.PingPong
                 Green = Rnd.Next(0, 255);
             }
 
-            Drawer.String($"Score : {Score}", "Arial", 10, Color.Black, new PointF((ScreenWith() / 2) - 5, 10)); 
+            Drawer.String($"Score : {Score}", "Arial", 10, Color.Black, new PointF((ScreenWidth() / 2) - 5, 10)); 
 
             return true;
         }

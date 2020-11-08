@@ -18,6 +18,11 @@ namespace CsharpGame.Engine.Base
 
         public string Name { get; set; }
 
+        /// <summary>
+        /// If false, the registred gameobjects will not be displayed
+        /// </summary>
+        public bool ShowIt { get; private set; }
+
         public Animation Animations { get; set; }
 
         /// <summary>
@@ -31,6 +36,23 @@ namespace CsharpGame.Engine.Base
             Sprite = sprite;
             Static = false;
             Animations = new Animation();
+            ShowIt = true;
+        }
+
+        /// <summary>
+        /// Hide the gameobject
+        /// </summary>
+        public void Hide()
+        {
+            ShowIt = false;
+        }
+
+        /// <summary>
+        /// Display the gameobject
+        /// </summary>
+        public void Show()
+        {
+            ShowIt = true;
         }
 
         /// <summary>

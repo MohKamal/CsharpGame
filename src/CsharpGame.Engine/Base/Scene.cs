@@ -56,6 +56,7 @@ namespace CsharpGame.Engine.Base
         /// </summary>
         public void Ended()
         {
+            OnDestroy();
             IsEnded = true;
         }
 
@@ -70,5 +71,7 @@ namespace CsharpGame.Engine.Base
         public virtual bool OnCreate() { return true; }
 
         public virtual bool OnUpdate(double ElapsedTime) { return true; }
+
+        public virtual bool OnDestroy() { return true; }
     }
 }

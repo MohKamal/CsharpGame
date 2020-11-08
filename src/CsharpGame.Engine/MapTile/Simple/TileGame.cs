@@ -24,10 +24,10 @@ namespace CsharpGame.Engine.MapTile.Simple
         {
             _Core = core;
             _Core.DisplayFPS = true;
-            _Map = new Map("Default", new System.Drawing.Size((Engine.ScreenWith() * 2) / 16, (Engine.ScreenHeight() * 2) / 16), new System.Drawing.Size(16, 16));
+            _Map = new Map("Default", new System.Drawing.Size((Engine.ScreenWidth() * 2) / 16, (Engine.ScreenHeight() * 2) / 16), new System.Drawing.Size(16, 16));
             Layout dLayout = new Layout("Default", Map.Size, Map.TilesSize);
             _Map.AddLayout(dLayout);
-            Camera = new WorldCamera(Engine.ScreenWith(), Engine.ScreenHeight(), Map.Size.Width * Map.TilesSize.Width, Map.Size.Height * Map.TilesSize.Height);
+            Camera = new WorldCamera(Engine.ScreenWidth(), Engine.ScreenHeight(), Map.Size.Width * Map.TilesSize.Width, Map.Size.Height * Map.TilesSize.Height);
             Camera.Speed = 2;
 
             PathFinder = new AStar();

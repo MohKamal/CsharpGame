@@ -26,7 +26,7 @@ namespace CsharpGame.Test
         public CustomPlatform(Engine.Base.Engine engine) : base(engine)
         {
             //Generate empty Grid (Platform)
-            RegisterGrid(new PlatformerGrid((engine.ScreenWith() * 2) / 32, (engine.ScreenHeight() * 2) / 32, 32));
+            RegisterGrid(new PlatformerGrid((engine.ScreenWidth() * 2) / 32, (engine.ScreenHeight() * 2) / 32, 32));
             //Init the character animations and frames
             Stand = new SpriteSheet("stand", 32, 32, 1, 5, 5, Test.Properties.Resources.charachter);
             RunLeft = new SpriteSheet("run_left", 32, 32, 15, 6, 9, Test.Properties.Resources.charachter);

@@ -42,7 +42,7 @@ namespace CsharpGame.Engine.Platformer
             if(Character == null)
                 Character = new PlatformCharacter(new System.Drawing.PointF(PLAYER_SPAWN_X, PLAYER_SPAWN_Y), new Sprite(Grid.Resolution, Grid.Resolution));
             Grid.Nodes.Add(Character);
-            Camera = new WorldCamera(_Core.ScreenWith(), _Core.ScreenHeight(), Grid.Width * Grid.Resolution, Grid.Height * Grid.Resolution);
+            Camera = new WorldCamera(_Core.ScreenWidth(), _Core.ScreenHeight(), Grid.Width * Grid.Resolution, Grid.Height * Grid.Resolution);
         }
 
         /// <summary>
