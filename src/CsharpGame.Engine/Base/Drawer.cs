@@ -29,7 +29,11 @@ namespace CsharpGame.Engine.Base
         /// </summary>
         public void ToScreen()
         {
-            _DrawingArea.Image = DrawArea;
+            try
+            {
+                _DrawingArea.Image = DrawArea;
+            }
+            catch { }
         }
 
         /// <summary>
@@ -38,7 +42,11 @@ namespace CsharpGame.Engine.Base
         /// <param name="color"></param>
         public void Clear(Color color)
         {
-            Graphic.Clear(color);
+            try
+            {
+                Graphic.Clear(color);
+            }
+            catch { }
         }
 
         /// <summary>
@@ -57,8 +65,11 @@ namespace CsharpGame.Engine.Base
                 return false;
             if (sprite is SpriteSheet)
                 SpriteSheet(x, y, (SpriteSheet)sprite);
-
-            Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            try
+            {
+                Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            }
+            catch { }
             return true;
         }
 
@@ -82,7 +93,11 @@ namespace CsharpGame.Engine.Base
             camera.UpdateMaxPosition();
             if (x >= camera.Offset.X && x <= camera.MaxPosition.X && y >= camera.Offset.Y && y <= camera.MaxPosition.Y)
             {
-                Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+                try
+                {
+                    Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -103,8 +118,11 @@ namespace CsharpGame.Engine.Base
 
             if (sprite is SpriteSheet)
                 SpriteSheet(point, (SpriteSheet)sprite);
-
-            Graphic.DrawImage(sprite.Graphic, point);
+            try
+            {
+                Graphic.DrawImage(sprite.Graphic, point);
+            }
+            catch { }
             return true;
         }
 
@@ -127,7 +145,11 @@ namespace CsharpGame.Engine.Base
             camera.UpdateMaxPosition();
             if (point.X >= camera.Position.X && point.X <= camera.MaxPosition.X && point.Y >= camera.Position.Y && point.Y <= camera.MaxPosition.Y)
             {
-                Graphic.DrawImage(sprite.Graphic, point);
+                try
+                {
+                    Graphic.DrawImage(sprite.Graphic, point);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -148,7 +170,11 @@ namespace CsharpGame.Engine.Base
             if (sprite.Graphic == null)
             return false;
             sprite.Update();
-            Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            try
+            {
+                Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            }
+            catch { }
             return true;
         }
 
@@ -170,7 +196,11 @@ namespace CsharpGame.Engine.Base
             if (x >= camera.Position.X && x <= camera.MaxPosition.X && y >= camera.Position.Y && y <= camera.MaxPosition.Y)
             {
                 sprite.Update();
-                Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+                try
+                {
+                    Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)x, (int)y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -191,7 +221,11 @@ namespace CsharpGame.Engine.Base
             if (sprite.Graphic == null)
                 return false;
             sprite.Update();
-            Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)point.X, (int)point.Y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            try
+            {
+                Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)point.X, (int)point.Y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+            }
+            catch { }
             return true;
         }
 
@@ -212,7 +246,11 @@ namespace CsharpGame.Engine.Base
             camera.UpdateMaxPosition();
             if ((point.X >= camera.Position.X && point.X <= camera.MaxPosition.X) && (point.Y >= camera.Position.Y && point.Y <= camera.MaxPosition.Y))
             {
-                Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)point.X, (int)point.Y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+                try
+                {
+                    Graphic.DrawImage(sprite.Graphic, new Rectangle(new Point((int)point.X, (int)point.Y), new Size((int)sprite.Width, (int)sprite.Height)), new Rectangle(sprite.Frame(), new Size((int)sprite.Width, (int)sprite.Height)), GraphicsUnit.Pixel);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -231,11 +269,18 @@ namespace CsharpGame.Engine.Base
             if (obj.Sprite is SpriteSheet)
             {
                 (obj.Sprite as SpriteSheet).Update();
-                Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle((obj.Sprite as SpriteSheet).Frame(), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                try
+                {
+                    Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle((obj.Sprite as SpriteSheet).Frame(), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                }
+                catch { }
                 return true;
             }
-
-            Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+            try
+            {
+                Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+            }
+            catch { }
             return true;
         }
 
@@ -255,15 +300,22 @@ namespace CsharpGame.Engine.Base
                 if (obj.Position.X >= camera.Position.X && obj.Position.X <= camera.MaxPosition.X && obj.Position.Y >= camera.Position.Y && obj.Position.Y <= camera.MaxPosition.Y)
                 {
                     (obj.Sprite as SpriteSheet).Update();
-                    Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle((obj.Sprite as SpriteSheet).Frame(), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                    try
+                    {
+                        Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle((obj.Sprite as SpriteSheet).Frame(), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                    }
+                    catch { }
                     return true;
                 }
                 return false;
             }
             if (obj.Position.X >= camera.Position.X && obj.Position.X <= camera.MaxPosition.X && obj.Position.Y >= camera.Position.Y && obj.Position.Y <= camera.MaxPosition.Y)
             {
-
-                Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                try
+                {
+                    Graphic.DrawImage(obj.Sprite.Graphic, new Rectangle(new Point((int)obj.Position.X, (int)obj.Position.Y), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), new Rectangle(new Point(0, 0), new Size((int)obj.Sprite.Width, (int)obj.Sprite.Height)), GraphicsUnit.Pixel);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -280,7 +332,11 @@ namespace CsharpGame.Engine.Base
         public bool Line(Point p1, Point p2, Color color)
         {
             Pen pen = new Pen(color);
-            Graphic.DrawLine(pen, p1, p2);
+            try
+            {
+                Graphic.DrawLine(pen, p1, p2);
+            }
+            catch { }
             return true;
         }
 
@@ -298,8 +354,12 @@ namespace CsharpGame.Engine.Base
             if (p1.X >= camera.Position.X && p1.Y >= camera.Position.Y && p2.X <= camera.MaxPosition.X && p2.Y <= camera.MaxPosition.Y)
             {
                 Pen pen = new Pen(color);
-                Graphic.DrawLine(pen, p1, p2);
-            return true;
+                try
+                {
+                    Graphic.DrawLine(pen, p1, p2);
+                }
+                catch { }
+                return true;
             }
             return false;
         }
@@ -319,12 +379,20 @@ namespace CsharpGame.Engine.Base
             if (!fill)
             {
                 Pen pen = new Pen(color);
-                Graphic.DrawRectangle(pen, x, y, with, height);
+                try
+                {
+                    Graphic.DrawRectangle(pen, x, y, with, height);
+                }
+                catch { }
             }
             else
             {
                 SolidBrush solidBrush = new SolidBrush(color);
-                Graphic.FillRectangle(solidBrush, x, y, with, height);
+                try
+                {
+                    Graphic.FillRectangle(solidBrush, x, y, with, height);
+                }
+                catch { }
             }
             return true;
         }
@@ -346,12 +414,20 @@ namespace CsharpGame.Engine.Base
                 if (!fill)
                 {
                     Pen pen = new Pen(color);
-                    Graphic.DrawRectangle(pen, x, y, with, height);
+                    try
+                    {
+                        Graphic.DrawRectangle(pen, x, y, with, height);
+                    }
+                    catch { }
                 }
                 else
                 {
                     SolidBrush solidBrush = new SolidBrush(color);
-                    Graphic.FillRectangle(solidBrush, x, y, with, height);
+                    try
+                    {
+                        Graphic.FillRectangle(solidBrush, x, y, with, height);
+                    }
+                    catch { }
                 }
                 return true;
             }
@@ -371,7 +447,11 @@ namespace CsharpGame.Engine.Base
         {
             SolidBrush brush = new SolidBrush(color);
             Font font = new Font(fontfamily, size);
-            Graphic.DrawString(text, font, brush, position);
+            try
+            {
+                Graphic.DrawString(text, font, brush, position);
+            }
+            catch { }
             return true;
         }
 
@@ -391,7 +471,11 @@ namespace CsharpGame.Engine.Base
             {
                 SolidBrush brush = new SolidBrush(color);
                 Font font = new Font(fontfamily, size);
-                Graphic.DrawString(text, font, brush, position);
+                try
+                {
+                    Graphic.DrawString(text, font, brush, position);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -409,7 +493,11 @@ namespace CsharpGame.Engine.Base
         public bool Circle(float x, float y, float with, float height, Color color)
         {
             Pen pen = new Pen(color);
-            Graphic.DrawEllipse(pen, x, y, with, height);
+            try
+            {
+                Graphic.DrawEllipse(pen, x, y, with, height);
+            }
+            catch { }
             return true;
         }
 
@@ -425,7 +513,11 @@ namespace CsharpGame.Engine.Base
         public bool Circle(PointF position, float with, float height, Color color)
         {
             Pen pen = new Pen(color);
-            Graphic.DrawEllipse(pen, position.X, position.Y, with, height);
+            try
+            {
+                Graphic.DrawEllipse(pen, position.X, position.Y, with, height);
+            }
+            catch { }
             return true;
         }
 
@@ -443,7 +535,11 @@ namespace CsharpGame.Engine.Base
             if (x >= camera.Position.X && y >= camera.Position.Y && x <= camera.MaxPosition.X && y <= camera.MaxPosition.Y)
             {
                 Pen pen = new Pen(color);
-                Graphic.DrawEllipse(pen, x, y, with, height);
+                try
+                {
+                    Graphic.DrawEllipse(pen, x, y, with, height);
+                }
+                catch { }
                 return true;
             }
             return false;
@@ -463,7 +559,11 @@ namespace CsharpGame.Engine.Base
             if (position.X >= camera.Position.X && position.Y >= camera.Position.Y && position.X <= camera.MaxPosition.X && position.Y <= camera.MaxPosition.Y)
             {
                 Pen pen = new Pen(color);
-                Graphic.DrawEllipse(pen, position.X, position.Y, with, height);
+                try
+                {
+                    Graphic.DrawEllipse(pen, position.X, position.Y, with, height);
+                }
+                catch { }
                 return true;
             }
             return false;
